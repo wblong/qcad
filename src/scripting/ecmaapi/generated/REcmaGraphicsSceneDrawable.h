@@ -70,6 +70,12 @@
         isPainterPath
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
+        isText
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        isImage
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
         setMode
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
@@ -86,6 +92,12 @@
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
         getPixelUnit
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        setWorkingSet
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        isWorkingSet
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
         getPainterPath

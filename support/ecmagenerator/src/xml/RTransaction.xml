@@ -7,6 +7,17 @@ xmlns:rs="http://www.ribbonsoft.com">
   xsi:noNamespaceSchemaLocation="../class.xsd" isCopyable="true"
   hasShell="false" sharedPointerSupport="false" isQObject="false"
   hasStreamOperator="true" isAbstract="false" isScriptable="true">
+    <enum name="Type">
+      <value name="Generic" />
+      <value name="CurrentLayerChange" />
+      <value name="CurrentLayerSelectionChange" />
+      <value name="LayerLockStatusChange" />
+      <value name="LayerVisibilityStatusChange" />
+      <value name="SaveWorkingSet" />
+      <value name="ChangeDocumentSetting" />
+      <value name="Undo" />
+      <value name="Redo" />
+    </enum>
     <constructor>
       <variant />
       <variant>
@@ -280,6 +291,36 @@ xmlns:rs="http://www.ribbonsoft.com">
     <method name="isPreview" cppName="isPreview" specifier="public"
     isStatic="false" isVirtual="false" isScriptOverwritable="true">
       <variant returnType="bool" isPureVirtual="false" />
+    </method>
+    <method name="setTypes" cppName="setTypes" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RTransaction::Types"
+        typeName="RTransaction::Types" name="t" isConst="false" />
+      </variant>
+    </method>
+    <method name="getTypes" cppName="getTypes" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="RTransaction::Types"
+      isPureVirtual="false" />
+    </method>
+    <method name="setType" cppName="setType" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="void" isPureVirtual="false">
+        <arg type="RTransaction::Type"
+        typeName="RTransaction::Type" name="type"
+        isConst="false" />
+        <arg type="bool" typeName="bool" name="on"
+        hasDefault="true" default="true" isConst="false" />
+      </variant>
+    </method>
+    <method name="getType" cppName="getType" specifier="public"
+    isStatic="false" isVirtual="false" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="RTransaction::Type"
+        typeName="RTransaction::Type" name="type"
+        isConst="false" />
+      </variant>
     </method>
     <method name="addPropertyChange" cppName="addPropertyChange"
     specifier="protected" isStatic="false" isVirtual="false"

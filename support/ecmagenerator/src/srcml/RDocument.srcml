@@ -51,6 +51,10 @@
 <cpp:define>#<cpp:directive>define</cpp:directive> <name>RDEFAULT_QLIST_RBOX</name> <name>QList</name>&lt;RBox&gt;()</cpp:define>
 <cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
 
+<cpp:ifndef>#<cpp:directive>ifndef</cpp:directive> <name>RDEFAULT_MIN1</name></cpp:ifndef>
+<cpp:define>#<cpp:directive>define</cpp:directive> <name>RDEFAULT_MIN1</name> -1</cpp:define>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+
 <cpp:define>#<cpp:directive>define</cpp:directive> <name>RDEFAULT_QLIST_RS_ENTITYTYPE</name> <name>QList</name>&lt;RS::EntityType&gt;()</cpp:define>
 
 
@@ -106,6 +110,7 @@
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryAllVisibleEntities</name><parameter_list>()</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryAllEntities</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>undone</name> =<init> <expr><name>false</name></expr></init></decl></param>, <param><decl><type><name>bool</name></type> <name>allBlocks</name> =<init> <expr><name>false</name></expr></init></decl></param>, <param><decl><type><name><name>RS</name>::<name>EntityType</name></name></type> <name>type</name> =<init> <expr><name><name>RS</name>::<name>EntityAll</name></name></expr></init></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryAllEntities</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>undone</name></decl></param>, <param><decl><type><name>bool</name></type> <name>allBlocks</name></decl></param>, <param><decl><type><name>QList<argument_list>&lt;<argument><name><name>RS</name>::<name>EntityType</name></name></argument>&gt;</argument_list></name></type> <name>types</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
+    <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryWorkingSetEntities</name><parameter_list>()</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>RUcs</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryAllUcs</name><parameter_list>()</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>RLayer</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryAllLayers</name><parameter_list>()</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>RLayerState</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryAllLayerStates</name><parameter_list>()</parameter_list> <specifier>const</specifier>;</function_decl>
@@ -131,29 +136,27 @@
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryIntersectedEntitiesXYFast</name><parameter_list>(<param><decl><type><name>const</name> <name>RBox</name>&amp;</type> <name>box</name></decl></param>)</parameter_list>;</function_decl>
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryIntersectedShapesXYFast</name><parameter_list>(<param><decl><type><name>const</name> <name>RBox</name>&amp;</type> <name>box</name></decl></param>, <param><decl><type><name>bool</name></type> <name>noInfiniteEntities</name> =<init> <expr><name>false</name></expr></init></decl></param>)</parameter_list>;</function_decl>
 
-    <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryIntersectedEntitiesXY</name><parameter_list>(
-            <param><decl><type><name>const</name> <name>RBox</name>&amp;</type> <name>box</name></decl></param>,
-            <param><decl><type><name>bool</name></type> <name>checkBoundingBoxOnly</name>=<init><expr><name>false</name></expr></init></decl></param>,
-            <param><decl><type><name>bool</name></type> <name>includeLockedLayers</name>=<init><expr><name>true</name></expr></init></decl></param>,
-            <param><decl><type><name><name>RBlock</name>::<name>Id</name></name></type> <name>blockId</name> =<init> <expr><name><name>RBlock</name>::<name>INVALID_ID</name></name></expr></init></decl></param>,
-            <param><decl><type><name>const</name> <name>QList<argument_list>&lt;<argument><name><name>RS</name>::<name>EntityType</name></name></argument>&gt;</argument_list></name>&amp;</type> <name>filter</name> =<init> <expr><name>RDEFAULT_QLIST_RS_ENTITYTYPE</name></expr></init></decl></param>,
-            <param><decl><type><name>bool</name></type> <name>selectedOnly</name> =<init> <expr><name>false</name></expr></init></decl></param>
-    )</parameter_list> <specifier>const</specifier>;</function_decl>
-
-    <function_decl><type><name>QMap<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>, <argument><name>QSet<argument_list>&lt;<argument><name>int</name></argument>&gt;</argument_list></name></argument> &gt;</argument_list></name></type> <name>queryIntersectedShapesXY</name><parameter_list>(
-        <param><decl><type><name>const</name> <name>RBox</name>&amp;</type> <name>box</name></decl></param>,
+    <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryIntersectedEntitiesXY</name><parameter_list>(<param><decl><type><name>const</name> <name>RBox</name>&amp;</type> <name>box</name></decl></param>,
         <param><decl><type><name>bool</name></type> <name>checkBoundingBoxOnly</name>=<init><expr><name>false</name></expr></init></decl></param>,
         <param><decl><type><name>bool</name></type> <name>includeLockedLayers</name>=<init><expr><name>true</name></expr></init></decl></param>,
         <param><decl><type><name><name>RBlock</name>::<name>Id</name></name></type> <name>blockId</name> =<init> <expr><name><name>RBlock</name>::<name>INVALID_ID</name></name></expr></init></decl></param>,
         <param><decl><type><name>const</name> <name>QList<argument_list>&lt;<argument><name><name>RS</name>::<name>EntityType</name></name></argument>&gt;</argument_list></name>&amp;</type> <name>filter</name> =<init> <expr><name>RDEFAULT_QLIST_RS_ENTITYTYPE</name></expr></init></decl></param>,
-        <param><decl><type><name>bool</name></type> <name>selectedOnly</name> =<init> <expr><name>false</name></expr></init></decl></param>
-    )</parameter_list> <specifier>const</specifier>;</function_decl>
+        <param><decl><type><name>bool</name></type> <name>selectedOnly</name> =<init> <expr><name>false</name></expr></init></decl></param>,
+        <param><decl><type><name><name>RLayer</name>::<name>Id</name></name></type> <name>layerId</name> =<init> <expr><name><name>RLayer</name>::<name>INVALID_ID</name></name></expr></init></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
+
+    <function_decl><type><name>QMap<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>, <argument><name>QSet<argument_list>&lt;<argument><name>int</name></argument>&gt;</argument_list></name></argument> &gt;</argument_list></name></type> <name>queryIntersectedShapesXY</name><parameter_list>(<param><decl><type><name>const</name> <name>RBox</name>&amp;</type> <name>box</name></decl></param>,
+        <param><decl><type><name>bool</name></type> <name>checkBoundingBoxOnly</name>=<init><expr><name>false</name></expr></init></decl></param>,
+        <param><decl><type><name>bool</name></type> <name>includeLockedLayers</name>=<init><expr><name>true</name></expr></init></decl></param>,
+        <param><decl><type><name><name>RBlock</name>::<name>Id</name></name></type> <name>blockId</name> =<init> <expr><name><name>RBlock</name>::<name>INVALID_ID</name></name></expr></init></decl></param>,
+        <param><decl><type><name>const</name> <name>QList<argument_list>&lt;<argument><name><name>RS</name>::<name>EntityType</name></name></argument>&gt;</argument_list></name>&amp;</type> <name>filter</name> =<init> <expr><name>RDEFAULT_QLIST_RS_ENTITYTYPE</name></expr></init></decl></param>,
+        <param><decl><type><name>bool</name></type> <name>selectedOnly</name> =<init> <expr><name>false</name></expr></init></decl></param>,
+        <param><decl><type><name><name>RLayer</name>::<name>Id</name></name></type> <name>layerId</name> =<init> <expr><name><name>RLayer</name>::<name>INVALID_ID</name></name></expr></init></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
 
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryContainedEntitiesXY</name><parameter_list>(<param><decl><type><name>const</name> <name>RBox</name>&amp;</type> <name>box</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
 
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>querySelectedEntities</name><parameter_list>()</parameter_list> <specifier>const</specifier>;</function_decl>
 
-    <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryConnectedEntities</name><parameter_list>(<param><decl><type><name><name>REntity</name>::<name>Id</name></name></type> <name>entityId</name></decl></param>, <param><decl><type><name>double</name></type> <name>tolerance</name> =<init> <expr><name><name>RS</name>::<name>PointTolerance</name></name></expr></init></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryConnectedEntities</name><parameter_list>(<param><decl><type><name><name>REntity</name>::<name>Id</name></name></type> <name>entityId</name></decl></param>, <param><decl><type><name>double</name></type> <name>tolerance</name> =<init> <expr><name><name>RS</name>::<name>PointTolerance</name></name></expr></init></decl></param>, <param><decl><type><name><name>RLayer</name>::<name>Id</name></name></type> <name>layerId</name> =<init> <expr><name><name>RLayer</name>::<name>INVALID_ID</name></name></expr></init></decl></param>)</parameter_list>;</function_decl>
 
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name><name>RObject</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>queryPropertyEditorObjects</name><parameter_list>()</parameter_list>;</function_decl>
 
@@ -212,6 +215,7 @@
         <param><decl><type><name>QSet<argument_list>&lt;<argument><name><name>REntity</name>::<name>Id</name></name></argument>&gt;</argument_list></name>*</type> <name>affectedEntities</name>=<init><expr><name>NULL</name></expr></init></decl></param>
     )</parameter_list>;</function_decl>
     <function_decl><type><name>bool</name></type> <name>isSelected</name><parameter_list>(<param><decl><type><name><name>REntity</name>::<name>Id</name></name></type> <name>entityId</name></decl></param>)</parameter_list>;</function_decl>
+    <function_decl><type><name>bool</name></type> <name>isSelectedWorkingSet</name><parameter_list>(<param><decl><type><name><name>REntity</name>::<name>Id</name></name></type> <name>entityId</name></decl></param>)</parameter_list>;</function_decl>
     <function_decl><type><name>bool</name></type> <name>isLayerLocked</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>Id</name></name></type> <name>layerId</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>bool</name></type> <name>isLayerLocked</name><parameter_list>(<param><decl><type><name>const</name> <name>RLayer</name>&amp;</type> <name>layer</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>bool</name></type> <name>isParentLayerLocked</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>Id</name></name></type> <name>layerId</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
@@ -230,6 +234,8 @@
     <function_decl><type><name>bool</name></type> <name>isLayerFrozen</name><parameter_list>(<param><decl><type><name>const</name> <name>RLayer</name>&amp;</type> <name>layer</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>bool</name></type> <name>isLayerPlottable</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>Id</name></name></type> <name>layerId</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>bool</name></type> <name>isLayerPlottable</name><parameter_list>(<param><decl><type><name>const</name> <name>RLayer</name>&amp;</type> <name>layer</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
+    <function_decl><type><name>bool</name></type> <name>isLayerSnappable</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>Id</name></name></type> <name>layerId</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
+    <function_decl><type><name>bool</name></type> <name>isLayerSnappable</name><parameter_list>(<param><decl><type><name>const</name> <name>RLayer</name>&amp;</type> <name>layer</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>bool</name></type> <name>isParentLayerFrozen</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>Id</name></name></type> <name>layerId</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>bool</name></type> <name>isParentLayerFrozen</name><parameter_list>(<param><decl><type><name>const</name> <name>RLayer</name>&amp;</type> <name>layer</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>bool</name></type> <name>isBlockFrozen</name><parameter_list>(<param><decl><type><name><name>RBlock</name>::<name>Id</name></name></type> <name>blockId</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
@@ -339,6 +345,7 @@
     <function_decl><type><name>QString</name></type> <name>getBlockNameFromLayout</name><parameter_list>(<param><decl><type><name><name>RLayout</name>::<name>Id</name></name></type> <name>layoutId</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name>QString</name></argument>&gt;</argument_list></name></type> <name>getBlockNames</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>rxStr</name> =<init> <expr><name>RDEFAULT_QSTRING</name></expr></init></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>QList<argument_list>&lt;<argument><name><name>RBlock</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>sortBlocks</name><parameter_list>(<param><decl><type><name>const</name> <name>QList<argument_list>&lt;<argument><name><name>RBlock</name>::<name>Id</name></name></argument>&gt;</argument_list></name>&amp;</type> <name>blockIds</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
+    <function_decl><type><name>QList<argument_list>&lt;<argument><name><name>RLayer</name>::<name>Id</name></name></argument>&gt;</argument_list></name></type> <name>sortLayers</name><parameter_list>(<param><decl><type><name>const</name> <name>QList<argument_list>&lt;<argument><name><name>RLayer</name>::<name>Id</name></name></argument>&gt;</argument_list></name>&amp;</type> <name>layerIds</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>QString</name></type> <name>getLayerName</name><parameter_list>(<param><decl><type><name><name>RLayer</name>::<name>Id</name></name></type> <name>layerId</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>QSet<argument_list>&lt;<argument><name>QString</name></argument>&gt;</argument_list></name></type> <name>getLayerNames</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>rxStr</name> =<init> <expr><name>RDEFAULT_QSTRING</name></expr></init></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>QString</name></type> <name>getLayerStateName</name><parameter_list>(<param><decl><type><name><name>RLayerState</name>::<name>Id</name></name></type> <name>layerStateId</name></decl></param>)</parameter_list> <specifier>const</specifier>;</function_decl>
@@ -429,6 +436,12 @@
     <function_decl><type><name>QStringList</name></type> <name>getAutoVariables</name><parameter_list>()</parameter_list> <specifier>const</specifier>;</function_decl>
     <function_decl><type><name>QString</name></type> <name>substituteAutoVariables</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>expression</name></decl></param>)</parameter_list>;</function_decl>
     <function_decl><type><name>double</name></type> <name>eval</name><parameter_list>(<param><decl><type><name>const</name> <name>QString</name>&amp;</type> <name>expression</name></decl></param>, <param><decl><type><name>bool</name>*</type> <name>ok</name> =<init> <expr><name>NULL</name></expr></init></decl></param>)</parameter_list>;</function_decl>
+
+    <function_decl><type><name>bool</name></type> <name>isEditingWorkingSet</name><parameter_list>()</parameter_list> <specifier>const</specifier>;</function_decl>
+    <function_decl><type><name>void</name></type> <name>setIgnoreWorkingSet</name><parameter_list>(<param><decl><type><name>bool</name></type> <name>on</name></decl></param>)</parameter_list>;</function_decl>
+
+<comment type="line">//    RBlockReferenceEntity::Id getWorkingSetBlockReferenceId() const;</comment>
+<comment type="line">//    void setWorkingSetBlockReferenceId(RBlockReferenceEntity::Id id, int group = RDEFAULT_MIN1, RTransaction* transaction = NULL);</comment>
 
     <comment type="block">/*
     void copyToDocument(const RVector&amp; reference, RDocument&amp; other,

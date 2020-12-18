@@ -228,7 +228,7 @@
         <translation>Программирование</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+53"/>
         <source>Hatch Patterns</source>
         <translation>Стили штриховки</translation>
     </message>
@@ -1282,11 +1282,16 @@ Do you wish to recover it?</source>
         <translation>Инструменты для работы с блоками</translation>
     </message>
     <message>
+        <location line="+110"/>
+        <source>Cannot edit block while editing a block in-place</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Show block tools</source>
         <translation type="vanished">Показать инструменты для работы с блоками</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="-82"/>
         <source>&amp;Block</source>
         <translation>&amp;Блок</translation>
     </message>
@@ -1294,13 +1299,13 @@ Do you wish to recover it?</source>
 <context>
     <name>BlockDialog</name>
     <message>
-        <location filename="../scripts/Block/BlockDialog.js" line="+82"/>
+        <location filename="../scripts/Block/BlockDialog.js" line="+81"/>
         <source>block</source>
         <comment>default block name prefix</comment>
         <translation>блок</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+53"/>
         <source>Leading or trailing spaces.</source>
         <translation>Начальные или завершающие пробелы.</translation>
     </message>
@@ -1555,9 +1560,13 @@ Do you wish to recover it?</source>
         <translation>Вертикальная/Горизонтальная</translation>
     </message>
     <message>
-        <location filename="../scripts/Widgets/CadToolBar/PreferencesPage.ui" line="+17"/>
         <source>Icon Size:</source>
-        <translation>Размер значка:</translation>
+        <translation type="vanished">Размер значка:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/CadToolBar/PreferencesPage.ui" line="+17"/>
+        <source>Icon size:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+71"/>
@@ -1618,9 +1627,13 @@ Do you wish to recover it?</source>
         <translation>Матрица инструментов</translation>
     </message>
     <message>
-        <location filename="../scripts/Widgets/CadToolMatrix/PreferencesPage.ui" line="+17"/>
         <source>Icon Size:</source>
-        <translation>Размер значка:</translation>
+        <translation type="vanished">Размер значка:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/CadToolMatrix/PreferencesPage.ui" line="+17"/>
+        <source>Icon size:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+96"/>
@@ -2217,18 +2230,18 @@ Do you wish to recover it?</source>
     </message>
     <message>
         <location line="+0"/>
-        <location line="+60"/>
+        <location line="+68"/>
         <location filename="../scripts/Widgets/CommandLine/CommandLine.ui" line="+20"/>
         <source>Command Line</source>
         <translation>Командная строка</translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-21"/>
         <source>&amp;Command Line</source>
         <translation>&amp;Командная строка</translation>
     </message>
     <message>
-        <location line="+217"/>
+        <location line="+208"/>
         <source>Invalid value:</source>
         <translation>Неверное значение:</translation>
     </message>
@@ -2298,9 +2311,13 @@ Do you wish to recover it?</source>
         <translation>: </translation>
     </message>
     <message>
-        <location filename="../scripts/Widgets/CommandLine/PreferencesPage.ui" line="+17"/>
         <source>History Size:</source>
-        <translation>Размер истории:</translation>
+        <translation type="vanished">Размер истории:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/CommandLine/PreferencesPage.ui" line="+17"/>
+        <source>History size:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
@@ -2350,7 +2367,7 @@ Do you wish to recover it?</source>
         <translation>Единица «%1» выбрана. Нечего делать</translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+136"/>
         <source>Converted drawing from %1 to %2</source>
         <translation>Преобразованный чертёж из %1 в %2</translation>
     </message>
@@ -2603,7 +2620,7 @@ Do you wish to recover it?</source>
 <context>
     <name>DefaultAction</name>
     <message>
-        <location filename="../scripts/DefaultAction.js" line="+90"/>
+        <location filename="../scripts/DefaultAction.js" line="+92"/>
         <source>Select entity or region</source>
         <translation>Выбрать объект или область</translation>
     </message>
@@ -2645,7 +2662,7 @@ Do you wish to recover it?</source>
         <translation>Переместить объект в нужное место</translation>
     </message>
     <message>
-        <location line="+388"/>
+        <location line="+394"/>
         <source>Move Reference Point</source>
         <translation>Переместить точку привязки</translation>
     </message>
@@ -3339,9 +3356,8 @@ Do you wish to recover it?</source>
         <translation>Стрелка</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Architectural Tick</source>
-        <translation>Архитектурная засечка</translation>
+        <translation type="vanished">Архитектурная засечка</translation>
     </message>
     <message>
         <source>Font</source>
@@ -3350,6 +3366,11 @@ Do you wish to recover it?</source>
     <message>
         <source>Dimension label font:</source>
         <translation type="vanished">Шрифт размерной метки:</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Architectural tick</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
@@ -3510,12 +3531,12 @@ is already in the list.</source>
 <context>
     <name>DrawBasedOnRectanglePP</name>
     <message>
-        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+69"/>
+        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+73"/>
         <source>First corner</source>
         <translation>Первый угол</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Second corner</source>
         <translation>Второй угол</translation>
     </message>
@@ -3753,24 +3774,24 @@ is already in the list.</source>
 <context>
     <name>EAction</name>
     <message>
-        <location filename="../scripts/EAction.js" line="+68"/>
+        <location filename="../scripts/EAction.js" line="+70"/>
         <source>Back</source>
         <translation>Назад</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+2097"/>
+        <location line="+2106"/>
         <source>Cancel</source>
         <translation>Отменить</translation>
     </message>
     <message>
-        <location line="-2096"/>
+        <location line="-2105"/>
         <source>Done</source>
         <translation>Готово</translation>
     </message>
     <message>
         <location line="+277"/>
-        <location line="+136"/>
+        <location line="+140"/>
         <source>Active Tool:</source>
         <translation>Активный инструмент:</translation>
     </message>
@@ -3799,17 +3820,22 @@ is already in the list.</source>
         <translation>Инструменты САПР</translation>
     </message>
     <message>
-        <location line="+710"/>
+        <location line="+711"/>
+        <source>Entity is not in working set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Entity is on a locked layer.</source>
         <translation>Объект находится на заблокированном слое.</translation>
     </message>
     <message>
-        <location line="+224"/>
+        <location line="+225"/>
         <source>Length:</source>
         <translation>Длина:</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+57"/>
         <source>Entity is not a block reference.</source>
         <translation>Объект не является привязкой блока.</translation>
     </message>
@@ -3878,6 +3904,11 @@ is already in the list.</source>
         <source>Entity is not a polyline.</source>
         <translation>Объект не является ломаной.</translation>
     </message>
+    <message>
+        <location line="+4"/>
+        <source>Entity is not a spline with fit points.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>EcmaScriptShell</name>
@@ -3887,12 +3918,12 @@ is already in the list.</source>
         <translation>Показать оболочку ECMAScript</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+55"/>
         <source>&amp;Script Shell</source>
         <translation>&amp;Оболочка сценария</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+35"/>
         <location filename="../scripts/Misc/MiscDevelopment/EcmaScriptShell/EcmaScriptShell.ui" line="+14"/>
         <source>Script Shell</source>
         <translation>Оболочка сценария</translation>
@@ -4843,9 +4874,24 @@ is already in the list.</source>
 <context>
     <name>FlexPainter</name>
     <message>
-        <location filename="../scripts/Misc/Examples/MathExamples/FlexPainter/FlexPainter.js" line="+1816"/>
+        <location filename="../scripts/Misc/Examples/MathExamples/FlexPainter/FlexPainter.js" line="+1115"/>
+        <source>Add Active SubLayer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>FP added layer:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1196"/>
         <source>&amp;FlexPainter</source>
         <translation>&amp;FlexPainter</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Paints over selection mimicking a roller stamp</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4861,62 +4907,56 @@ is already in the list.</source>
         <translation>Параметры размещения роликовых штампов</translation>
     </message>
     <message>
-        <location line="+18"/>
         <source>Mirror painters over baseline</source>
-        <translation>Отражать роликовые штампы над базовой линией</translation>
+        <translation type="vanished">Отражать роликовые штампы над базовой линией</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+21"/>
         <source>Flip Painters</source>
         <translation>Развернуть роликовые штампы</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Group all castings to one operation</source>
-        <translation>Сгруппировать все размещения в одну операцию</translation>
+        <translation type="vanished">Сгруппировать все размещения в одну операцию</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+10"/>
         <source>Cast in group</source>
         <translation>Разместить в группе</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Cast on newly sub-layer &apos;Painted&apos; if applicable</source>
-        <translation>Разместить на новом подслое «Роликовый штамп», если применимо</translation>
+        <translation type="vanished">Разместить на новом подслое «Роликовый штамп», если применимо</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+17"/>
         <source>Cast on sub-layer</source>
         <translation>Разместить на подслое</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Start with casting a begin apex on open forms</source>
-        <translation>Начать с размещения начальной вершины на открытых формах</translation>
+        <translation type="vanished">Начать с размещения начальной вершины на открытых формах</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+13"/>
         <source>Add Begin Apex</source>
         <translation>Добавить начальную вершину</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>End with casting an end apex on open forms</source>
-        <translation>Завершить добавлением конечной вершины на открытые формы</translation>
+        <translation type="vanished">Завершить добавлением конечной вершины на открытые формы</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Add End Apex</source>
         <translation>Добавить конечную вершину</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>Add insertions in between eg. spacers, knots</source>
-        <translation>Добавить вставки (например, разделители, узлы)</translation>
+        <translation type="vanished">Добавить вставки (например, разделители, узлы)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Add Insertions</source>
         <translation>Добавить вставки</translation>
     </message>
@@ -4926,14 +4966,53 @@ is already in the list.</source>
         <translation>Набор роликовых штампов</translation>
     </message>
     <message>
-        <location line="+36"/>
         <source>Preview of painters</source>
-        <translation>Предварительный просмотр роликовых штампов</translation>
+        <translation type="vanished">Предварительный просмотр роликовых штампов</translation>
+    </message>
+    <message>
+        <source>Select painter set</source>
+        <translation type="vanished">Выбрать набор роликовых штампов</translation>
+    </message>
+    <message>
+        <location line="-101"/>
+        <source>Mirror painters over baseline.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Group all castings to one operation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Cast on newly sub-layer &apos;Painted&apos;.
+BUG: Interferes with group castings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Start with casting a begin apex on open forms.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>End with casting an end apex on open forms.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Add insertions in between eg. spacers, knots. (Not implemented)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <source>Preview of painters.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+41"/>
-        <source>Select painter set</source>
-        <translation>Выбрать набор роликовых штампов</translation>
+        <source>Select painter set.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -5007,16 +5086,79 @@ is already in the list.</source>
     </message>
     <message>
         <location line="+36"/>
-        <source>Preview of insertion</source>
-        <translation>Предварительный просмотр вставки</translation>
+        <source>Preview of insertion.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+38"/>
-        <source>Select Insertion or Enter void space</source>
-        <translation>Выбрать вставку или ввести пустое пространство</translation>
+        <source>Select Insertion or Enter void space. (Not implemented)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+250"/>
+        <source>Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>FlexPainter Beta 0.42e © CVH 2020 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+245"/>
+        <source>Document Units.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Enter painter width. (+0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+90"/>
+        <source>Enter main painter stepsize. (+0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Enter main painter length. (+)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Keep painters proportional.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Select percentage of Stepsize.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+86"/>
+        <source>Adapt scaling f 1.00-0.90 to fit the whole form.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+92"/>
+        <source>Verbose info. (persistent on)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Deleted painted over base entities. (persistent off)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Preview of insertion</source>
+        <translation type="vanished">Предварительный просмотр вставки</translation>
+    </message>
+    <message>
+        <source>Select Insertion or Enter void space</source>
+        <translation type="vanished">Выбрать вставку или ввести пустое пространство</translation>
+    </message>
+    <message>
+        <location line="-879"/>
         <source>&lt;Enter space size&gt;</source>
         <translation>&lt;Введите размер пространства&gt;</translation>
     </message>
@@ -5026,22 +5168,20 @@ is already in the list.</source>
         <translation>Узел подхвата</translation>
     </message>
     <message>
-        <location line="+328"/>
         <source>Document Units</source>
-        <translation>Единицы измерения документа</translation>
+        <translation type="vanished">Единицы измерения документа</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+489"/>
         <source>#Undefined#</source>
         <translation>#Не задано#</translation>
     </message>
     <message>
-        <location line="+33"/>
         <source>Enter painter width (+0)</source>
-        <translation>Введите ширину роликового штампа (+0)</translation>
+        <translation type="vanished">Введите ширину роликового штампа (+0)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+36"/>
         <source>Width : </source>
         <translation>Ширина: </translation>
     </message>
@@ -5056,37 +5196,33 @@ is already in the list.</source>
         <translation>Параметры повторяющегося роликового штампа</translation>
     </message>
     <message>
-        <location line="+62"/>
         <source>Enter main painter stepsize (+0)</source>
-        <translation>Введите размер шага главного роликового штампа (+0)</translation>
+        <translation type="vanished">Введите размер шага главного роликового штампа (+0)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+65"/>
         <source>Stepsize :</source>
         <translation>Размер шага:</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>Enter main painter length (+)</source>
-        <translation>Введите длину главного роликового штампа (+)</translation>
+        <translation type="vanished">Введите длину главного роликового штампа (+)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Length :</source>
         <translation>Длина:</translation>
     </message>
     <message>
-        <location line="+19"/>
         <source>Keep painters proportional</source>
-        <translation>Сохранять пропорции роликовых штампов</translation>
+        <translation type="vanished">Сохранять пропорции роликовых штампов</translation>
     </message>
     <message>
-        <location line="+29"/>
         <source>Select percentage of Stepsize</source>
-        <translation>Выбрать процент размера шага</translation>
+        <translation type="vanished">Выбрать процент размера шага</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+52"/>
         <source>Closed Forms shifting % :</source>
         <translation>Сдвиг закрытых форм (%):</translation>
     </message>
@@ -5096,12 +5232,11 @@ is already in the list.</source>
         <translation>Параметры масштабирования открытых форм</translation>
     </message>
     <message>
-        <location line="+21"/>
         <source>Adapt scaling f 1.00-0.90 to fit the whole form</source>
-        <translation>Адаптировать масштаб f1.00-0.90 для вписывания во всю форму</translation>
+        <translation type="vanished">Адаптировать масштаб f1.00-0.90 для вписывания во всю форму</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+24"/>
         <source>Dynamically scale to fit</source>
         <translation>Динамически масштабировать для вписывания в окно</translation>
     </message>
@@ -5121,22 +5256,20 @@ is already in the list.</source>
         <translation>Выравнивание по концу</translation>
     </message>
     <message>
-        <location line="+36"/>
         <source>Verbose info (persistent on)</source>
-        <translation>Подробные сведения (постоянно включено)</translation>
+        <translation type="vanished">Подробные сведения (постоянно включено)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+39"/>
         <source>Verbose *</source>
         <translation>Подробно *</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>Deleted painted over base entities (persistent off)</source>
-        <translation>Удалить запечатанные роликовым штампом базовые объекты (постоянно выключено)</translation>
+        <translation type="vanished">Удалить запечатанные роликовым штампом базовые объекты (постоянно выключено)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Delete Base Entities *</source>
         <translation>Удалить базовые объекты *</translation>
     </message>
@@ -5296,7 +5429,12 @@ is already in the list.</source>
         <translation>Двойной щелчок по привязке блока для открытия блока</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+28"/>
+        <source>Edit block reference in-place</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
         <source>Tolerance:</source>
         <translation type="unfinished">Допуск:</translation>
     </message>
@@ -5330,7 +5468,7 @@ is already in the list.</source>
         <translation>Выделить объект в пределах диапазона</translation>
     </message>
     <message>
-        <location line="-232"/>
+        <location line="-259"/>
         <source>Right-Click</source>
         <translation>Щелчок правой кнопкой</translation>
     </message>
@@ -5344,7 +5482,7 @@ is already in the list.</source>
         <translation type="vanished">Щелчок правой кнопкой мыши показывает контекстное меню</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+73"/>
         <source>Double-click to select contour</source>
         <translation>Двойной щелчок для выбора контура</translation>
     </message>
@@ -5453,7 +5591,12 @@ is already in the list.</source>
         <translation>Предотвратить белый на белом/чёрный на чёрном дисплее</translation>
     </message>
     <message>
-        <location line="+547"/>
+        <location line="+152"/>
+        <source>Use full resolution for Retina / high resolution display</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+398"/>
         <source>auto</source>
         <translation type="unfinished">авто</translation>
     </message>
@@ -5463,7 +5606,12 @@ is already in the list.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-674"/>
+        <location line="+16"/>
+        <source>Persistent selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-693"/>
         <source>Color lightness threshold:</source>
         <translation>Порог светлоты цвета:</translation>
     </message>
@@ -5477,7 +5625,7 @@ is already in the list.</source>
         <translation type="vanished">Тип линии</translation>
     </message>
     <message>
-        <location line="+53"/>
+        <location line="+56"/>
         <source>Auto switch to screen based linetypes in model view</source>
         <translation>Автоматически переключиться на типы линий, оптимизированные для экрана, в просмотре моделей</translation>
     </message>
@@ -5497,12 +5645,11 @@ is already in the list.</source>
         <translation>Отображение и производительность</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>Use full resolution for Retina display</source>
-        <translation>Использовать полное разрешение для дисплея Retina</translation>
+        <translation type="vanished">Использовать полное разрешение для дисплея Retina</translation>
     </message>
     <message>
-        <location line="+216"/>
+        <location line="+229"/>
         <source>Display entities with more than N dashes as continuous:</source>
         <translation>Отображать объекты с более чем N тире как непрерывные:</translation>
     </message>
@@ -5512,7 +5659,7 @@ is already in the list.</source>
         <translation>Сглаживание по умолчанию</translation>
     </message>
     <message>
-        <location line="-122"/>
+        <location line="-125"/>
         <source>Linetypes and Lineweights</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5522,7 +5669,7 @@ is already in the list.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+35"/>
         <source>Automatically use screen based linetypes in model view</source>
         <translation>Автоматически использовать типы линий, оптимизированные для экрана, в просмотре моделей</translation>
     </message>
@@ -5565,9 +5712,8 @@ is already in the list.</source>
         <translation>Выделение</translation>
     </message>
     <message>
-        <location line="+6"/>
         <source>Persistent Selection</source>
-        <translation>Постоянное выделение</translation>
+        <translation type="vanished">Постоянное выделение</translation>
     </message>
 </context>
 <context>
@@ -5687,7 +5833,7 @@ is already in the list.</source>
         <translation>Инструменты прилипания</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+12"/>
         <source>Snap label:</source>
         <translation>Метка прилипания:</translation>
     </message>
@@ -5712,7 +5858,12 @@ is already in the list.</source>
         <translation>Вспомогательные фигуры:</translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+30"/>
+        <source>Working set fading factor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+75"/>
         <source>Zoom Tools</source>
         <translation>Инструменты масштабирования</translation>
     </message>
@@ -5722,7 +5873,7 @@ is already in the list.</source>
         <translation>Граница рамки масштаба:</translation>
     </message>
     <message>
-        <location line="-643"/>
+        <location line="-712"/>
         <source>Origin:</source>
         <translation>Начало координат:</translation>
     </message>
@@ -5735,19 +5886,31 @@ is already in the list.</source>
 <context>
     <name>GraphicsViewFonts</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/GraphicsViewPreferences/FontPreferences/PreferencesPage.ui" line="+41"/>
         <source>Ruler Font:</source>
-        <translation>Шрифт линейки:</translation>
+        <translation type="vanished">Шрифт линейки:</translation>
+    </message>
+    <message>
+        <source>Snap Label Font:</source>
+        <translation type="vanished">Шрифт метки прилипания:</translation>
+    </message>
+    <message>
+        <source>Info Label Font:</source>
+        <translation type="vanished">Шрифт метки информации:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/GraphicsViewPreferences/FontPreferences/PreferencesPage.ui" line="+41"/>
+        <source>Ruler font:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Snap Label Font:</source>
-        <translation>Шрифт метки прилипания:</translation>
+        <source>Snap label font:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Info Label Font:</source>
-        <translation>Шрифт метки информации:</translation>
+        <source>Info label font:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6169,7 +6332,7 @@ is already in the list.</source>
         <translation type="vanished">Завершено</translation>
     </message>
     <message>
-        <location line="+91"/>
+        <location line="+96"/>
         <source>Angle:</source>
         <translation>Угол:</translation>
     </message>
@@ -6480,7 +6643,7 @@ is already in the list.</source>
         <translation>Периметр</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+72"/>
         <source>Polyline area:</source>
         <translation>Площадь ломаной:</translation>
     </message>
@@ -6566,24 +6729,40 @@ is already in the list.</source>
 <context>
     <name>Input</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/InputPreferences/PreferencesPage.ui" line="+19"/>
         <source>Decimal Point:</source>
-        <translation>Десятичная точка:</translation>
+        <translation type="vanished">Десятичная точка:</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Cartesian Coordinate Separator:</source>
-        <translation>Разделитель декартовой координаты:</translation>
+        <translation type="vanished">Разделитель декартовой координаты:</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Polar Coordinate Separator:</source>
-        <translation>Разделитель полярной координаты:</translation>
+        <translation type="vanished">Разделитель полярной координаты:</translation>
+    </message>
+    <message>
+        <source>Relative Coordinate Prefix:</source>
+        <translation type="vanished">Префикс относительной координаты:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/InputPreferences/PreferencesPage.ui" line="+19"/>
+        <source>Decimal point:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Relative Coordinate Prefix:</source>
-        <translation>Префикс относительной координаты:</translation>
+        <source>Cartesian coordinate separator:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Polar coordinate separator:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Relative coordinate prefix:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
@@ -6592,23 +6771,39 @@ is already in the list.</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Absolute Cartesian Coordinate:</source>
-        <translation>Абсолютная декартовая координата:</translation>
+        <source>Absolute Cartesian coordinate:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Absolute Polar Coordinate:</source>
-        <translation>Абсолютная полярная координата:</translation>
+        <source>Absolute polar coordinate:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Relative Cartesian Coordinate:</source>
-        <translation>Относительная декартовая координата:</translation>
+        <source>Relative Cartesian coordinate:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
+        <source>Relative polar coordinate:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Absolute Cartesian Coordinate:</source>
+        <translation type="vanished">Абсолютная декартовая координата:</translation>
+    </message>
+    <message>
+        <source>Absolute Polar Coordinate:</source>
+        <translation type="vanished">Абсолютная полярная координата:</translation>
+    </message>
+    <message>
+        <source>Relative Cartesian Coordinate:</source>
+        <translation type="vanished">Относительная декартовая координата:</translation>
+    </message>
+    <message>
         <source>Relative Polar Coordinate:</source>
-        <translation>Относительная полярная координата:</translation>
+        <translation type="vanished">Относительная полярная координата:</translation>
     </message>
 </context>
 <context>
@@ -7028,9 +7223,13 @@ is already in the list.</source>
 <context>
     <name>Language</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/LanguagePreferences/PreferencesPage.ui" line="+20"/>
         <source>Language of User Interface:</source>
-        <translation>Язык интерфейса пользователя:</translation>
+        <translation type="vanished">Язык интерфейса пользователя:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/LanguagePreferences/PreferencesPage.ui" line="+20"/>
+        <source>Language of user interface:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7540,19 +7739,27 @@ Library browser will not be available.</source>
         <translation>Параметры отображения</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>Icon Size:</source>
-        <translation>Размер значка:</translation>
+        <translation type="vanished">Размер значка:</translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+53"/>
         <source>Dark icon background</source>
         <translation>Тёмный фон значков</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>View Mode:</source>
-        <translation>Режим просмотра:</translation>
+        <translation type="vanished">Режим просмотра:</translation>
+    </message>
+    <message>
+        <location line="-44"/>
+        <source>Icon size:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>View mode:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
@@ -8320,9 +8527,13 @@ shown in search results:</source>
         <translation>Основное</translation>
     </message>
     <message>
-        <location filename="../scripts/Edit/DrawingPreferences/LinetypeSettings/PreferencesPage.ui" line="+19"/>
         <source>Global Linetype Scale:</source>
-        <translation>Глобальный масштаб типа линии:</translation>
+        <translation type="vanished">Глобальный масштаб типа линии:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/DrawingPreferences/LinetypeSettings/PreferencesPage.ui" line="+19"/>
+        <source>Global linetype scale:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+35"/>
@@ -8462,12 +8673,12 @@ shown in search results:</source>
         <translation>У&amp;далить оригинал</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>С&amp;охранить оригинал</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+85"/>
         <source>Use current layer and &amp;attributes</source>
         <translation>Использовать текущий с&amp;лой и атрибуты</translation>
     </message>
@@ -8891,7 +9102,7 @@ shown in search results:</source>
         <translation>Выбрать линию, дугу, окружность или эллипс</translation>
     </message>
     <message numerus="yes">
-        <location line="+89"/>
+        <location line="+94"/>
         <source>Radius dropped below 0.0 after %n concentric circle(s).</source>
         <translation>
             <numerusform>Радиус упал ниже 0,0 после %n концентрической окружности.</numerusform>
@@ -9545,12 +9756,12 @@ shown in search results:</source>
 <context>
     <name>PropertyEditor</name>
     <message>
-        <location filename="../scripts/Widgets/PropertyEditor/PropertyEditor.js" line="+1468"/>
+        <location filename="../scripts/Widgets/PropertyEditor/PropertyEditor.js" line="+1469"/>
         <source>*VARIES*</source>
         <translation>*ВАРЬИРОВАНИЕ*</translation>
     </message>
     <message>
-        <location line="-1275"/>
+        <location line="-1276"/>
         <source>:</source>
         <translation>:</translation>
     </message>
@@ -9610,7 +9821,7 @@ shown in search results:</source>
         <translation>Автоматический</translation>
     </message>
     <message>
-        <location line="+143"/>
+        <location line="+144"/>
         <source>Use auto measurement</source>
         <translation>Использовать автоматическое измерение</translation>
     </message>
@@ -9689,6 +9900,11 @@ shown in search results:</source>
         <location line="+10"/>
         <source>Always show all properties (this may slow down selection of entities)</source>
         <translation>Всегда показывать все свойства (это может замедлить выбор объектов)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Always format property values as decimal numbers</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -10008,17 +10224,17 @@ shown in search results:</source>
         <translation>У&amp;далить оригинал</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>С&amp;охранить оригинал</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>&amp;Несколько копий</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+97"/>
         <source>Angle &amp;a:</source>
         <translation>Угол &amp;a:</translation>
     </message>
@@ -10059,17 +10275,17 @@ shown in search results:</source>
         <translation>У&amp;далить оригинал</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>С&amp;охранить оригинал</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>&amp;Несколько копий</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+97"/>
         <source>&amp;Angle (a):</source>
         <translation>&amp;Угол (a):</translation>
     </message>
@@ -10168,7 +10384,7 @@ shown in search results:</source>
 <context>
     <name>Save</name>
     <message>
-        <location filename="../scripts/File/Save/Save.js" line="+78"/>
+        <location filename="../scripts/File/Save/Save.js" line="+92"/>
         <source>Overwrite File?</source>
         <translation>Перезаписать файл?</translation>
     </message>
@@ -10286,6 +10502,16 @@ shown in search results:</source>
     </message>
     <message>
         <location line="+13"/>
+        <source>Opening</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Allow opening of zero size files (e.g. online files that are not synched to disk)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Saving</source>
         <translation>Сохранение</translation>
     </message>
@@ -10440,17 +10666,17 @@ shown in search results:</source>
         <translation>У&amp;далить оригинал</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>С&amp;охранить оригинал</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>&amp;Несколько копий</translation>
     </message>
     <message>
-        <location line="+112"/>
+        <location line="+115"/>
         <source>Factor x:</source>
         <translation>Коэффициент х:</translation>
     </message>
@@ -10610,7 +10836,7 @@ shown in search results:</source>
 <context>
     <name>SelectContour</name>
     <message>
-        <location filename="../scripts/Select/SelectContour/SelectContour.js" line="+53"/>
+        <location filename="../scripts/Select/SelectContour/SelectContour.js" line="+54"/>
         <source>Choose entity of contour</source>
         <translation>Выбрать объект из контура</translation>
     </message>
@@ -10647,6 +10873,11 @@ shown in search results:</source>
         <location line="+27"/>
         <source>Tolerance:</source>
         <translation>Допуск:</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Same Layer</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../scripts/Select/SelectContour/SelectContourInit.js" line="+2"/>
@@ -11025,6 +11256,11 @@ shown in search results:</source>
     <message>
         <source>1</source>
         <translation type="obsolete">1</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePP.ui" line="+17"/>
+        <source>Rotate:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -11455,7 +11691,7 @@ shown in search results:</source>
         <translation>Указать первую точку, от которой измерять расстояние</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+32"/>
         <source>Second point</source>
         <translation>Вторая точка</translation>
     </message>
@@ -11721,9 +11957,13 @@ shown in search results:</source>
 <context>
     <name>StatusBar</name>
     <message>
-        <location filename="../scripts/Widgets/StatusBar/PreferencesPage.ui" line="+53"/>
         <source>Status Bar Font:</source>
-        <translation>Шрифт панели состояния:</translation>
+        <translation type="vanished">Шрифт панели состояния:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/StatusBar/PreferencesPage.ui" line="+53"/>
+        <source>Status bar font:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
@@ -12027,7 +12267,7 @@ shown in search results:</source>
         <translation>Значение по умолчанию:</translation>
     </message>
     <message>
-        <location line="+268"/>
+        <location line="+271"/>
         <source>&amp;Undo</source>
         <translation>&amp;Отменить</translation>
     </message>
@@ -12092,7 +12332,7 @@ shown in search results:</source>
         <translation>Другие...</translation>
     </message>
     <message>
-        <location line="+135"/>
+        <location line="+139"/>
         <source>Degree</source>
         <translation>Градусы</translation>
     </message>
@@ -12387,9 +12627,13 @@ shown in search results:</source>
 <context>
     <name>Theme</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/ThemePreferences/PreferencesPage.ui" line="+20"/>
         <source>User Interface Theme:</source>
-        <translation>Тема интерфейса пользователя:</translation>
+        <translation type="vanished">Тема интерфейса пользователя:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/ThemePreferences/PreferencesPage.ui" line="+20"/>
+        <source>User interface theme:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -12480,9 +12724,13 @@ shown in search results:</source>
 <context>
     <name>ToolBar</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/ToolBarPreferences/PreferencesPage.ui" line="+19"/>
         <source>Icon Size:</source>
-        <translation>Размер значка:</translation>
+        <translation type="vanished">Размер значка:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/ToolBarPreferences/PreferencesPage.ui" line="+19"/>
+        <source>Icon size:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+72"/>
@@ -12501,8 +12749,12 @@ shown in search results:</source>
     </message>
     <message>
         <location line="+6"/>
+        <source>Shortcut prefix character:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Shortcut Prefix Character:</source>
-        <translation>Символ префикса горячей клавиши:</translation>
+        <translation type="vanished">Символ префикса горячей клавиши:</translation>
     </message>
 </context>
 <context>
@@ -12626,17 +12878,17 @@ shown in search results:</source>
         <translation>У&amp;далить оригинал</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>С&amp;охранить оригинал</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>&amp;Несколько копий</translation>
     </message>
     <message>
-        <location line="+86"/>
+        <location line="+89"/>
         <source>Use current layer and &amp;attributes</source>
         <translation>Использовать текущий с&amp;лой и атрибуты</translation>
     </message>
@@ -12672,17 +12924,17 @@ shown in search results:</source>
         <translation>У&amp;далить оригинал</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>С&amp;охранить оригинал</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>&amp;Несколько копий</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+97"/>
         <source>&amp;Angle (a):</source>
         <translation>&amp;Угол (a):</translation>
     </message>
@@ -12705,12 +12957,12 @@ shown in search results:</source>
         <translation>Выбрать объект для усечения</translation>
     </message>
     <message>
-        <location line="+169"/>
+        <location line="+174"/>
         <source>The two entities don&apos;t intersect, or are currently not supported for trimming.</source>
         <translation>Два объекта не пересекаются, или в настоящее время нет поддержки для усечения.</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+74"/>
         <source>First entity cannot be trimmed.</source>
         <translation>Первый объект не может быть усечён.</translation>
     </message>
@@ -12763,6 +13015,42 @@ shown in search results:</source>
     </message>
 </context>
 <context>
+    <name>Ui</name>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/UiPreferences/PreferencesPage.ui" line="+17"/>
+        <source>These settings affect the resolution and scale of the QCAD user interface. These preferences can be adjusted if there are problems with the user interface of QCAD, such as very large or very small icons or text labels.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Auto screen scale factor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Enable high DPI scaling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Scale factor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>UiPreferences</name>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/UiPreferences/UiPreferences.js" line="+29"/>
+        <source>General</source>
+        <translation type="unfinished">Основное</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>User Interface</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Undo</name>
     <message>
         <location filename="../scripts/Edit/Undo/UndoInit.js" line="+2"/>
@@ -12773,19 +13061,16 @@ shown in search results:</source>
 <context>
     <name>UnitSettings</name>
     <message>
-        <location filename="../scripts/Edit/DrawingPreferences/UnitSettings/PreferencesPage.ui" line="+17"/>
         <source>Drawing Unit:</source>
-        <translation>Единица измерения чертежа:</translation>
+        <translation type="vanished">Единица измерения чертежа:</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Paper Unit:</source>
-        <translation>Единица размера бумаги:</translation>
+        <translation type="vanished">Единица размера бумаги:</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>Measurement System (for line types and hatch patterns):</source>
-        <translation>Система измерения (для типов линий и образцов штриховки):</translation>
+        <translation type="vanished">Система измерения (для типов линий и образцов штриховки):</translation>
     </message>
     <message>
         <location filename="../scripts/Edit/DrawingPreferences/UnitSettings/UnitSettings.js" line="+27"/>
@@ -12918,6 +13203,21 @@ shown in search results:</source>
         <source>Metric</source>
         <translation>Метрическая</translation>
     </message>
+    <message>
+        <location filename="../scripts/Edit/DrawingPreferences/UnitSettings/PreferencesPage.ui" line="+17"/>
+        <source>Drawing unit:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Paper unit:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Measurement system (for line types and hatch patterns):</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>UnlockAllLayers</name>
@@ -13015,7 +13315,7 @@ shown in search results:</source>
 <context>
     <name>ViewportWidget</name>
     <message>
-        <location filename="../scripts/Widgets/ViewportWidget/ViewportWidget.js" line="+290"/>
+        <location filename="../scripts/Widgets/ViewportWidget/ViewportWidget.js" line="+295"/>
         <source>Dropped data not supported</source>
         <translation>Удалённые данные не поддерживаются</translation>
     </message>
@@ -13088,12 +13388,12 @@ shown in search results:</source>
 <context>
     <name>WidgetFactory</name>
     <message>
-        <location filename="../scripts/WidgetFactory.js" line="+1038"/>
+        <location filename="../scripts/WidgetFactory.js" line="+1069"/>
         <source>Restore defaults</source>
         <translation>Восстановить умолчания</translation>
     </message>
     <message>
-        <location line="+50"/>
+        <location line="+45"/>
         <source>Insert Symbol</source>
         <translation>Вставить символ</translation>
     </message>
@@ -13402,7 +13702,7 @@ shown in search results:</source>
 <context>
     <name>library</name>
     <message>
-        <location filename="../scripts/library.js" line="+856"/>
+        <location filename="../scripts/library.js" line="+865"/>
         <source>Objects</source>
         <translation>Объекты</translation>
     </message>

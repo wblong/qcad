@@ -223,7 +223,7 @@
         <translation>Programowanie</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+53"/>
         <source>Hatch Patterns</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1543,11 +1543,16 @@ Bardzo gruby</translatorcomment>
         <translation>Narzędzia bloku</translation>
     </message>
     <message>
+        <location line="+110"/>
+        <source>Cannot edit block while editing a block in-place</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Show block tools</source>
         <translation type="vanished">Wyświetla narzędzia bloku</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="-82"/>
         <source>&amp;Block</source>
         <translatorcomment>--exact match--
 --file: qcad_pl.ts--
@@ -1558,13 +1563,13 @@ Bardzo gruby</translatorcomment>
 <context>
     <name>BlockDialog</name>
     <message>
-        <location filename="../scripts/Block/BlockDialog.js" line="+82"/>
+        <location filename="../scripts/Block/BlockDialog.js" line="+81"/>
         <source>block</source>
         <comment>default block name prefix</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+53"/>
         <source>Leading or trailing spaces.</source>
         <translation>Poprzedzające lub końcowe odstępy.</translation>
     </message>
@@ -1840,10 +1845,14 @@ Zastępcze widżety</translatorcomment>
         <translation type="obsolete">Przełącz Nagłówek</translation>
     </message>
     <message>
-        <location filename="../scripts/Widgets/CadToolBar/PreferencesPage.ui" line="+17"/>
         <source>Icon Size:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Rozmiar ikon:</translation>
+        <translation type="vanished">Rozmiar ikon:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/CadToolBar/PreferencesPage.ui" line="+17"/>
+        <source>Icon size:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+71"/>
@@ -1919,9 +1928,13 @@ Powrót do poprzedniego menu</translatorcomment>
         <translation>Tabela narzędzi</translation>
     </message>
     <message>
-        <location filename="../scripts/Widgets/CadToolMatrix/PreferencesPage.ui" line="+17"/>
         <source>Icon Size:</source>
-        <translation>Rozmiar ikon:</translation>
+        <translation type="vanished">Rozmiar ikon:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/CadToolMatrix/PreferencesPage.ui" line="+17"/>
+        <source>Icon size:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+96"/>
@@ -2694,15 +2707,15 @@ Przełącz tryb czarno-biały</translatorcomment>
 <context>
     <name>CommandLine</name>
     <message>
-        <location filename="../scripts/Widgets/CommandLine/CommandLine.js" line="+60"/>
+        <location filename="../scripts/Widgets/CommandLine/CommandLine.js" line="+77"/>
         <source>&amp;Command Line</source>
         <translatorcomment>--google--
 Aktywuj linię &amp;poleceń</translatorcomment>
         <translation>Wiersz p&amp;oleceń</translation>
     </message>
     <message>
-        <location line="-30"/>
-        <location line="+60"/>
+        <location line="-47"/>
+        <location line="+68"/>
         <location filename="../scripts/Widgets/CommandLine/CommandLine.ui" line="+20"/>
         <source>Command Line</source>
         <translatorcomment>--exact match--
@@ -2751,12 +2764,12 @@ Aktywuj linię &amp;poleceń</translatorcomment>
         <translation type="obsolete">Próbuje zwrócić na lub modyfikować jednostki na warstwie zablokowanej lub niewidoczne.</translation>
     </message>
     <message>
-        <location line="-372"/>
+        <location line="-380"/>
         <source>Widgets</source>
         <translation>Widżety</translation>
     </message>
     <message>
-        <location line="+247"/>
+        <location line="+255"/>
         <source>Invalid value:</source>
         <translation>Nieprawidłowa wartość:</translation>
     </message>
@@ -2827,10 +2840,14 @@ Wersja: </translatorcomment>
         <translation>:</translation>
     </message>
     <message>
-        <location filename="../scripts/Widgets/CommandLine/PreferencesPage.ui" line="+17"/>
         <source>History Size:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Rozmiar historii:</translation>
+        <translation type="vanished">Rozmiar historii:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/CommandLine/PreferencesPage.ui" line="+17"/>
+        <source>History size:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
@@ -2887,7 +2904,7 @@ Wersja: </translatorcomment>
         <translation type="vanished">Wybrano jednostkę „%1” - brak czynności do wykonania</translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+136"/>
         <source>Converted drawing from %1 to %2</source>
         <translation>Skonwertowano jednostki rysunku z %1 na %2</translation>
     </message>
@@ -3159,7 +3176,7 @@ Wycina obiekty z punktem odniesienia</translatorcomment>
 <context>
     <name>DefaultAction</name>
     <message>
-        <location filename="../scripts/DefaultAction.js" line="+90"/>
+        <location filename="../scripts/DefaultAction.js" line="+92"/>
         <source>Select entity or region</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Proszę zaznaczyć obiekt lub obszar</translation>
@@ -3206,7 +3223,7 @@ Wycina obiekty z punktem odniesienia</translatorcomment>
         <translation>Przenieś obiekt do określonego położenia</translation>
     </message>
     <message>
-        <location line="+388"/>
+        <location line="+394"/>
         <source>Move Reference Point</source>
         <translation>Przenieś punkt odniesienia</translation>
     </message>
@@ -4129,12 +4146,11 @@ Rozmiar strzałki:</translatorcomment>
         <translation>Strzałka</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Architectural Tick</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
 Strzałka architektoniczna</translatorcomment>
-        <translation>Zasieczka</translation>
+        <translation type="vanished">Zasieczka</translation>
     </message>
     <message>
         <source>Font</source>
@@ -4143,6 +4159,11 @@ Strzałka architektoniczna</translatorcomment>
     <message>
         <source>Dimension label font:</source>
         <translation type="vanished">Czcionka etykiet wymiarów</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Architectural tick</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
@@ -4352,12 +4373,12 @@ Podziel &amp;2</translatorcomment>
 <context>
     <name>DrawBasedOnRectanglePP</name>
     <message>
-        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+69"/>
+        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+73"/>
         <source>First corner</source>
         <translation>Pierwszy narożnik</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Second corner</source>
         <translation>Drugi narożnik</translation>
     </message>
@@ -4614,7 +4635,7 @@ Zrobione
 <context>
     <name>EAction</name>
     <message>
-        <location filename="../scripts/EAction.js" line="+68"/>
+        <location filename="../scripts/EAction.js" line="+70"/>
         <source>Back</source>
         <translatorcomment>--exact match--
 --file: qt_pl.ts--
@@ -4624,7 +4645,7 @@ Powrót do poprzedniego menu</translatorcomment>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+2097"/>
+        <location line="+2106"/>
         <source>Cancel</source>
         <translatorcomment>--exact match--
 --file: qvfb_pl.ts--
@@ -4633,13 +4654,13 @@ Anuluj
         <translation>Anuluj</translation>
     </message>
     <message>
-        <location line="-2096"/>
+        <location line="-2105"/>
         <source>Done</source>
         <translation type="unfinished">Zrobione</translation>
     </message>
     <message>
         <location line="+277"/>
-        <location line="+136"/>
+        <location line="+140"/>
         <source>Active Tool:</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Aktywne narzędzie:</translation>
@@ -4682,18 +4703,23 @@ Narzędzia CAD</translatorcomment>
         <translation>Narzędzia CAD</translation>
     </message>
     <message>
-        <location line="+710"/>
+        <location line="+711"/>
+        <source>Entity is not in working set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Entity is on a locked layer.</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Obiekt nie znajduje się na zablokowanej warstwie.</translation>
     </message>
     <message>
-        <location line="+224"/>
+        <location line="+225"/>
         <source>Length:</source>
         <translation>Długość:</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+57"/>
         <source>Entity is not a block reference.</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Obiekt nie jest odniesieniem bloku.</translation>
@@ -4770,6 +4796,11 @@ Narzędzia CAD</translatorcomment>
         <translatorcomment>--google--</translatorcomment>
         <translation>Obiekt nie jest linią łamaną.</translation>
     </message>
+    <message>
+        <location line="+4"/>
+        <source>Entity is not a spline with fit points.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>EcmaScriptShell</name>
@@ -4779,12 +4810,12 @@ Narzędzia CAD</translatorcomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+55"/>
         <source>&amp;Script Shell</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+35"/>
         <location filename="../scripts/Misc/MiscDevelopment/EcmaScriptShell/EcmaScriptShell.ui" line="+14"/>
         <source>Script Shell</source>
         <translation type="unfinished"></translation>
@@ -5841,8 +5872,23 @@ Jednostka domyślna:
 <context>
     <name>FlexPainter</name>
     <message>
-        <location filename="../scripts/Misc/Examples/MathExamples/FlexPainter/FlexPainter.js" line="+1816"/>
+        <location filename="../scripts/Misc/Examples/MathExamples/FlexPainter/FlexPainter.js" line="+1115"/>
+        <source>Add Active SubLayer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>FP added layer:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1196"/>
         <source>&amp;FlexPainter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Paints over selection mimicking a roller stamp</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5859,62 +5905,32 @@ Jednostka domyślna:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+18"/>
-        <source>Mirror painters over baseline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+21"/>
         <source>Flip Painters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Group all castings to one operation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+10"/>
         <source>Cast in group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Cast on newly sub-layer &apos;Painted&apos; if applicable</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+17"/>
         <source>Cast on sub-layer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Start with casting a begin apex on open forms</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+13"/>
         <source>Add Begin Apex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>End with casting an end apex on open forms</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Add End Apex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Add insertions in between eg. spacers, knots</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Add Insertions</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5924,13 +5940,44 @@ Jednostka domyślna:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+36"/>
-        <source>Preview of painters</source>
+        <location line="-101"/>
+        <source>Mirror painters over baseline.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Group all castings to one operation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Cast on newly sub-layer &apos;Painted&apos;.
+BUG: Interferes with group castings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Start with casting a begin apex on open forms.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>End with casting an end apex on open forms.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Add insertions in between eg. spacers, knots. (Not implemented)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <source>Preview of painters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+41"/>
-        <source>Select painter set</source>
+        <source>Select painter set.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6005,16 +6052,71 @@ Jednostka domyślna:
     </message>
     <message>
         <location line="+36"/>
-        <source>Preview of insertion</source>
+        <source>Preview of insertion.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+38"/>
-        <source>Select Insertion or Enter void space</source>
+        <source>Select Insertion or Enter void space. (Not implemented)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+250"/>
+        <source>Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>FlexPainter Beta 0.42e © CVH 2020 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+245"/>
+        <source>Document Units.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Enter painter width. (+0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+90"/>
+        <source>Enter main painter stepsize. (+0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Enter main painter length. (+)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Keep painters proportional.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Select percentage of Stepsize.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+86"/>
+        <source>Adapt scaling f 1.00-0.90 to fit the whole form.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+92"/>
+        <source>Verbose info. (persistent on)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Deleted painted over base entities. (persistent off)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-879"/>
         <source>&lt;Enter space size&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6024,22 +6126,12 @@ Jednostka domyślna:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+328"/>
-        <source>Document Units</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
+        <location line="+489"/>
         <source>#Undefined#</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+33"/>
-        <source>Enter painter width (+0)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+36"/>
         <source>Width : </source>
         <translation type="unfinished"></translation>
     </message>
@@ -6054,37 +6146,17 @@ Jednostka domyślna:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+62"/>
-        <source>Enter main painter stepsize (+0)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+65"/>
         <source>Stepsize :</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Enter main painter length (+)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Length :</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+19"/>
-        <source>Keep painters proportional</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+29"/>
-        <source>Select percentage of Stepsize</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+52"/>
         <source>Closed Forms shifting % :</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6094,12 +6166,7 @@ Jednostka domyślna:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+21"/>
-        <source>Adapt scaling f 1.00-0.90 to fit the whole form</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+24"/>
         <source>Dynamically scale to fit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6119,22 +6186,12 @@ Jednostka domyślna:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+36"/>
-        <source>Verbose info (persistent on)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+39"/>
         <source>Verbose *</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Deleted painted over base entities (persistent off)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Delete Base Entities *</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6398,7 +6455,12 @@ Czy chcesz zamknąć rysunek?</translatorcomment>
         <translation>Otwieranie bloku kliknięciem na odniesieniu</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+28"/>
+        <source>Edit block reference in-place</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
         <source>Tolerance:</source>
         <translation type="unfinished">Tolerancja:</translation>
     </message>
@@ -6432,7 +6494,7 @@ Czy chcesz zamknąć rysunek?</translatorcomment>
         <translation>Zaznaczanie obiektów w zasięgu</translation>
     </message>
     <message>
-        <location line="-232"/>
+        <location line="-259"/>
         <source>Right-Click</source>
         <translation>Kliknięcie prawym przyciskiem</translation>
     </message>
@@ -6442,7 +6504,7 @@ Czy chcesz zamknąć rysunek?</translatorcomment>
         <translation>Odznaczanie obiektów</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+73"/>
         <source>Double-click to select contour</source>
         <translation>Zaznaczanie konturu</translation>
     </message>
@@ -6577,7 +6639,12 @@ Autozoom
         <translation>Zapobieganie wyświetlania białego na białym tle / czarnego na czarnym tle</translation>
     </message>
     <message>
-        <location line="+547"/>
+        <location line="+152"/>
+        <source>Use full resolution for Retina / high resolution display</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+398"/>
         <source>auto</source>
         <translation type="unfinished">Automatycznie</translation>
     </message>
@@ -6587,7 +6654,12 @@ Autozoom
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-674"/>
+        <location line="+16"/>
+        <source>Persistent selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-693"/>
         <source>Color lightness threshold:</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Próg jasności koloru:</translation>
@@ -6602,7 +6674,7 @@ Autozoom
         <translation type="vanished">Rodzaje linii</translation>
     </message>
     <message>
-        <location line="+53"/>
+        <location line="+56"/>
         <source>Auto switch to screen based linetypes in model view</source>
         <translation>Automatyczne przełączanie ekranowego rodzaju linii w widoku modelu</translation>
     </message>
@@ -6632,7 +6704,7 @@ Autozoom
         <translation>Minimalny krok kątowy dla renderowania łuków (stopnie):</translation>
     </message>
     <message>
-        <location line="-263"/>
+        <location line="-266"/>
         <source>Linetypes and Lineweights</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6642,12 +6714,11 @@ Autozoom
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+121"/>
         <source>Use full resolution for Retina display</source>
-        <translation>Użycie pełnej rozdzielczości dla wyświetlaczy Retina</translation>
+        <translation type="vanished">Użycie pełnej rozdzielczości dla wyświetlaczy Retina</translation>
     </message>
     <message>
-        <location line="-7"/>
+        <location line="+117"/>
         <source>Anti-aliasing on by default</source>
         <translation>Domyślnie włączony antyaliasing</translation>
     </message>
@@ -6699,12 +6770,11 @@ Kontynuuj działanie
         <translation>Zaznaczenie</translation>
     </message>
     <message>
-        <location line="+6"/>
         <source>Persistent Selection</source>
         <translatorcomment>--google--
 &amp;Stałe zaznaczenia
 Stałe zaznaczenia</translatorcomment>
-        <translation>Trwałe zaznaczenie</translation>
+        <translation type="vanished">Trwałe zaznaczenie</translation>
     </message>
 </context>
 <context>
@@ -6830,7 +6900,7 @@ Tło okna:</translatorcomment>
         <translation>Narzędzia przyciągania</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+12"/>
         <source>Snap label:</source>
         <translation>Etykieta przyciągania:</translation>
     </message>
@@ -6855,7 +6925,12 @@ Tło okna:</translatorcomment>
         <translation>Pomocnicze kształty:</translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+30"/>
+        <source>Working set fading factor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+75"/>
         <source>Zoom Tools</source>
         <translation>Narzędzia przybliżania</translation>
     </message>
@@ -6870,7 +6945,7 @@ Tło okna:</translatorcomment>
         <translation type="obsolete">Nieaktywne Krzyżyk:</translation>
     </message>
     <message>
-        <location line="-643"/>
+        <location line="-712"/>
         <source>Origin:</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Początek układu współrzędnych:</translation>
@@ -6951,22 +7026,34 @@ Meta-siatka:</translatorcomment>
 <context>
     <name>GraphicsViewFonts</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/GraphicsViewPreferences/FontPreferences/PreferencesPage.ui" line="+41"/>
         <source>Ruler Font:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Czcionka linijki:</translation>
+        <translation type="vanished">Czcionka linijki:</translation>
+    </message>
+    <message>
+        <source>Snap Label Font:</source>
+        <translatorcomment>--google--</translatorcomment>
+        <translation type="vanished">Czcionka etykiety przyciągania:</translation>
+    </message>
+    <message>
+        <source>Info Label Font:</source>
+        <translatorcomment>--google--</translatorcomment>
+        <translation type="vanished">Czcionka etykiety informacji:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/GraphicsViewPreferences/FontPreferences/PreferencesPage.ui" line="+41"/>
+        <source>Ruler font:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Snap Label Font:</source>
-        <translatorcomment>--google--</translatorcomment>
-        <translation>Czcionka etykiety przyciągania:</translation>
+        <source>Snap label font:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Info Label Font:</source>
-        <translatorcomment>--google--</translatorcomment>
-        <translation>Czcionka etykiety informacji:</translation>
+        <source>Info label font:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7584,7 +7671,7 @@ Zrobione
         <translation type="vanished">Zrobione</translation>
     </message>
     <message>
-        <location line="+91"/>
+        <location line="+96"/>
         <source>Angle:</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -7956,7 +8043,7 @@ Wskaż położenie linii wymiarowej:</translatorcomment>
         <translation>Obwód</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+72"/>
         <source>Polyline area:</source>
         <translation>Pole powierzchni linii łamanej:</translation>
     </message>
@@ -8043,28 +8130,44 @@ Wskaż położenie linii wymiarowej:</translatorcomment>
 <context>
     <name>Input</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/InputPreferences/PreferencesPage.ui" line="+19"/>
         <source>Decimal Point:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Separator dziesiętny:</translation>
+        <translation type="vanished">Separator dziesiętny:</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Cartesian Coordinate Separator:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Separator współrzędnych kartezjańskich:</translation>
+        <translation type="vanished">Separator współrzędnych kartezjańskich:</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Polar Coordinate Separator:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Separator współrzędnych biegunowych:</translation>
+        <translation type="vanished">Separator współrzędnych biegunowych:</translation>
+    </message>
+    <message>
+        <source>Relative Coordinate Prefix:</source>
+        <translatorcomment>--google--</translatorcomment>
+        <translation type="vanished">Prefiks współrzędnych względnych:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/InputPreferences/PreferencesPage.ui" line="+19"/>
+        <source>Decimal point:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Relative Coordinate Prefix:</source>
-        <translatorcomment>--google--</translatorcomment>
-        <translation>Prefiks współrzędnych względnych:</translation>
+        <source>Cartesian coordinate separator:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Polar coordinate separator:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Relative coordinate prefix:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
@@ -8074,27 +8177,43 @@ Wskaż położenie linii wymiarowej:</translatorcomment>
     </message>
     <message>
         <location line="+6"/>
-        <source>Absolute Cartesian Coordinate:</source>
-        <translatorcomment>--google--</translatorcomment>
-        <translation>Bezwzględna współrzędna kartezjańska:</translation>
+        <source>Absolute Cartesian coordinate:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Absolute Polar Coordinate:</source>
-        <translatorcomment>--google--</translatorcomment>
-        <translation>Bezwzględna współrzędna biegunowa:</translation>
+        <source>Absolute polar coordinate:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Relative Cartesian Coordinate:</source>
-        <translatorcomment>--google--</translatorcomment>
-        <translation>Względna współrzędna kartezjańska:</translation>
+        <source>Relative Cartesian coordinate:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
+        <source>Relative polar coordinate:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Absolute Cartesian Coordinate:</source>
+        <translatorcomment>--google--</translatorcomment>
+        <translation type="vanished">Bezwzględna współrzędna kartezjańska:</translation>
+    </message>
+    <message>
+        <source>Absolute Polar Coordinate:</source>
+        <translatorcomment>--google--</translatorcomment>
+        <translation type="vanished">Bezwzględna współrzędna biegunowa:</translation>
+    </message>
+    <message>
+        <source>Relative Cartesian Coordinate:</source>
+        <translatorcomment>--google--</translatorcomment>
+        <translation type="vanished">Względna współrzędna kartezjańska:</translation>
+    </message>
+    <message>
         <source>Relative Polar Coordinate:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Względna współrzędna biegunowa:</translation>
+        <translation type="vanished">Względna współrzędna biegunowa:</translation>
     </message>
 </context>
 <context>
@@ -8621,10 +8740,14 @@ Rzutowanie &amp;izometryczne</translatorcomment>
 <context>
     <name>Language</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/LanguagePreferences/PreferencesPage.ui" line="+20"/>
         <source>Language of User Interface:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Język interfejsu użytkownika:</translation>
+        <translation type="vanished">Język interfejsu użytkownika:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/LanguagePreferences/PreferencesPage.ui" line="+20"/>
+        <source>Language of user interface:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -9257,21 +9380,29 @@ Przeglądarka kolekcji nie będzie dostępna.</translation>
         <translation>Opcje wyświetlania</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>Icon Size:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Rozmiar ikon:</translation>
+        <translation type="vanished">Rozmiar ikon:</translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+53"/>
         <source>Dark icon background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>View Mode:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Tryb wyświetlania:</translation>
+        <translation type="vanished">Tryb wyświetlania:</translation>
+    </message>
+    <message>
+        <location line="-44"/>
+        <source>Icon size:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>View mode:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
@@ -10459,10 +10590,14 @@ General Punctuation</translatorcomment>
         <translation>Ogólne</translation>
     </message>
     <message>
-        <location filename="../scripts/Edit/DrawingPreferences/LinetypeSettings/PreferencesPage.ui" line="+19"/>
         <source>Global Linetype Scale:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Ogólna skala rodzaju linii:</translation>
+        <translation type="vanished">Ogólna skala rodzaju linii:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/DrawingPreferences/LinetypeSettings/PreferencesPage.ui" line="+19"/>
+        <source>Global linetype scale:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+35"/>
@@ -10621,7 +10756,7 @@ Wprowadź liczbę kopii</translatorcomment>
         <translation>&amp;Usunięcie oryginału</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -10629,7 +10764,7 @@ Wprowadź liczbę kopii</translatorcomment>
         <translation>&amp;Zachowanie oryginału</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+85"/>
         <source>Use current layer and &amp;attributes</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Użycie bieżącej warstwy i &amp;atrybutów</translation>
@@ -11076,7 +11211,7 @@ Nowy &amp;formularz</translatorcomment>
         <translation>Proszę wskazać linię, łuk, okrąg lub elipsę</translation>
     </message>
     <message numerus="yes">
-        <location line="+89"/>
+        <location line="+94"/>
         <source>Radius dropped below 0.0 after %n concentric circle(s).</source>
         <translation>
             <numerusform>Promień osiągnął wartość mniejszą niż 0.0 po narysowaniu %n koncentrycznego okręgu.</numerusform>
@@ -12033,13 +12168,13 @@ Wskaż punkt docelowy</translatorcomment>
 <context>
     <name>PropertyEditor</name>
     <message>
-        <location filename="../scripts/Widgets/PropertyEditor/PropertyEditor.js" line="+1468"/>
+        <location filename="../scripts/Widgets/PropertyEditor/PropertyEditor.js" line="+1469"/>
         <source>*VARIES*</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>*RÓŻNE*</translation>
     </message>
     <message>
-        <location line="-1275"/>
+        <location line="-1276"/>
         <source>:</source>
         <translatorcomment>--ignored colon--
 --file: qt_pl.ts--
@@ -12117,7 +12252,7 @@ Czy chcesz zamknąć plik
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+661"/>
+        <location line="+662"/>
         <source>Widgets</source>
         <translation>Widżety</translation>
     </message>
@@ -12127,7 +12262,7 @@ Czy chcesz zamknąć plik
         <translation type="obsolete">Dodaj niestandardowy obiekt</translation>
     </message>
     <message>
-        <location line="-707"/>
+        <location line="-708"/>
         <source>Add custom property to selected objects</source>
         <translation>Dodaj dostosowaną właściwość do zaznaczonych obiektów</translation>
     </message>
@@ -12215,7 +12350,7 @@ Przyciąganie automatyczne</translatorcomment>
         <translation>Automatycznie</translation>
     </message>
     <message>
-        <location line="+143"/>
+        <location line="+144"/>
         <source>Use auto measurement</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Użyj automatycznego pomiaru</translation>
@@ -12314,6 +12449,11 @@ General Punctuation</translatorcomment>
     <message>
         <location line="+10"/>
         <source>Always show all properties (this may slow down selection of entities)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Always format property values as decimal numbers</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -12697,7 +12837,7 @@ Wprowadź liczbę kopii</translatorcomment>
         <translation>&amp;Usunięcie oryginału</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -12705,7 +12845,7 @@ Wprowadź liczbę kopii</translatorcomment>
         <translation>&amp;Zachowanie oryginału</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -12714,7 +12854,7 @@ Kopie &amp;wielokrotne:</translatorcomment>
         <translation>&amp;Wielokrotne skopiowanie</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+97"/>
         <source>Angle &amp;a:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -12773,7 +12913,7 @@ Wprowadź liczbę kopii</translatorcomment>
         <translation>&amp;Usunięcie oryginału</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -12781,7 +12921,7 @@ Wprowadź liczbę kopii</translatorcomment>
         <translation>&amp;Zachowanie oryginału</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -12790,7 +12930,7 @@ Kopie &amp;wielokrotne:</translatorcomment>
         <translation>&amp;Wielokrotne skopiowanie</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+97"/>
         <source>&amp;Angle (a):</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -12907,7 +13047,7 @@ Promień:</translatorcomment>
 <context>
     <name>Save</name>
     <message>
-        <location filename="../scripts/File/Save/Save.js" line="+78"/>
+        <location filename="../scripts/File/Save/Save.js" line="+92"/>
         <source>Overwrite File?</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Zastąpić plik?</translation>
@@ -13053,6 +13193,16 @@ Zapisz &amp;wszystko</translatorcomment>
     </message>
     <message>
         <location line="+13"/>
+        <source>Opening</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Allow opening of zero size files (e.g. online files that are not synched to disk)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Saving</source>
         <translation>Zapisywanie</translation>
     </message>
@@ -13244,7 +13394,7 @@ Wprowadź liczbę kopii</translatorcomment>
         <translation>&amp;Usunięcie oryginału</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -13252,7 +13402,7 @@ Wprowadź liczbę kopii</translatorcomment>
         <translation>&amp;Zachowanie oryginału</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -13261,7 +13411,7 @@ Kopie &amp;wielokrotne:</translatorcomment>
         <translation>&amp;Wielokrotne skopiowanie</translation>
     </message>
     <message>
-        <location line="+112"/>
+        <location line="+115"/>
         <source>Factor x:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -13442,7 +13592,7 @@ Odznacz &amp;wszystko</translatorcomment>
 <context>
     <name>SelectContour</name>
     <message>
-        <location filename="../scripts/Select/SelectContour/SelectContour.js" line="+53"/>
+        <location filename="../scripts/Select/SelectContour/SelectContour.js" line="+54"/>
         <source>Choose entity of contour</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Proszę wskazać obiekt konturu</translation>
@@ -13487,6 +13637,11 @@ Odznacz &amp;wszystko</translatorcomment>
         <source>Tolerance:</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Tolerancja:</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Same Layer</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../scripts/Select/SelectContour/SelectContourInit.js" line="+2"/>
@@ -13974,6 +14129,11 @@ Wskaż pozycje</translatorcomment>
     <message>
         <source>1</source>
         <translation type="obsolete">1</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePP.ui" line="+17"/>
+        <source>Rotate:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -14552,7 +14712,7 @@ Odstęp od punktów &amp;końcowych</translatorcomment>
         <translation>Proszę wskazać pierwszy punkt, od którego zostanie zmierzona odległość</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+32"/>
         <source>Second point</source>
         <translation>Drugi punkt</translation>
     </message>
@@ -14879,10 +15039,14 @@ Pokazuj to okno przy uruchamianiu</translatorcomment>
 <context>
     <name>StatusBar</name>
     <message>
-        <location filename="../scripts/Widgets/StatusBar/PreferencesPage.ui" line="+53"/>
         <source>Status Bar Font:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Czcionka paska stanu:</translation>
+        <translation type="vanished">Czcionka paska stanu:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/StatusBar/PreferencesPage.ui" line="+53"/>
+        <source>Status bar font:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
@@ -15237,7 +15401,7 @@ Rysuj obiekty tekstowe</translatorcomment>
         <translation>Domyślna wartość:</translation>
     </message>
     <message>
-        <location line="+268"/>
+        <location line="+271"/>
         <source>&amp;Undo</source>
         <translatorcomment>--exact match--
 --file: qt_pl.ts--
@@ -15327,7 +15491,7 @@ Kopiuj z punktem &amp;odniesienia</translatorcomment>
         <translation>Inne...</translation>
     </message>
     <message>
-        <location line="+135"/>
+        <location line="+139"/>
         <source>Degree</source>
         <translatorcomment>--exact match--
 --file: qcadlib_pl.ts--
@@ -15757,9 +15921,13 @@ OK
 <context>
     <name>Theme</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/ThemePreferences/PreferencesPage.ui" line="+20"/>
         <source>User Interface Theme:</source>
-        <translation>Styl interfejsu użytkownika:</translation>
+        <translation type="vanished">Styl interfejsu użytkownika:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/ThemePreferences/PreferencesPage.ui" line="+20"/>
+        <source>User interface theme:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -15874,9 +16042,13 @@ Ciągłe linie &amp;siatki</translatorcomment>
 <context>
     <name>ToolBar</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/ToolBarPreferences/PreferencesPage.ui" line="+19"/>
         <source>Icon Size:</source>
-        <translation>Rozmiar ikon:</translation>
+        <translation type="vanished">Rozmiar ikon:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/ToolBarPreferences/PreferencesPage.ui" line="+19"/>
+        <source>Icon size:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+72"/>
@@ -15895,8 +16067,12 @@ Ciągłe linie &amp;siatki</translatorcomment>
     </message>
     <message>
         <location line="+6"/>
+        <source>Shortcut prefix character:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Shortcut Prefix Character:</source>
-        <translation>Znak poprzedzający skrót:</translation>
+        <translation type="vanished">Znak poprzedzający skrót:</translation>
     </message>
 </context>
 <context>
@@ -16041,7 +16217,7 @@ Wprowadź liczbę kopii</translatorcomment>
         <translation>&amp;Usunięcie oryginału</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -16049,7 +16225,7 @@ Wprowadź liczbę kopii</translatorcomment>
         <translation>&amp;Zachowanie oryginału</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -16058,7 +16234,7 @@ Kopie &amp;wielokrotne:</translatorcomment>
         <translation>&amp;Wielokrotne skopiowanie</translation>
     </message>
     <message>
-        <location line="+86"/>
+        <location line="+89"/>
         <source>Use current layer and &amp;attributes</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Użycie aktualnej warstwy i &amp;atrybutów</translation>
@@ -16131,7 +16307,7 @@ Wprowadź liczbę kopii</translatorcomment>
         <translation>&amp;Usunięcie oryginału</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -16139,7 +16315,7 @@ Wprowadź liczbę kopii</translatorcomment>
         <translation>&amp;Zachowanie oryginału</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -16148,7 +16324,7 @@ Kopie &amp;wielokrotne:</translatorcomment>
         <translation>&amp;Wielokrotne skopiowanie</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+97"/>
         <source>&amp;Angle (a):</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -16177,13 +16353,13 @@ Kopie &amp;wielokrotne:</translatorcomment>
         <translation>Proszę wskazać obiekt przycinany</translation>
     </message>
     <message>
-        <location line="+169"/>
+        <location line="+174"/>
         <source>The two entities don&apos;t intersect, or are currently not supported for trimming.</source>
         <translatorcomment>--google--</translatorcomment>
         <translation>Te dwa obiekty nie przecinają się lub aktualnie ich przycinanie nie jest obsługiwane.</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+74"/>
         <source>First entity cannot be trimmed.</source>
         <translation>Nie można przyciąć pierwszego obiektu.</translation>
     </message>
@@ -16241,6 +16417,42 @@ Przytnij &amp;dwa</translatorcomment>
     </message>
 </context>
 <context>
+    <name>Ui</name>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/UiPreferences/PreferencesPage.ui" line="+17"/>
+        <source>These settings affect the resolution and scale of the QCAD user interface. These preferences can be adjusted if there are problems with the user interface of QCAD, such as very large or very small icons or text labels.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Auto screen scale factor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Enable high DPI scaling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Scale factor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>UiPreferences</name>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/UiPreferences/UiPreferences.js" line="+29"/>
+        <source>General</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>User Interface</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Undo</name>
     <message>
         <location filename="../scripts/Edit/Undo/UndoInit.js" line="+2"/>
@@ -16254,23 +16466,20 @@ Przytnij &amp;dwa</translatorcomment>
 <context>
     <name>UnitSettings</name>
     <message>
-        <location filename="../scripts/Edit/DrawingPreferences/UnitSettings/PreferencesPage.ui" line="+17"/>
         <source>Drawing Unit:</source>
         <translatorcomment>--google--
 &amp;Główna jednostka rysowania:
 Główna jednostka rysowania:</translatorcomment>
-        <translation>Jednostka rysunku:</translation>
+        <translation type="vanished">Jednostka rysunku:</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Paper Unit:</source>
         <translatorcomment>--google--</translatorcomment>
-        <translation>Jednostka papieru:</translation>
+        <translation type="vanished">Jednostka papieru:</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>Measurement System (for line types and hatch patterns):</source>
-        <translation>System miar (dla rodzajów linii i wzorów kreskowania):</translation>
+        <translation type="vanished">System miar (dla rodzajów linii i wzorów kreskowania):</translation>
     </message>
     <message>
         <location filename="../scripts/Edit/DrawingPreferences/UnitSettings/UnitSettings.js" line="+27"/>
@@ -16484,6 +16693,21 @@ Parsek</translatorcomment>
         <source>Metric</source>
         <translation>Metryczny</translation>
     </message>
+    <message>
+        <location filename="../scripts/Edit/DrawingPreferences/UnitSettings/PreferencesPage.ui" line="+17"/>
+        <source>Drawing unit:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Paper unit:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Measurement system (for line types and hatch patterns):</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>UnlockAllLayers</name>
@@ -16619,7 +16843,7 @@ Zmień geometrię elementu w rozmieszczeniu</translatorcomment>
 <context>
     <name>ViewportWidget</name>
     <message>
-        <location filename="../scripts/Widgets/ViewportWidget/ViewportWidget.js" line="+290"/>
+        <location filename="../scripts/Widgets/ViewportWidget/ViewportWidget.js" line="+295"/>
         <source>Dropped data not supported</source>
         <translation>Nie obsługiwane przeciągnięte dane </translation>
     </message>
@@ -16723,7 +16947,7 @@ Odwiedź &amp;stronę</translatorcomment>
 <context>
     <name>WidgetFactory</name>
     <message>
-        <location filename="../scripts/WidgetFactory.js" line="+1038"/>
+        <location filename="../scripts/WidgetFactory.js" line="+1069"/>
         <source>Restore defaults</source>
         <translatorcomment>--ignored case--
 --file: qt_pl.ts--
@@ -16731,7 +16955,7 @@ Przywróć ustawienia</translatorcomment>
         <translation>Przywróć domyślne</translation>
     </message>
     <message>
-        <location line="+50"/>
+        <location line="+45"/>
         <source>Insert Symbol</source>
         <translatorcomment>--exact match--
 --file: qcadguiqt_pl.ts--
@@ -17099,7 +17323,7 @@ Zoom wg &amp;wyboru</translatorcomment>
 <context>
     <name>library</name>
     <message>
-        <location filename="../scripts/library.js" line="+856"/>
+        <location filename="../scripts/library.js" line="+865"/>
         <source>Objects</source>
         <translatorcomment>Plural form should be used</translatorcomment>
         <translation>Obiekty</translation>

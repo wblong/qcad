@@ -73,6 +73,23 @@ class RExporter;
  */
 class QCADCORE_EXPORT RTransaction {
 public:
+    /**
+     * Transaction type for optimizations.
+     */
+    enum Type {
+        Generic = 0x0000,
+        CurrentLayerChange = 0x0001,
+        CurrentLayerSelectionChange = 0x0002,
+        LayerLockStatusChange = 0x0004,
+        LayerVisibilityStatusChange = 0x0008,
+        SaveWorkingSet = 0x0010,
+        ChangeDocumentSetting = 0x0020,
+        Undo = 0x0040,
+        Redo = 0x0080
+    };
+    Q_DECLARE_FLAGS(Types, Type)
+
+public:
     RTransaction();
 
     RTransaction(RStorage& storage);
@@ -256,6 +273,15 @@ public:
 
     bool isPreview() const;
 
+    void setTypes(RTransaction::Types t) {
+        types = t;
+    }
+    RTransaction::Types getTypes() const {
+        return types;
+    }
+    void setType(RTransaction::Type type, bool on = true);
+    bool getType(RTransaction::Type type) const;
+
 protected:
     bool addPropertyChange(RObject::Id objectId, const RPropertyChange& propertyChange);
     //void appendChild(RTransaction& t);
@@ -264,6 +290,8 @@ protected:
     void rollback();
 
 protected:
+    RTransaction::Types types;
+
     /**
      * A transaction always belongs to the storage of a document.
      */
@@ -387,7 +415,12 @@ protected:
 
 QCADCORE_EXPORT QDebug operator<<(QDebug dbg, RTransaction& t);
 
+Q_DECLARE_OPERATORS_FOR_FLAGS(RTransaction::Types)
 Q_DECLARE_METATYPE(RTransaction)
 Q_DECLARE_METATYPE(RTransaction*)
+Q_DECLARE_METATYPE(RTransaction::Type)
+Q_DECLARE_METATYPE(RTransaction::Type*)
+Q_DECLARE_METATYPE(QFlags<RTransaction::Type>)
+Q_DECLARE_METATYPE(QFlags<RTransaction::Type>*)
 
 #endif

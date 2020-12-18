@@ -124,6 +124,11 @@ Trim.prototype.pickEntity = function(event, preview) {
     var entity = doc.queryEntity(entityId);
     var pos = event.getModelPosition();
 
+    if (!this.isEntitySnappable(entity)) {
+        // entity not on a snappable layer:
+        return;
+    }
+
     switch (this.state) {
     case Trim.State.ChoosingLimitingEntity:
         if (isNull(entity) || (this.trimBoth && !EAction.assertEditable(entity, preview))) {
@@ -176,7 +181,7 @@ Trim.prototype.pickEntity = function(event, preview) {
         }
 
         // unsupported entity chosen:
-        if (!this.isSupportedTrimEntity(entity)) {
+        if (!Trim.isSupportedTrimEntity(entity)) {
             this.trimEntity = undefined;
             if (preview) {
                 this.updatePreview();
@@ -223,7 +228,7 @@ Trim.prototype.isSupportedLimitingShape = function(shape) {
            (RPolyline.hasProxy() && isPolylineShape(shape));
 };
 
-Trim.prototype.isSupportedTrimEntity = function(entity) {
+Trim.isSupportedTrimEntity = function(entity) {
     return isLineBasedEntity(entity) ||
            isArcEntity(entity) ||
            isCircleEntity(entity) ||
@@ -292,6 +297,7 @@ Trim.trim = function(op, limitingEntity, limitingClickPos, trimEntity, trimClick
         return false;
     }
 
+
     var trimShape = trimEntity.castToShape();
     if (isNull(trimShape)) {
         return false;
@@ -314,6 +320,11 @@ Trim.trim = function(op, limitingEntity, limitingClickPos, trimEntity, trimClick
             // TODO: fix trimming one segment within same polyline:
             return false;
         }
+    }
+
+    if (trimBoth && isClosedPolylineEntity(limitingEntity) && !samePolyline) {
+        // no trimming between two different closed polylines:
+        return false;
     }
 
     var newShapes = Trim.trimShapes(trimShape, trimClickPos, limitingShape, limitingClickPos, trimBoth, samePolyline);

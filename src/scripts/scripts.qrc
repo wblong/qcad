@@ -731,6 +731,7 @@
     <file alias="scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePP-inverse.svg">../../scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePP-inverse.svg</file>
     <file alias="scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePP.js">../../scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePP.js</file>
     <file alias="scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePP.svg">../../scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePP.svg</file>
+    <file alias="scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePP.ui">../../scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePP.ui</file>
     <file alias="scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePPInit.js">../../scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePPInit.js</file>
     <file alias="scripts/Draw/Shape/ShapeRectanglePP/Tests/ShapeRectanglePPTest00.js">../../scripts/Draw/Shape/ShapeRectanglePP/Tests/ShapeRectanglePPTest00.js</file>
     <file alias="scripts/Draw/Shape/ShapeRectanglePP/Tests/ShapeRectanglePPTest01.js">../../scripts/Draw/Shape/ShapeRectanglePP/Tests/ShapeRectanglePPTest01.js</file>
@@ -777,6 +778,7 @@
     <file alias="scripts/Draw/Text/Tests/Text17.js">../../scripts/Draw/Text/Tests/Text17.js</file>
     <file alias="scripts/Draw/Text/Tests/Text18.js">../../scripts/Draw/Text/Tests/Text18.js</file>
     <file alias="scripts/Draw/Text/Tests/Text19.js">../../scripts/Draw/Text/Tests/Text19.js</file>
+    <file alias="scripts/Draw/Text/Tests/Text20.js">../../scripts/Draw/Text/Tests/Text20.js</file>
     <file alias="scripts/Draw/Text/Tests/data/text01.dxf">../../scripts/Draw/Text/Tests/data/text01.dxf</file>
     <file alias="scripts/Draw/Text/Tests/data/text02.dxf">../../scripts/Draw/Text/Tests/data/text02.dxf</file>
     <file alias="scripts/Draw/Text/Tests/data/text03.dxf">../../scripts/Draw/Text/Tests/data/text03.dxf</file>
@@ -796,6 +798,7 @@
     <file alias="scripts/Draw/Text/Tests/data/text17.dxf">../../scripts/Draw/Text/Tests/data/text17.dxf</file>
     <file alias="scripts/Draw/Text/Tests/data/text18.dxf">../../scripts/Draw/Text/Tests/data/text18.dxf</file>
     <file alias="scripts/Draw/Text/Tests/data/text19.dxf">../../scripts/Draw/Text/Tests/data/text19.dxf</file>
+    <file alias="scripts/Draw/Text/Tests/data/text20.dxf">../../scripts/Draw/Text/Tests/data/text20.dxf</file>
     <file alias="scripts/Draw/Text/Tests/required/Text01_000.dxf">../../scripts/Draw/Text/Tests/required/Text01_000.dxf</file>
     <file alias="scripts/Draw/Text/Tests/required/Text02_000.dxf">../../scripts/Draw/Text/Tests/required/Text02_000.dxf</file>
     <file alias="scripts/Draw/Text/Tests/required/Text03_000.dxf">../../scripts/Draw/Text/Tests/required/Text03_000.dxf</file>
@@ -830,6 +833,8 @@
     <file alias="scripts/Draw/Text/Tests/required/Text18_001.dxf">../../scripts/Draw/Text/Tests/required/Text18_001.dxf</file>
     <file alias="scripts/Draw/Text/Tests/required/Text19_000.dxf">../../scripts/Draw/Text/Tests/required/Text19_000.dxf</file>
     <file alias="scripts/Draw/Text/Tests/required/Text19_001.dxf">../../scripts/Draw/Text/Tests/required/Text19_001.dxf</file>
+    <file alias="scripts/Draw/Text/Tests/required/Text20_000.dxf">../../scripts/Draw/Text/Tests/required/Text20_000.dxf</file>
+    <file alias="scripts/Draw/Text/Tests/required/Text20_001.dxf">../../scripts/Draw/Text/Tests/required/Text20_001.dxf</file>
     <file alias="scripts/Draw/Text/Text-inverse.svg">../../scripts/Draw/Text/Text-inverse.svg</file>
     <file alias="scripts/Draw/Text/Text.js">../../scripts/Draw/Text/Text.js</file>
     <file alias="scripts/Draw/Text/Text.svg">../../scripts/Draw/Text/Text.svg</file>
@@ -941,6 +946,9 @@
     <file alias="scripts/Edit/AppPreferences/ToolBarPreferences/PreferencesPage.ui">../../scripts/Edit/AppPreferences/ToolBarPreferences/PreferencesPage.ui</file>
     <file alias="scripts/Edit/AppPreferences/ToolBarPreferences/ToolBarPreferences.js">../../scripts/Edit/AppPreferences/ToolBarPreferences/ToolBarPreferences.js</file>
     <file alias="scripts/Edit/AppPreferences/ToolBarPreferences/ToolBarPreferencesInit.js">../../scripts/Edit/AppPreferences/ToolBarPreferences/ToolBarPreferencesInit.js</file>
+    <file alias="scripts/Edit/AppPreferences/UiPreferences/PreferencesPage.ui">../../scripts/Edit/AppPreferences/UiPreferences/PreferencesPage.ui</file>
+    <file alias="scripts/Edit/AppPreferences/UiPreferences/UiPreferences.js">../../scripts/Edit/AppPreferences/UiPreferences/UiPreferences.js</file>
+    <file alias="scripts/Edit/AppPreferences/UiPreferences/UiPreferencesInit.js">../../scripts/Edit/AppPreferences/UiPreferences/UiPreferencesInit.js</file>
     <file alias="scripts/Edit/Clear-inverse.svg">../../scripts/Edit/Clear-inverse.svg</file>
     <file alias="scripts/Edit/Clear.svg">../../scripts/Edit/Clear.svg</file>
     <file alias="scripts/Edit/ClipboardOperation.js">../../scripts/Edit/ClipboardOperation.js</file>
@@ -1708,9 +1716,11 @@
     <file alias="scripts/Modify/BreakOutManual/Tests/BreakOutManualTest00.js">../../scripts/Modify/BreakOutManual/Tests/BreakOutManualTest00.js</file>
     <file alias="scripts/Modify/BreakOutManual/Tests/BreakOutManualTest01.js">../../scripts/Modify/BreakOutManual/Tests/BreakOutManualTest01.js</file>
     <file alias="scripts/Modify/BreakOutManual/Tests/BreakOutManualTest02.js">../../scripts/Modify/BreakOutManual/Tests/BreakOutManualTest02.js</file>
+    <file alias="scripts/Modify/BreakOutManual/Tests/BreakOutManualTest03.js">../../scripts/Modify/BreakOutManual/Tests/BreakOutManualTest03.js</file>
     <file alias="scripts/Modify/BreakOutManual/Tests/required/BreakOutManualTest00_000.dxf">../../scripts/Modify/BreakOutManual/Tests/required/BreakOutManualTest00_000.dxf</file>
     <file alias="scripts/Modify/BreakOutManual/Tests/required/BreakOutManualTest01_000.dxf">../../scripts/Modify/BreakOutManual/Tests/required/BreakOutManualTest01_000.dxf</file>
     <file alias="scripts/Modify/BreakOutManual/Tests/required/BreakOutManualTest02_000.dxf">../../scripts/Modify/BreakOutManual/Tests/required/BreakOutManualTest02_000.dxf</file>
+    <file alias="scripts/Modify/BreakOutManual/Tests/required/BreakOutManualTest03_000.dxf">../../scripts/Modify/BreakOutManual/Tests/required/BreakOutManualTest03_000.dxf</file>
     <file alias="scripts/Modify/Divide/Divide-inverse.svg">../../scripts/Modify/Divide/Divide-inverse.svg</file>
     <file alias="scripts/Modify/Divide/Divide.js">../../scripts/Modify/Divide/Divide.js</file>
     <file alias="scripts/Modify/Divide/Divide.svg">../../scripts/Modify/Divide/Divide.svg</file>

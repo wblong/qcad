@@ -150,6 +150,18 @@
         ;static  QScriptValue
         isPreview
         (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        setTypes
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        getTypes
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        setType
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        getType
+        (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue toString
     (QScriptContext *context, QScriptEngine *engine)
     ;static  QScriptValue copy
@@ -157,6 +169,8 @@
     ;static  QScriptValue destroy(QScriptContext *context, QScriptEngine *engine)
     ;static RTransaction* getSelf(const QString& fName, QScriptContext* context)
     ;static RTransaction* getSelfShell(const QString& fName, QScriptContext* context)
+    ;static  QScriptValue toScriptValueEnumType(QScriptEngine* engine, const RTransaction::Type& value)
+    ;static  void fromScriptValueEnumType(const QScriptValue& value, RTransaction::Type& out)
     ;};
     #endif
     

@@ -106,6 +106,8 @@ public:
 
     QList<RBlock::Id> sortBlocks(const QList<RBlock::Id>& blockIds) const;
 
+    QList<RLayer::Id> sortLayers(const QList<RLayer::Id>& layerIds) const;
+
     /**
      * \nonscriptable
      */
@@ -126,6 +128,11 @@ public:
 
     virtual QSet<REntity::Id> queryAllEntities(bool undone,
             bool allBlocks, QList<RS::EntityType> types) = 0;
+
+    /**
+     * \return A set of all entity IDs in the current working set.
+     */
+    virtual QSet<REntity::Id> queryWorkingSetEntities() = 0;
 
     /**
      * \return A set of all UCS IDs of the document.
@@ -203,6 +210,11 @@ public:
      * \return A set of all block reference entity IDs.
      */
     virtual QSet<REntity::Id> queryAllBlockReferences() const = 0;
+
+    /**
+     * \return A set of all viewport entity IDs.
+     */
+    virtual QSet<REntity::Id> queryAllViewports() const = 0;
 
     /**
      * \return A set of entity IDs of all selected entities.
@@ -625,6 +637,11 @@ public:
         return (!e.isNull() && e->isSelected());
     }
 
+    virtual bool isSelectedWorkingSet(REntity::Id entityId) {
+        QSharedPointer<REntity> e = queryEntityDirect(entityId);
+        return (!e.isNull() && e->isSelectedWorkingSet());
+    }
+
     virtual bool isEntity(RObject::Id objectId) {
         QSharedPointer<REntity> e = queryEntityDirect(objectId);
         return !e.isNull();
@@ -646,6 +663,8 @@ public:
     virtual bool isParentLayerFrozen(RLayer::Id layerId) const;
     virtual bool isParentLayerFrozen(const RLayer& layer) const;
 
+    virtual bool isLayerSnappable(RLayer::Id layerId) const;
+    virtual bool isLayerSnappable(const RLayer& layer) const;
     virtual bool isParentLayerSnappable(RLayer::Id layerId) const;
     virtual bool isParentLayerSnappable(const RLayer& layer) const;
 
@@ -844,6 +863,9 @@ public:
      * Clear caches:
      */
     virtual void update() {}
+
+//    RBlockReferenceEntity::Id getWorkingSetBlockReferenceId() const;
+//    void setWorkingSetBlockReferenceId(RBlockReferenceEntity::Id id, int group = -1, RTransaction* transaction = NULL);
 
 protected:
     QDateTime lastModified;

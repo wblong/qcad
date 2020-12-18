@@ -208,7 +208,7 @@
         <translation>Programování</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+53"/>
         <source>Hatch Patterns</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1253,11 +1253,16 @@ Přejete si ho obnovit?</translation>
         <translation>Nástroje bloku</translation>
     </message>
     <message>
+        <location line="+110"/>
+        <source>Cannot edit block while editing a block in-place</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Show block tools</source>
         <translation type="vanished">Zobrazit nástroje bloku</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="-82"/>
         <source>&amp;Block</source>
         <translation>&amp;Blok</translation>
     </message>
@@ -1265,13 +1270,13 @@ Přejete si ho obnovit?</translation>
 <context>
     <name>BlockDialog</name>
     <message>
-        <location filename="../scripts/Block/BlockDialog.js" line="+82"/>
+        <location filename="../scripts/Block/BlockDialog.js" line="+81"/>
         <source>block</source>
         <comment>default block name prefix</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+53"/>
         <source>Leading or trailing spaces.</source>
         <translation>Počáteční nebo koncové mezery.</translation>
     </message>
@@ -1514,9 +1519,13 @@ Přejete si ho obnovit?</translation>
         <translation>Svisle/vodorovně</translation>
     </message>
     <message>
-        <location filename="../scripts/Widgets/CadToolBar/PreferencesPage.ui" line="+17"/>
         <source>Icon Size:</source>
-        <translation>Velikost ikon:</translation>
+        <translation type="vanished">Velikost ikon:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/CadToolBar/PreferencesPage.ui" line="+17"/>
+        <source>Icon size:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+71"/>
@@ -1577,9 +1586,13 @@ Přejete si ho obnovit?</translation>
         <translation>Matice nástrojů</translation>
     </message>
     <message>
-        <location filename="../scripts/Widgets/CadToolMatrix/PreferencesPage.ui" line="+17"/>
         <source>Icon Size:</source>
-        <translation>Velikost ikon:</translation>
+        <translation type="vanished">Velikost ikon:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/CadToolMatrix/PreferencesPage.ui" line="+17"/>
+        <source>Icon size:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+96"/>
@@ -2168,18 +2181,18 @@ Přejete si ho obnovit?</translation>
     </message>
     <message>
         <location line="+0"/>
-        <location line="+60"/>
+        <location line="+68"/>
         <location filename="../scripts/Widgets/CommandLine/CommandLine.ui" line="+20"/>
         <source>Command Line</source>
         <translation>Příkazový řádek</translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-21"/>
         <source>&amp;Command Line</source>
         <translation>&amp;Příkazový řádek</translation>
     </message>
     <message>
-        <location line="+217"/>
+        <location line="+208"/>
         <source>Invalid value:</source>
         <translation>Neplatná hodnota:</translation>
     </message>
@@ -2265,9 +2278,13 @@ Přejete si ho obnovit?</translation>
         <translation>:</translation>
     </message>
     <message>
-        <location filename="../scripts/Widgets/CommandLine/PreferencesPage.ui" line="+17"/>
         <source>History Size:</source>
-        <translation>Velikost historie:</translation>
+        <translation type="vanished">Velikost historie:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/CommandLine/PreferencesPage.ui" line="+17"/>
+        <source>History size:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
@@ -2321,7 +2338,7 @@ Přejete si ho obnovit?</translation>
         <translation type="vanished">Vybraná jednotka &apos;%1&apos; - Nic se nestane</translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+136"/>
         <source>Converted drawing from %1 to %2</source>
         <translation>Výkres převeden z %1 na %2</translation>
     </message>
@@ -2570,7 +2587,7 @@ Přejete si ho obnovit?</translation>
 <context>
     <name>DefaultAction</name>
     <message>
-        <location filename="../scripts/DefaultAction.js" line="+90"/>
+        <location filename="../scripts/DefaultAction.js" line="+92"/>
         <source>Select entity or region</source>
         <translation>Vyberte prvek nebo oblast</translation>
     </message>
@@ -2612,7 +2629,7 @@ Přejete si ho obnovit?</translation>
         <translation>Přesuňte prvek na požadované umístění</translation>
     </message>
     <message>
-        <location line="+388"/>
+        <location line="+394"/>
         <source>Move Reference Point</source>
         <translation>Přesuňte referenční bod</translation>
     </message>
@@ -3298,9 +3315,8 @@ Přejete si ho obnovit?</translation>
         <translation>Šipka</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Architectural Tick</source>
-        <translation>Stavitelská čára</translation>
+        <translation type="vanished">Stavitelská čára</translation>
     </message>
     <message>
         <source>Font</source>
@@ -3309,6 +3325,11 @@ Přejete si ho obnovit?</translation>
     <message>
         <source>Dimension label font:</source>
         <translation type="vanished">Písmo popisku kót:</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Architectural tick</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
@@ -3473,12 +3494,12 @@ již v seznamu je.</translation>
 <context>
     <name>DrawBasedOnRectanglePP</name>
     <message>
-        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+69"/>
+        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+73"/>
         <source>First corner</source>
         <translation>První roh</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Second corner</source>
         <translation>Druhý roh</translation>
     </message>
@@ -3716,24 +3737,24 @@ již v seznamu je.</translation>
 <context>
     <name>EAction</name>
     <message>
-        <location filename="../scripts/EAction.js" line="+68"/>
+        <location filename="../scripts/EAction.js" line="+70"/>
         <source>Back</source>
         <translation>Zpět</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+2097"/>
+        <location line="+2106"/>
         <source>Cancel</source>
         <translation>Storno</translation>
     </message>
     <message>
-        <location line="-2096"/>
+        <location line="-2105"/>
         <source>Done</source>
         <translation type="unfinished">Dokončit</translation>
     </message>
     <message>
         <location line="+277"/>
-        <location line="+136"/>
+        <location line="+140"/>
         <source>Active Tool:</source>
         <translation>Aktivní nástroj:</translation>
     </message>
@@ -3758,17 +3779,22 @@ již v seznamu je.</translation>
         <translation>CAD nástroje</translation>
     </message>
     <message>
-        <location line="+710"/>
+        <location line="+711"/>
+        <source>Entity is not in working set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Entity is on a locked layer.</source>
         <translation>Prvek je na uzamčené vrstvě.</translation>
     </message>
     <message>
-        <location line="+224"/>
+        <location line="+225"/>
         <source>Length:</source>
         <translation>Délka:</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+57"/>
         <source>Entity is not a block reference.</source>
         <translation>Prvek není reference bloku.</translation>
     </message>
@@ -3837,6 +3863,11 @@ již v seznamu je.</translation>
         <source>Entity is not a polyline.</source>
         <translation>Prvek není lomená čára.</translation>
     </message>
+    <message>
+        <location line="+4"/>
+        <source>Entity is not a spline with fit points.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>EcmaScriptShell</name>
@@ -3846,12 +3877,12 @@ již v seznamu je.</translation>
         <translation>Zobrazit ECMAScript Shell</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+55"/>
         <source>&amp;Script Shell</source>
         <translation>&amp;Skript Shell</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+35"/>
         <location filename="../scripts/Misc/MiscDevelopment/EcmaScriptShell/EcmaScriptShell.ui" line="+14"/>
         <source>Script Shell</source>
         <translation>Skript Shell</translation>
@@ -4766,8 +4797,23 @@ již v seznamu je.</translation>
 <context>
     <name>FlexPainter</name>
     <message>
-        <location filename="../scripts/Misc/Examples/MathExamples/FlexPainter/FlexPainter.js" line="+1816"/>
+        <location filename="../scripts/Misc/Examples/MathExamples/FlexPainter/FlexPainter.js" line="+1115"/>
+        <source>Add Active SubLayer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>FP added layer:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1196"/>
         <source>&amp;FlexPainter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Paints over selection mimicking a roller stamp</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4784,62 +4830,32 @@ již v seznamu je.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+18"/>
-        <source>Mirror painters over baseline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+21"/>
         <source>Flip Painters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Group all castings to one operation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+10"/>
         <source>Cast in group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Cast on newly sub-layer &apos;Painted&apos; if applicable</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+17"/>
         <source>Cast on sub-layer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Start with casting a begin apex on open forms</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+13"/>
         <source>Add Begin Apex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>End with casting an end apex on open forms</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Add End Apex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Add insertions in between eg. spacers, knots</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Add Insertions</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4849,13 +4865,44 @@ již v seznamu je.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+36"/>
-        <source>Preview of painters</source>
+        <location line="-101"/>
+        <source>Mirror painters over baseline.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Group all castings to one operation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Cast on newly sub-layer &apos;Painted&apos;.
+BUG: Interferes with group castings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Start with casting a begin apex on open forms.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>End with casting an end apex on open forms.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Add insertions in between eg. spacers, knots. (Not implemented)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <source>Preview of painters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+41"/>
-        <source>Select painter set</source>
+        <source>Select painter set.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4930,16 +4977,71 @@ již v seznamu je.</translation>
     </message>
     <message>
         <location line="+36"/>
-        <source>Preview of insertion</source>
+        <source>Preview of insertion.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+38"/>
-        <source>Select Insertion or Enter void space</source>
+        <source>Select Insertion or Enter void space. (Not implemented)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+250"/>
+        <source>Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>FlexPainter Beta 0.42e © CVH 2020 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+245"/>
+        <source>Document Units.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Enter painter width. (+0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+90"/>
+        <source>Enter main painter stepsize. (+0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Enter main painter length. (+)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Keep painters proportional.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Select percentage of Stepsize.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+86"/>
+        <source>Adapt scaling f 1.00-0.90 to fit the whole form.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+92"/>
+        <source>Verbose info. (persistent on)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Deleted painted over base entities. (persistent off)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-879"/>
         <source>&lt;Enter space size&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4949,22 +5051,12 @@ již v seznamu je.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+328"/>
-        <source>Document Units</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
+        <location line="+489"/>
         <source>#Undefined#</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+33"/>
-        <source>Enter painter width (+0)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+36"/>
         <source>Width : </source>
         <translation type="unfinished"></translation>
     </message>
@@ -4979,37 +5071,17 @@ již v seznamu je.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+62"/>
-        <source>Enter main painter stepsize (+0)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+65"/>
         <source>Stepsize :</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Enter main painter length (+)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Length :</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+19"/>
-        <source>Keep painters proportional</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+29"/>
-        <source>Select percentage of Stepsize</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+52"/>
         <source>Closed Forms shifting % :</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5019,12 +5091,7 @@ již v seznamu je.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+21"/>
-        <source>Adapt scaling f 1.00-0.90 to fit the whole form</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+24"/>
         <source>Dynamically scale to fit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5044,22 +5111,12 @@ již v seznamu je.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+36"/>
-        <source>Verbose info (persistent on)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+39"/>
         <source>Verbose *</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Deleted painted over base entities (persistent off)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Delete Base Entities *</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5229,7 +5286,12 @@ již v seznamu je.</translation>
         <translation>Dvojklikem na referenci bloku otevřít blok</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+28"/>
+        <source>Edit block reference in-place</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
         <source>Double-click to select contour</source>
         <translation>Dvojklikem vybrat obrys</translation>
     </message>
@@ -5368,7 +5430,12 @@ již v seznamu je.</translation>
         <translation>Zabránit bílé barvě na bílém / černé barvě na černém displeji</translation>
     </message>
     <message>
-        <location line="+547"/>
+        <location line="+152"/>
+        <source>Use full resolution for Retina / high resolution display</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+398"/>
         <source>auto</source>
         <translation type="unfinished">auto</translation>
     </message>
@@ -5378,7 +5445,12 @@ již v seznamu je.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-674"/>
+        <location line="+16"/>
+        <source>Persistent selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-693"/>
         <source>Color lightness threshold:</source>
         <translation>Prahová hodnota světla barvy:</translation>
     </message>
@@ -5392,7 +5464,7 @@ již v seznamu je.</translation>
         <translation type="vanished">Typy čar</translation>
     </message>
     <message>
-        <location line="+50"/>
+        <location line="+53"/>
         <source>Automatically use screen based linetypes in model view</source>
         <translation>V zobrazení modelu automaticky použít typy čar v závislosti na obrazovce</translation>
     </message>
@@ -5437,17 +5509,16 @@ již v seznamu je.</translation>
         <translation>Minimální krok úhlu pro vykreslení oblouků (stupně):</translation>
     </message>
     <message>
-        <location line="-134"/>
         <source>Use full resolution for Retina display</source>
-        <translation>Použít plné rozlišení pro displej Retina</translation>
+        <translation type="vanished">Použít plné rozlišení pro displej Retina</translation>
     </message>
     <message>
-        <location line="-7"/>
+        <location line="-141"/>
         <source>Anti-aliasing on by default</source>
         <translation>Vyhlazování hran je standardně zapnuto</translation>
     </message>
     <message>
-        <location line="-122"/>
+        <location line="-125"/>
         <source>Linetypes and Lineweights</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5457,7 +5528,7 @@ již v seznamu je.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+379"/>
+        <location line="+382"/>
         <source>Timeout for hatch rendering:</source>
         <translation>Časový limit pro vykreslení šrafování:</translation>
     </message>
@@ -5472,9 +5543,8 @@ již v seznamu je.</translation>
         <translation>Výběr</translation>
     </message>
     <message>
-        <location line="+6"/>
         <source>Persistent Selection</source>
-        <translation>Trvalý výběr</translation>
+        <translation type="vanished">Trvalý výběr</translation>
     </message>
 </context>
 <context>
@@ -5600,7 +5670,7 @@ již v seznamu je.</translation>
         <translation>Nástroje přichycení</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+12"/>
         <source>Snap label:</source>
         <translation>Popisek přichycení:</translation>
     </message>
@@ -5625,7 +5695,12 @@ již v seznamu je.</translation>
         <translation>Pomocné tvary:</translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+30"/>
+        <source>Working set fading factor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+75"/>
         <source>Zoom Tools</source>
         <translation>Nástroje pro přibližování</translation>
     </message>
@@ -5638,19 +5713,31 @@ již v seznamu je.</translation>
 <context>
     <name>GraphicsViewFonts</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/GraphicsViewPreferences/FontPreferences/PreferencesPage.ui" line="+41"/>
         <source>Ruler Font:</source>
-        <translation>Písmo pravítka:</translation>
+        <translation type="vanished">Písmo pravítka:</translation>
+    </message>
+    <message>
+        <source>Snap Label Font:</source>
+        <translation type="vanished">Písmo popisku přichycení:</translation>
+    </message>
+    <message>
+        <source>Info Label Font:</source>
+        <translation type="vanished">Písmo informačního popisku:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/GraphicsViewPreferences/FontPreferences/PreferencesPage.ui" line="+41"/>
+        <source>Ruler font:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Snap Label Font:</source>
-        <translation>Písmo popisku přichycení:</translation>
+        <source>Snap label font:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Info Label Font:</source>
-        <translation>Písmo informačního popisku:</translation>
+        <source>Info label font:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6056,7 +6143,7 @@ již v seznamu je.</translation>
         <translation type="vanished">Dokončit</translation>
     </message>
     <message>
-        <location line="+91"/>
+        <location line="+96"/>
         <source>Angle:</source>
         <translation>Úhel:</translation>
     </message>
@@ -6367,7 +6454,7 @@ již v seznamu je.</translation>
         <translation>Obvod</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+72"/>
         <source>Polyline area:</source>
         <translation>Plocha lomené čáry:</translation>
     </message>
@@ -6449,24 +6536,40 @@ již v seznamu je.</translation>
 <context>
     <name>Input</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/InputPreferences/PreferencesPage.ui" line="+19"/>
         <source>Decimal Point:</source>
-        <translation>Desetinná čárka:</translation>
+        <translation type="vanished">Desetinná čárka:</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Cartesian Coordinate Separator:</source>
-        <translation>Oddělovač karteziánských souřadnic:</translation>
+        <translation type="vanished">Oddělovač karteziánských souřadnic:</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Polar Coordinate Separator:</source>
-        <translation>Oddělovač polárních souřadnic:</translation>
+        <translation type="vanished">Oddělovač polárních souřadnic:</translation>
+    </message>
+    <message>
+        <source>Relative Coordinate Prefix:</source>
+        <translation type="vanished">Předpona relativních souřadnic:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/InputPreferences/PreferencesPage.ui" line="+19"/>
+        <source>Decimal point:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Relative Coordinate Prefix:</source>
-        <translation>Předpona relativních souřadnic:</translation>
+        <source>Cartesian coordinate separator:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Polar coordinate separator:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Relative coordinate prefix:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
@@ -6475,23 +6578,39 @@ již v seznamu je.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Absolute Cartesian Coordinate:</source>
-        <translation>Absolutní karteziánské souřadnice:</translation>
+        <source>Absolute Cartesian coordinate:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Absolute Polar Coordinate:</source>
-        <translation>Absolutní polární souřadnice:</translation>
+        <source>Absolute polar coordinate:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Relative Cartesian Coordinate:</source>
-        <translation>Relativní karteziánské souřadnice:</translation>
+        <source>Relative Cartesian coordinate:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
+        <source>Relative polar coordinate:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Absolute Cartesian Coordinate:</source>
+        <translation type="vanished">Absolutní karteziánské souřadnice:</translation>
+    </message>
+    <message>
+        <source>Absolute Polar Coordinate:</source>
+        <translation type="vanished">Absolutní polární souřadnice:</translation>
+    </message>
+    <message>
+        <source>Relative Cartesian Coordinate:</source>
+        <translation type="vanished">Relativní karteziánské souřadnice:</translation>
+    </message>
+    <message>
         <source>Relative Polar Coordinate:</source>
-        <translation>Relativní polární souřadnice:</translation>
+        <translation type="vanished">Relativní polární souřadnice:</translation>
     </message>
 </context>
 <context>
@@ -6903,9 +7022,13 @@ již v seznamu je.</translation>
 <context>
     <name>Language</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/LanguagePreferences/PreferencesPage.ui" line="+20"/>
         <source>Language of User Interface:</source>
-        <translation>Jazyk aplikace:</translation>
+        <translation type="vanished">Jazyk aplikace:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/LanguagePreferences/PreferencesPage.ui" line="+20"/>
+        <source>Language of user interface:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7411,19 +7534,27 @@ Prohlížeč knihoven není dostupný.</translation>
         <translation>Volby zobrazení</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>Icon Size:</source>
-        <translation>Velikost ikon:</translation>
+        <translation type="vanished">Velikost ikon:</translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+53"/>
         <source>Dark icon background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>View Mode:</source>
-        <translation>Režim zobrazení:</translation>
+        <translation type="vanished">Režim zobrazení:</translation>
+    </message>
+    <message>
+        <location line="-44"/>
+        <source>Icon size:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>View mode:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
@@ -8163,9 +8294,13 @@ ve výsledcích vyhledávání:</translation>
         <translation>Všeobecné</translation>
     </message>
     <message>
-        <location filename="../scripts/Edit/DrawingPreferences/LinetypeSettings/PreferencesPage.ui" line="+19"/>
         <source>Global Linetype Scale:</source>
-        <translation>Globální měřítko čar:</translation>
+        <translation type="vanished">Globální měřítko čar:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/DrawingPreferences/LinetypeSettings/PreferencesPage.ui" line="+19"/>
+        <source>Global linetype scale:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+35"/>
@@ -8305,12 +8440,12 @@ ve výsledcích vyhledávání:</translation>
         <translation>&amp;Smazat originál</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>&amp;Zachovat originál</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+85"/>
         <source>Use current layer and &amp;attributes</source>
         <translation>Použít aktuální vrstvu a &amp;vlastnosti</translation>
     </message>
@@ -8686,7 +8821,7 @@ ve výsledcích vyhledávání:</translation>
         <translation>Vyberte čáru, oblouk, kružnici nebo elipsu</translation>
     </message>
     <message numerus="yes">
-        <location line="+89"/>
+        <location line="+94"/>
         <source>Radius dropped below 0.0 after %n concentric circle(s).</source>
         <translation>
             <numerusform>Poloměr klesl pod hodnotu 0.0 po %n soustředné(ých) kružnici(ích).</numerusform>
@@ -9380,6 +9515,11 @@ ve výsledcích vyhledávání:</translation>
         <translation>Zobrazovat vždy všechny vlastnosti (může se tím zpomalit výběr prvků)</translation>
     </message>
     <message>
+        <location line="+7"/>
+        <source>Always format property values as decimal numbers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../scripts/Widgets/PropertyEditor/PropertyEditor.js" line="+193"/>
         <source>:</source>
         <translation>:</translation>
@@ -9440,7 +9580,7 @@ ve výsledcích vyhledávání:</translation>
         <translation>Auto</translation>
     </message>
     <message>
-        <location line="+143"/>
+        <location line="+144"/>
         <source>Use auto measurement</source>
         <translation>Použít automatické měření</translation>
     </message>
@@ -9815,17 +9955,17 @@ ve výsledcích vyhledávání:</translation>
         <translation>&amp;Smazat originál</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>&amp;Ponechat originál</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>&amp;Vícenásobné kopie</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+97"/>
         <source>Angle &amp;a:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -9866,17 +10006,17 @@ ve výsledcích vyhledávání:</translation>
         <translation>&amp;Smazat originál</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>&amp;Ponechat originál</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>&amp;Vícenásobné kopie</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+97"/>
         <source>&amp;Angle (a):</source>
         <translation>Ú&amp;hel (a):</translation>
     </message>
@@ -9975,7 +10115,7 @@ ve výsledcích vyhledávání:</translation>
 <context>
     <name>Save</name>
     <message>
-        <location filename="../scripts/File/Save/Save.js" line="+78"/>
+        <location filename="../scripts/File/Save/Save.js" line="+92"/>
         <source>Overwrite File?</source>
         <translation>Přepsat soubor?</translation>
     </message>
@@ -10093,6 +10233,16 @@ ve výsledcích vyhledávání:</translation>
     </message>
     <message>
         <location line="+13"/>
+        <source>Opening</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Allow opening of zero size files (e.g. online files that are not synched to disk)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Saving</source>
         <translation>Ukládání</translation>
     </message>
@@ -10239,17 +10389,17 @@ ve výsledcích vyhledávání:</translation>
         <translation>&amp;Smazat originál</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>&amp;Ponechat originál</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>&amp;Vícenásobné kopie</translation>
     </message>
     <message>
-        <location line="+112"/>
+        <location line="+115"/>
         <source>Factor x:</source>
         <translation type="unfinished">Faktor &amp;x:</translation>
     </message>
@@ -10401,7 +10551,7 @@ ve výsledcích vyhledávání:</translation>
 <context>
     <name>SelectContour</name>
     <message>
-        <location filename="../scripts/Select/SelectContour/SelectContour.js" line="+53"/>
+        <location filename="../scripts/Select/SelectContour/SelectContour.js" line="+54"/>
         <source>Choose entity of contour</source>
         <translation>Vyberte objekt obrysu</translation>
     </message>
@@ -10438,6 +10588,11 @@ ve výsledcích vyhledávání:</translation>
         <location line="+27"/>
         <source>Tolerance:</source>
         <translation>Tolerance:</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Same Layer</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../scripts/Select/SelectContour/SelectContourInit.js" line="+2"/>
@@ -10808,6 +10963,11 @@ ve výsledcích vyhledávání:</translation>
     <message>
         <source>1</source>
         <translation type="vanished">1</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePP.ui" line="+17"/>
+        <source>Rotate:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -11230,7 +11390,7 @@ ve výsledcích vyhledávání:</translation>
         <translation>Určete první bod pro měření vzdálenosti od</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+32"/>
         <source>Second point</source>
         <translation>Druhý bod</translation>
     </message>
@@ -11496,9 +11656,13 @@ ve výsledcích vyhledávání:</translation>
 <context>
     <name>StatusBar</name>
     <message>
-        <location filename="../scripts/Widgets/StatusBar/PreferencesPage.ui" line="+53"/>
         <source>Status Bar Font:</source>
-        <translation>Písmo stavového řádku:</translation>
+        <translation type="vanished">Písmo stavového řádku:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/StatusBar/PreferencesPage.ui" line="+53"/>
+        <source>Status bar font:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
@@ -11802,7 +11966,7 @@ ve výsledcích vyhledávání:</translation>
         <translation>Výchozí hodnota:</translation>
     </message>
     <message>
-        <location line="+268"/>
+        <location line="+271"/>
         <source>&amp;Undo</source>
         <translation>&amp;Zpět</translation>
     </message>
@@ -11867,7 +12031,7 @@ ve výsledcích vyhledávání:</translation>
         <translation>Další...</translation>
     </message>
     <message>
-        <location line="+135"/>
+        <location line="+139"/>
         <source>Degree</source>
         <translation>Stupeň</translation>
     </message>
@@ -12162,9 +12326,13 @@ ve výsledcích vyhledávání:</translation>
 <context>
     <name>Theme</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/ThemePreferences/PreferencesPage.ui" line="+20"/>
         <source>User Interface Theme:</source>
-        <translation>Vzhled uživatelského rozhraní:</translation>
+        <translation type="vanished">Vzhled uživatelského rozhraní:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/ThemePreferences/PreferencesPage.ui" line="+20"/>
+        <source>User interface theme:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -12255,9 +12423,13 @@ ve výsledcích vyhledávání:</translation>
 <context>
     <name>ToolBar</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/ToolBarPreferences/PreferencesPage.ui" line="+19"/>
         <source>Icon Size:</source>
-        <translation>Velikost ikon:</translation>
+        <translation type="vanished">Velikost ikon:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/ToolBarPreferences/PreferencesPage.ui" line="+19"/>
+        <source>Icon size:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+72"/>
@@ -12276,8 +12448,12 @@ ve výsledcích vyhledávání:</translation>
     </message>
     <message>
         <location line="+6"/>
+        <source>Shortcut prefix character:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Shortcut Prefix Character:</source>
-        <translation>Znak předpony zkratky:</translation>
+        <translation type="vanished">Znak předpony zkratky:</translation>
     </message>
 </context>
 <context>
@@ -12401,17 +12577,17 @@ ve výsledcích vyhledávání:</translation>
         <translation>&amp;Smazat originál</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>&amp;Ponechat originál</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>&amp;Vícenásobné kopie</translation>
     </message>
     <message>
-        <location line="+86"/>
+        <location line="+89"/>
         <source>Use current layer and &amp;attributes</source>
         <translation>Použít aktuální vrstvu a &amp;vlastnosti</translation>
     </message>
@@ -12447,17 +12623,17 @@ ve výsledcích vyhledávání:</translation>
         <translation>&amp;Smazat originál</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>&amp;Ponechat originál</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>&amp;Vícenásobné kopie</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+97"/>
         <source>&amp;Angle (a):</source>
         <translation>&amp;Úhel (a):</translation>
     </message>
@@ -12480,12 +12656,12 @@ ve výsledcích vyhledávání:</translation>
         <translation>Vyberte prvek pro ořez</translation>
     </message>
     <message>
-        <location line="+169"/>
+        <location line="+174"/>
         <source>The two entities don&apos;t intersect, or are currently not supported for trimming.</source>
         <translation>Tyto dva prvky se nepřekrývají nebo nejsou momentálně podporovány pro ořezávání.</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+74"/>
         <source>First entity cannot be trimmed.</source>
         <translation>První prvek nemůže být oříznut.</translation>
     </message>
@@ -12538,6 +12714,42 @@ ve výsledcích vyhledávání:</translation>
     </message>
 </context>
 <context>
+    <name>Ui</name>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/UiPreferences/PreferencesPage.ui" line="+17"/>
+        <source>These settings affect the resolution and scale of the QCAD user interface. These preferences can be adjusted if there are problems with the user interface of QCAD, such as very large or very small icons or text labels.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Auto screen scale factor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Enable high DPI scaling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Scale factor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>UiPreferences</name>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/UiPreferences/UiPreferences.js" line="+29"/>
+        <source>General</source>
+        <translation type="unfinished">Všeobecné</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>User Interface</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Undo</name>
     <message>
         <location filename="../scripts/Edit/Undo/UndoInit.js" line="+2"/>
@@ -12548,19 +12760,16 @@ ve výsledcích vyhledávání:</translation>
 <context>
     <name>UnitSettings</name>
     <message>
-        <location filename="../scripts/Edit/DrawingPreferences/UnitSettings/PreferencesPage.ui" line="+17"/>
         <source>Drawing Unit:</source>
-        <translation>Jednotka výkresu:</translation>
+        <translation type="vanished">Jednotka výkresu:</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Paper Unit:</source>
-        <translation>Jednotka papíru:</translation>
+        <translation type="vanished">Jednotka papíru:</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>Measurement System (for line types and hatch patterns):</source>
-        <translation>Měřicí systém (pro typy čar a vzory šrafování):</translation>
+        <translation type="vanished">Měřicí systém (pro typy čar a vzory šrafování):</translation>
     </message>
     <message>
         <location filename="../scripts/Edit/DrawingPreferences/UnitSettings/UnitSettings.js" line="+27"/>
@@ -12693,6 +12902,21 @@ ve výsledcích vyhledávání:</translation>
         <source>Metric</source>
         <translation>Metrický</translation>
     </message>
+    <message>
+        <location filename="../scripts/Edit/DrawingPreferences/UnitSettings/PreferencesPage.ui" line="+17"/>
+        <source>Drawing unit:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Paper unit:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Measurement system (for line types and hatch patterns):</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>UnlockAllLayers</name>
@@ -12786,7 +13010,7 @@ ve výsledcích vyhledávání:</translation>
 <context>
     <name>ViewportWidget</name>
     <message>
-        <location filename="../scripts/Widgets/ViewportWidget/ViewportWidget.js" line="+290"/>
+        <location filename="../scripts/Widgets/ViewportWidget/ViewportWidget.js" line="+295"/>
         <source>Dropped data not supported</source>
         <translation>Vložené údaje nejsou podporované</translation>
     </message>
@@ -12812,12 +13036,12 @@ ve výsledcích vyhledávání:</translation>
 <context>
     <name>WidgetFactory</name>
     <message>
-        <location filename="../scripts/WidgetFactory.js" line="+1038"/>
+        <location filename="../scripts/WidgetFactory.js" line="+1069"/>
         <source>Restore defaults</source>
         <translation>Obnovit výchozí nastavení</translation>
     </message>
     <message>
-        <location line="+50"/>
+        <location line="+45"/>
         <source>Insert Symbol</source>
         <translation>Vložit symbol</translation>
     </message>
@@ -13122,7 +13346,7 @@ ve výsledcích vyhledávání:</translation>
 <context>
     <name>library</name>
     <message>
-        <location filename="../scripts/library.js" line="+856"/>
+        <location filename="../scripts/library.js" line="+865"/>
         <source>Objects</source>
         <translation>Objektů</translation>
     </message>

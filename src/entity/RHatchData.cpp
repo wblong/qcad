@@ -128,7 +128,7 @@ RHatchData& RHatchData::operator =(const RHatchData& other) {
         }
     }
 
-    dirty = false;
+    dirty = other.dirty;
     return *this;
 }
 
@@ -487,6 +487,11 @@ QList<QSharedPointer<RShape> > RHatchData::getShapes(const RBox& queryBox, bool 
 
 QList<QSharedPointer<RShape> > RHatchData::getExploded() const {
     return getShapes();
+}
+
+void RHatchData::clearCustomPattern() {
+    pattern.clear();
+    update();
 }
 
 void RHatchData::newLoop() {
@@ -1228,6 +1233,7 @@ void RHatchData::update() const {
 }
 
 bool RHatchData::order() {
+    update();
     return RShape::order(boundary);
 }
 

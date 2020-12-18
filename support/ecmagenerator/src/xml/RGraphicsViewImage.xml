@@ -547,8 +547,9 @@ xmlns:rs="http://www.ribbonsoft.com">
     specifier="public" isStatic="false" isVirtual="false"
     isScriptOverwritable="true">
       <variant returnType="void" isPureVirtual="false">
-        <arg type="RPainterPath &amp;" typeName="RPainterPath"
-        name="path" isConst="true" />
+        <arg type="RGraphicsSceneDrawable &amp;"
+        typeName="RGraphicsSceneDrawable" name="drawable"
+        isConst="true" />
       </variant>
     </method>
     <method name="setBackgroundTransform"
@@ -781,6 +782,8 @@ xmlns:rs="http://www.ribbonsoft.com">
         isConst="false" />
         <arg type="RImageData &amp;" typeName="RImageData"
         name="image" isConst="false" />
+        <arg type="bool" typeName="bool" name="workingSet"
+        hasDefault="true" default="true" isConst="false" />
       </variant>
     </method>
     <method name="paintText" cppName="paintText"
@@ -791,6 +794,8 @@ xmlns:rs="http://www.ribbonsoft.com">
         isConst="false" />
         <arg type="RTextBasedData &amp;" typeName="RTextBasedData"
         name="text" isConst="false" />
+        <arg type="bool" typeName="bool" name="workingSet"
+        hasDefault="true" default="true" isConst="false" />
       </variant>
     </method>
     <method name="paintOrigin" cppName="paintOrigin"

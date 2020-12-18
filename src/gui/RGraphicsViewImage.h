@@ -293,7 +293,7 @@ public:
     //virtual void emitDecorateForeground(QPainter* painter) { Q_UNUSED(painter) }
 
     void clearBackground();
-    void addToBackground(const RPainterPath& path);
+    void addToBackground(const RGraphicsSceneDrawable& drawable);
     void setBackgroundTransform(double bgFactor, const RVector& bgOffset);
 
     void clearOverlay(int overlayId);
@@ -355,8 +355,8 @@ protected:
     virtual void drawCircle(QPainter* painter, QPointF pt, double pSize);
     virtual void drawSquare(QPainter* painter, QPointF pt, double pSize);
 
-    virtual void paintImage(QPainter* painter, RImageData& image);
-    virtual void paintText(QPainter* painter, RTextBasedData& text);
+    virtual void paintImage(QPainter* painter, RImageData& image, bool workingSet = true);
+    virtual void paintText(QPainter* painter, RTextBasedData& text, bool workingSet = true);
     virtual void paintOrigin(QPaintDevice& device);
     virtual void paintReferencePoint(QPainter& painter, const RRefPoint& pos, bool highlight);
     virtual void paintErase(QPaintDevice& device, const QRect& rect = QRect());
@@ -415,7 +415,7 @@ protected:
 
     double drawingScale;
 
-    QList<RPainterPath> backgroundDecoration;
+    QList<RGraphicsSceneDrawable> backgroundDecoration;
     //QTransform backgroundTransform;
     double backgroundFactor;
     RVector backgroundOffset;

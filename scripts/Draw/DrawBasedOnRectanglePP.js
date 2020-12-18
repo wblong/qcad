@@ -34,8 +34,10 @@ function DrawBasedOnRectanglePP(guiAction) {
 
     this.corner1 = undefined;
     this.corner2 = undefined;
+    this.rotate = true;
     this.rotation = 0.0;
     this.previewRectangle = false;
+    this.square = false;
 }
 
 DrawBasedOnRectanglePP.prototype = new EAction();
@@ -66,6 +68,8 @@ DrawBasedOnRectanglePP.prototype.setState = function(state) {
     var appWin = RMainWindowQt.getMainWindow();
     switch (this.state) {
     case DrawBasedOnRectanglePP.State.SettingCorner1:
+        this.corner1 = undefined;
+        this.corner2 = undefined;
         var trFirstCorner = qsTr("First corner");
         this.setCommandPrompt(trFirstCorner);
         this.setLeftMouseTip(trFirstCorner);
@@ -73,6 +77,7 @@ DrawBasedOnRectanglePP.prototype.setState = function(state) {
         break;
 
     case DrawBasedOnRectanglePP.State.SettingCorner2:
+        this.corner2 = undefined;
         var trSecondCorner = qsTr("Second corner");
         this.setCommandPrompt(trSecondCorner);
         this.setLeftMouseTip(trSecondCorner);
@@ -109,6 +114,7 @@ DrawBasedOnRectanglePP.prototype.pickCoordinate = function(event, preview) {
 
     case DrawBasedOnRectanglePP.State.SettingCorner2:
         this.corner2 = event.getModelPosition();
+
         if (preview) {
             this.updatePreview();
         }
@@ -129,26 +135,68 @@ DrawBasedOnRectanglePP.prototype.getCorners = function() {
         return [];
     }
 
-    if (RMath.fuzzyCompare(this.rotation, 0.0)) {
-        return [
-            new RVector(this.corner1.x, this.corner1.y),
-            new RVector(this.corner2.x, this.corner1.y),
-            new RVector(this.corner2.x, this.corner2.y),
-            new RVector(this.corner1.x, this.corner2.y)
-        ];
+    var ret;
+
+    var c2 = this.corner2;
+
+    var rotate = !(this.rotate===false || RMath.fuzzyCompare(this.rotation, 0.0));
+
+    if (rotate) {
+        // rotate c2 around c1:
+        c2 = c2.getRotated(-this.rotation, this.corner1);
     }
-    else {
-        var l1 = new RLine(this.corner1, this.rotation, 1.0);
-        var l2 = new RLine(this.corner2, this.rotation + Math.PI/2, 1.0);
-        var ips = RShape.getIntersectionPointsLL(l1, l2, false);
-        if (ips.length!==1) {
-            return [];
+
+    // square:
+    if (isShiftPressed()) {
+        var w = c2.x - this.corner1.x;
+        var h = c2.y - this.corner1.y;
+        var s = Math.max(Math.abs(w), Math.abs(h));
+
+        if (w<0) {
+            c2.x = this.corner1.x - s;
         }
-        var c3 = ips[0];
-        var v = this.corner1.operator_subtract(c3);
-        var c4 = this.corner2.operator_add(v);
-        return [ this.corner1, c3, this.corner2, c4 ];
+        else {
+            c2.x = this.corner1.x + s;
+        }
+
+        if (h<0) {
+            c2.y = this.corner1.y - s;
+        }
+        else {
+            c2.y = this.corner1.y + s;
+        }
     }
+
+    ret = [
+        new RVector(this.corner1.x, this.corner1.y),
+        new RVector(c2.x, this.corner1.y),
+        new RVector(c2.x, c2.y),
+        new RVector(this.corner1.x, c2.y)
+    ];
+
+    if (rotate) {
+        // rotate corners:
+        for (var i=0; i<ret.length; i++) {
+            ret[i].rotate(this.rotation, this.corner1);
+        }
+    }
+
+    return ret;
+
+//    }
+//    else {
+//        var l1 = new RLine(this.corner1, this.rotation, 1.0);
+//        var l2 = new RLine(this.corner2, this.rotation + Math.PI/2, 1.0);
+//        var ips = RShape.getIntersectionPointsLL(l1, l2, false);
+//        if (ips.length!==1) {
+//            return [];
+//        }
+//        var c3 = ips[0];
+//        var v = this.corner1.operator_subtract(c3);
+//        var c4 = this.corner2.operator_add(v);
+//        return [ this.corner1, c3, this.corner2, c4 ];
+//    }
+
 };
 
 DrawBasedOnRectanglePP.prototype.getCenter = function() {

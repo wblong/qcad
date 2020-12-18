@@ -352,6 +352,7 @@ void RDocument::init(bool beforeLoad) {
     transaction.addObject(docVars);
 
     transaction.end();
+    resetTransactionStack();
     storage.setModified(false);
 }
 
@@ -425,10 +426,11 @@ void RDocument::clear(bool beforeLoad) {
     fileName = "";
     storage.clear();
     clearSpatialIndices();
-    transactionStack.reset();
 
     init(beforeLoad);
     setUnit(u);
+
+    transactionStack.reset();
 }
 
 
@@ -911,6 +913,10 @@ QList<RBlock::Id> RDocument::sortBlocks(const QList<RBlock::Id>& blockIds) const
     return storage.sortBlocks(blockIds);
 }
 
+QList<RLayer::Id> RDocument::sortLayers(const QList<RLayer::Id>& layerIds) const {
+    return storage.sortLayers(layerIds);
+}
+
 /**
  * \copydoc RStorage::setCurrentView
  */
@@ -1248,6 +1254,13 @@ QSet<REntity::Id> RDocument::queryAllEntities(bool undone, bool allBlocks, QList
 }
 
 /**
+ * \copydoc RStorage::queryWorkingSetEntities
+ */
+QSet<REntity::Id> RDocument::queryWorkingSetEntities() const {
+    return storage.queryWorkingSetEntities();
+}
+
+/**
  * Queries all UCSs of this document.
  *
  * \return Set of UCS IDs.
@@ -1379,6 +1392,13 @@ QSet<REntity::Id> RDocument::queryBlockReferences(RBlock::Id blockId) const {
  */
 QSet<REntity::Id> RDocument::queryAllBlockReferences() const {
     return storage.queryAllBlockReferences();
+}
+
+/**
+ * \copydoc RStorage::queryAllViewports
+ */
+QSet<REntity::Id> RDocument::queryAllViewports() const {
+    return storage.queryAllViewports();
 }
 
 /*
@@ -1556,7 +1576,7 @@ QSet<REntity::Id> RDocument::queryIntersectedShapesXYFast(const RBox& box, bool 
 
 QSet<REntity::Id> RDocument::queryIntersectedEntitiesXY(
         const RBox& box, bool checkBoundingBoxOnly, bool includeLockedLayers, RBlock::Id blockId,
-        const QList<RS::EntityType>& filter, bool selectedOnly) const {
+        const QList<RS::EntityType>& filter, bool selectedOnly, RLayer::Id layerId) const {
 
     bool onlyVisible = false;
 
@@ -1587,12 +1607,12 @@ QSet<REntity::Id> RDocument::queryIntersectedEntitiesXY(
         return ids;
     }
 
-    return queryIntersectedShapesXY(box, checkBoundingBoxOnly, includeLockedLayers, blockId, filter, selectedOnly).keys().toSet();
+    return queryIntersectedShapesXY(box, checkBoundingBoxOnly, includeLockedLayers, blockId, filter, selectedOnly, layerId).keys().toSet();
 }
 
 QMap<REntity::Id, QSet<int> > RDocument::queryIntersectedShapesXY(
         const RBox& box, bool checkBoundingBoxOnly, bool includeLockedLayers, RBlock::Id blockId,
-        const QList<RS::EntityType>& filter, bool selectedOnly) const {
+        const QList<RS::EntityType>& filter, bool selectedOnly, RLayer::Id layerId) const {
 
     bool onlyVisible = false;
 
@@ -1693,7 +1713,7 @@ QMap<REntity::Id, QSet<int> > RDocument::queryIntersectedShapesXY(
         }
 
         if (selectedOnly) {
-            if (!entity->isSelected()) {
+            if (!entity->isSelected() && !entity->isSelectedWorkingSet()) {
                 continue;
             }
         }
@@ -1729,6 +1749,13 @@ QMap<REntity::Id, QSet<int> > RDocument::queryIntersectedShapesXY(
         // layer is locked:
         if (!includeLockedLayers) {
             if (isLayerLocked(entity->getLayerId())) {
+                continue;
+            }
+        }
+
+        // restrict to a specific layer:
+        if (layerId!=RLayer::INVALID_ID) {
+            if (entity->getLayerId()!=layerId) {
                 continue;
             }
         }
@@ -1884,7 +1911,7 @@ QSet<RObject::Id> RDocument::querySelectedLayers() const {
     return storage.querySelectedLayers();
 }
 
-QSet<REntity::Id> RDocument::queryConnectedEntities(REntity::Id entityId, double tolerance) {
+QSet<REntity::Id> RDocument::queryConnectedEntities(REntity::Id entityId, double tolerance, RObject::Id layerId) {
     QSet<REntity::Id> ret;
 
     QSharedPointer<REntity> entity = queryEntityDirect(entityId);
@@ -1909,7 +1936,7 @@ QSet<REntity::Id> RDocument::queryConnectedEntities(REntity::Id entityId, double
 
             // find connected entities:
             // candidates intersect with small box around end point:
-            QSet<REntity::Id> candidates = queryIntersectedEntitiesXY(box, true, false, RBlock::INVALID_ID);
+            QSet<REntity::Id> candidates = queryIntersectedEntitiesXY(box, true, false, RBlock::INVALID_ID, QList<RS::EntityType>(), false, layerId);
                       //QList<RS::EntityType>() << RS::EntityLine << RS::EntityArc << RS::EntityEllipse << RS::EntityPolyline << RS::EntitySpline);
 
             candidates.remove(entityId);
@@ -2244,6 +2271,13 @@ bool RDocument::isSelected(REntity::Id entityId) {
 }
 
 /**
+ * \copydoc RStorage::isSelectedWorkingSet
+ */
+bool RDocument::isSelectedWorkingSet(REntity::Id entityId) {
+    return storage.isSelectedWorkingSet(entityId);
+}
+
+/**
  * \copydoc RStorage::isLayerLocked
  */
 bool RDocument::isLayerLocked(RLayer::Id layerId) const {
@@ -2387,6 +2421,20 @@ bool RDocument::isParentLayerSnappable(RLayer::Id layerId) const {
  */
 bool RDocument::isParentLayerSnappable(const RLayer& layer) const {
     return storage.isParentLayerSnappable(layer);
+}
+
+/**
+ * \copydoc RStorage::isLayerSnappable
+ */
+bool RDocument::isLayerSnappable(RLayer::Id layerId) const {
+    return storage.isLayerSnappable(layerId);
+}
+
+/**
+ * \copydoc RStorage::isLayerSnappable
+ */
+bool RDocument::isLayerSnappable(const RLayer& layer) const {
+    return storage.isLayerSnappable(layer);
 }
 
 /**
@@ -2729,7 +2777,9 @@ void RDocument::updateAllEntities() {
     QSet<REntity::Id>::iterator it;
     for (it=ids.begin(); it!=ids.end(); it++) {
         QSharedPointer<REntity> entity = queryEntityDirect(*it);
+        entity->setAutoUpdatesBlocked(true);
         entity->update();
+        entity->setAutoUpdatesBlocked(false);
     }
 }
 
@@ -2870,6 +2920,28 @@ RDocument& RDocument::getClipboard() {
 
     return *clipboard;
 }
+
+bool RDocument::isEditingWorkingSet() const {
+    QSharedPointer<RDocumentVariables> docVars = queryDocumentVariablesDirect();
+    return docVars->hasCustomProperty("QCAD", "WorkingSet/BlockName") && !docVars->hasCustomProperty("QCAD", "WorkingSet/Ignore");
+}
+
+void RDocument::setIgnoreWorkingSet(bool on) {
+    if (on) {
+        queryDocumentVariablesDirect()->setCustomProperty("QCAD", "WorkingSet/Ignore", true);
+    }
+    else {
+        queryDocumentVariablesDirect()->removeCustomProperty("QCAD", "WorkingSet/Ignore");
+    }
+}
+
+//RBlockReferenceEntity::Id RDocument::getWorkingSetBlockReferenceId() const {
+//    return storage.getWorkingSetBlockReferenceId();
+//}
+
+//void RDocument::setWorkingSetBlockReferenceId(RBlockReferenceEntity::Id id, int group, RTransaction* transaction) {
+//    storage.setWorkingSetBlockReferenceId(id, group, transaction);
+//}
 
 /**
  * Stream operator for QDebug

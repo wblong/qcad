@@ -208,10 +208,10 @@ bool RBlockReferenceData::isPointType() const {
 QList<RBox> RBlockReferenceData::getBoundingBoxes(bool ignoreEmpty) const {
     QList<RBox>* bbs;
     if (ignoreEmpty) {
-        bbs = &boundingBoxes;
+        bbs = &boundingBoxesIgnoreEmpty;
     }
     else {
-        bbs = &boundingBoxesIgnoreEmpty;
+        bbs = &boundingBoxes;
     }
 
     if (!bbs->isEmpty()) {
@@ -335,13 +335,18 @@ RVector RBlockReferenceData::getPointOnEntity() const {
 
     QList<REntity::Id> idsOrdered = document->getStorage().orderBackToFront(ids);
 
-    QList<REntity::Id>::iterator it = idsOrdered.begin();
-    QSharedPointer<REntity> entity = queryEntity(*it, true);
-    if (entity.isNull()) {
-        return RVector::invalid;
+    QList<REntity::Id>::iterator it;
+    for (it=idsOrdered.begin(); it!=idsOrdered.end(); it++) {
+        QSharedPointer<REntity> entity = queryEntity(*it, true);
+        if (entity.isNull()) {
+            continue;
+        }
+
+        return entity->getPointOnEntity();
     }
 
-    return entity->getPointOnEntity();
+    // no valid entity in block:
+    return RVector::invalid;
 }
 
 /**
@@ -349,7 +354,7 @@ RVector RBlockReferenceData::getPointOnEntity() const {
  *
  * \param transform Transform according to the transformation of this block reference.
  */
-QSharedPointer<REntity> RBlockReferenceData::queryEntity(REntity::Id entityId, bool transform) const {
+QSharedPointer<REntity> RBlockReferenceData::queryEntity(REntity::Id entityId, bool transform, bool ignoreAttDef) const {
 
     if (cache.contains(entityId) && !transform) {
         QSharedPointer<REntity> e = cache.value(entityId);
@@ -378,7 +383,7 @@ QSharedPointer<REntity> RBlockReferenceData::queryEntity(REntity::Id entityId, b
     }
 
     // never render attribute definition as part of a block reference:
-    if (entity->getType()==RS::EntityAttributeDefinition) {
+    if (ignoreAttDef && entity->getType()==RS::EntityAttributeDefinition) {
         return QSharedPointer<REntity>();
     }
 

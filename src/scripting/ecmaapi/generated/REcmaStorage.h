@@ -72,6 +72,9 @@
         sortBlocks
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
+        sortLayers
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
         queryAllObjects
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
@@ -79,6 +82,9 @@
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
         queryAllEntities
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        queryWorkingSetEntities
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
         queryAllUcs
@@ -441,6 +447,9 @@
         isSelected
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
+        isSelectedWorkingSet
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
         isEntity
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
@@ -460,6 +469,9 @@
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
         isParentLayerFrozen
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        isLayerSnappable
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
         isParentLayerSnappable

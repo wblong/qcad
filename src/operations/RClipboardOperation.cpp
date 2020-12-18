@@ -27,7 +27,7 @@
 #include "RUnit.h"
 
 
-RClipboardOperation::RClipboardOperation() {
+RClipboardOperation::RClipboardOperation() : copyEmptyBlocks(false) {
 }
 
 void RClipboardOperation::copy(RDocument& src, RDocument& dest,
@@ -238,6 +238,57 @@ void RClipboardOperation::copy(RDocument& src, RDocument& dest,
                         overwriteLayers,
                         transaction
                         );
+        }
+    }
+
+    // copy all (even empty or unused) blocks:
+    if (copyEmptyBlocks && !preview) {
+        QSet<RBlock::Id> blockIds = src.queryAllBlocks();
+        QSet<RBlock::Id>::iterator it;
+        for (it=blockIds.begin(); it!=blockIds.end(); ++it) {
+            RBlock::Id blockId = *it;
+
+            if (blockId==src.getModelSpaceBlockId()) {
+                // do not copy model space block (again):
+                continue;
+            }
+
+            QList<REntity::Id> blockEntityIds = src.queryBlockEntities(blockId).toList();
+
+            if (blockEntityIds.isEmpty()) {
+                copyBlock(blockId, src, dest, overwriteBlocks, toCurrentBlock, blockName, transaction);
+            }
+            else {
+                bool first = true;
+                QList<REntity::Id>::iterator it2;
+                for (it2=blockEntityIds.begin(); it2!=blockEntityIds.end(); ++it2) {
+                    QSharedPointer<REntity> entity = src.queryEntityDirect(*it2);
+                    if (entity.isNull() || entity->isUndone()) {
+                        continue;
+                    }
+
+                    copyEntity(
+                        *entity.data(),
+                        src, dest,
+                        RVector::nullVector,
+                        1.0,          // scale from user options not applied to block contents
+                                      // but to block reference
+                        unitScale,
+                        0.0,
+                        RVector(0,0),
+                        false, false, // no flips
+                        false, false, // keep original block and layer
+                        false/*overwriteLayers*/, first && overwriteBlocks,
+                        QString(),
+                        QString(),
+                        transaction,
+                        false,         // not to model space but actual block
+                        attributes
+                    );
+
+                    first = false;
+                }
+            }
         }
     }
 

@@ -90,6 +90,9 @@
         queryAllEntities
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
+        queryWorkingSetEntities
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
         queryAllUcs
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
@@ -249,6 +252,9 @@
         isSelected
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
+        isSelectedWorkingSet
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
         isLayerLocked
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
@@ -268,6 +274,9 @@
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
         isLayerPlottable
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        isLayerSnappable
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
         isParentLayerFrozen
@@ -448,6 +457,9 @@
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
         sortBlocks
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        sortLayers
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
         getLayerName
@@ -649,6 +661,12 @@
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
         eval
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        isEditingWorkingSet
+        (QScriptContext* context, QScriptEngine* engine) 
+        ;static  QScriptValue
+        setIgnoreWorkingSet
         (QScriptContext* context, QScriptEngine* engine) 
         ;static  QScriptValue
         getClipboard

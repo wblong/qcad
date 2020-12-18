@@ -294,6 +294,9 @@
            <property name="noDefault" stdset="0">
             <bool>true</bool>
            </property>
+           <property name="defaultValue" stdset="0">
+            <string notr="true">0</string>
+           </property>
           </widget>
          </item>
          <item>
@@ -403,7 +406,7 @@
        <item row="1" column="0" colspan="2">
         <widget class="QCheckBox" name="HighResolutionGraphicsView">
          <property name="text">
-          <string>Use full resolution for Retina display</string>
+          <string>Use full resolution for Retina / high resolution display</string>
          </property>
         </widget>
        </item>
@@ -915,7 +918,7 @@
        <item>
         <widget class="QCheckBox" name="PersistentSelection">
          <property name="text">
-          <string>Persistent Selection</string>
+          <string>Persistent selection</string>
          </property>
         </widget>
        </item>

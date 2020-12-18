@@ -63,6 +63,16 @@ xmlns:rs="http://www.ribbonsoft.com">
         isConst="true" />
       </variant>
     </method>
+    <method name="sortLayers" cppName="sortLayers"
+    specifier="public" isStatic="false" isVirtual="false"
+    isScriptOverwritable="true">
+      <variant returnType="QList &lt; RLayer::Id &gt;"
+      isPureVirtual="false">
+        <arg type="QList &lt; RLayer::Id &gt; &amp;"
+        typeName="QList &lt; RLayer::Id &gt;" name="layerIds"
+        isConst="true" />
+      </variant>
+    </method>
     <method name="queryAllObjects" cppName="queryAllObjects"
     specifier="public" isStatic="false" isVirtual="true"
     isScriptOverwritable="true">
@@ -98,6 +108,12 @@ xmlns:rs="http://www.ribbonsoft.com">
         typeName="QList &lt; RS::EntityType &gt;" name="types"
         isConst="false" />
       </variant>
+    </method>
+    <method name="queryWorkingSetEntities"
+    cppName="queryWorkingSetEntities" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="QSet &lt; REntity::Id &gt;"
+      isPureVirtual="true" />
     </method>
     <method name="queryAllUcs" cppName="queryAllUcs"
     specifier="public" isStatic="false" isVirtual="true"
@@ -1148,6 +1164,14 @@ xmlns:rs="http://www.ribbonsoft.com">
         name="entityId" isConst="false" />
       </variant>
     </method>
+    <method name="isSelectedWorkingSet"
+    cppName="isSelectedWorkingSet" specifier="public"
+    isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="REntity::Id" typeName="REntity::Id"
+        name="entityId" isConst="false" />
+      </variant>
+    </method>
     <method name="isEntity" cppName="isEntity" specifier="public"
     isStatic="false" isVirtual="true" isScriptOverwritable="true">
       <variant returnType="bool" isPureVirtual="false">
@@ -1218,6 +1242,18 @@ xmlns:rs="http://www.ribbonsoft.com">
     <method name="isParentLayerFrozen"
     cppName="isParentLayerFrozen" specifier="public"
     isStatic="false" isVirtual="true" isScriptOverwritable="true">
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="RLayer::Id" typeName="RLayer::Id" name="layerId"
+        isConst="false" />
+      </variant>
+      <variant returnType="bool" isPureVirtual="false">
+        <arg type="RLayer &amp;" typeName="RLayer" name="layer"
+        isConst="true" />
+      </variant>
+    </method>
+    <method name="isLayerSnappable" cppName="isLayerSnappable"
+    specifier="public" isStatic="false" isVirtual="true"
+    isScriptOverwritable="true">
       <variant returnType="bool" isPureVirtual="false">
         <arg type="RLayer::Id" typeName="RLayer::Id" name="layerId"
         isConst="false" />

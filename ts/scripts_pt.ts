@@ -236,7 +236,7 @@
         <translation>Programação</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+53"/>
         <source>Hatch Patterns</source>
         <translation>Padrões de hachuras</translation>
     </message>
@@ -1313,11 +1313,16 @@ Você deseja recuperá-lo?</translation>
         <translation>Ferramentas de Bloco</translation>
     </message>
     <message>
+        <location line="+110"/>
+        <source>Cannot edit block while editing a block in-place</source>
+        <translation>Não é possível editar um bloco durante a edição de um bloco in situ</translation>
+    </message>
+    <message>
         <source>Show block tools</source>
         <translation type="vanished">Exiba as ferramentas para Blocos</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="-82"/>
         <source>&amp;Block</source>
         <translation>&amp;Bloqueio</translation>
     </message>
@@ -1325,13 +1330,13 @@ Você deseja recuperá-lo?</translation>
 <context>
     <name>BlockDialog</name>
     <message>
-        <location filename="../scripts/Block/BlockDialog.js" line="+82"/>
+        <location filename="../scripts/Block/BlockDialog.js" line="+81"/>
         <source>block</source>
         <comment>default block name prefix</comment>
         <translation>bloco</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+53"/>
         <source>Leading or trailing spaces.</source>
         <translation>Espaços no início ou no fim.</translation>
     </message>
@@ -1590,8 +1595,12 @@ Você deseja recuperá-lo?</translation>
         <translation type="vanished">Alterne a Barra de Título</translation>
     </message>
     <message>
-        <location filename="../scripts/Widgets/CadToolBar/PreferencesPage.ui" line="+17"/>
         <source>Icon Size:</source>
+        <translation type="vanished">Tamanho do Ícone:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/CadToolBar/PreferencesPage.ui" line="+17"/>
+        <source>Icon size:</source>
         <translation>Tamanho do Ícone:</translation>
     </message>
     <message>
@@ -1661,8 +1670,12 @@ Você deseja recuperá-lo?</translation>
         <translation type="vanished">Ferramentas CAD</translation>
     </message>
     <message>
-        <location filename="../scripts/Widgets/CadToolMatrix/PreferencesPage.ui" line="+17"/>
         <source>Icon Size:</source>
+        <translation type="vanished">Tamanho do Ícone:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/CadToolMatrix/PreferencesPage.ui" line="+17"/>
+        <source>Icon size:</source>
         <translation>Tamanho do Ícone:</translation>
     </message>
     <message>
@@ -2255,13 +2268,13 @@ Você deseja recuperá-lo?</translation>
     <name>CommandLine</name>
     <message>
         <location filename="../scripts/Widgets/CommandLine/CommandLine.js" line="+30"/>
-        <location line="+60"/>
+        <location line="+68"/>
         <location filename="../scripts/Widgets/CommandLine/CommandLine.ui" line="+20"/>
         <source>Command Line</source>
         <translation>Linha de Comando</translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-21"/>
         <source>&amp;Command Line</source>
         <translation>Linha de &amp;comando</translation>
     </message>
@@ -2270,7 +2283,7 @@ Você deseja recuperá-lo?</translation>
         <translation type="obsolete">Coordenar inválido &quot;%1&quot;.</translation>
     </message>
     <message>
-        <location line="+252"/>
+        <location line="+243"/>
         <source>Unknown command or invalid coordinate or value: &quot;%1&quot;</source>
         <translation>Comando desconhecido, ou coordenadas ou valor inválido: &quot;%1&quot;</translation>
     </message>
@@ -2299,12 +2312,12 @@ Você deseja recuperá-lo?</translation>
         <translation type="obsolete">Tentando aproveitar ou modificar as entidades em uma camada bloqueada.</translation>
     </message>
     <message>
-        <location line="-372"/>
+        <location line="-380"/>
         <source>Widgets</source>
         <translation>Widgets</translation>
     </message>
     <message>
-        <location line="+247"/>
+        <location line="+255"/>
         <source>Invalid value:</source>
         <translation>Valor inválido:</translation>
     </message>
@@ -2349,8 +2362,12 @@ Você deseja recuperá-lo?</translation>
         <translation>: </translation>
     </message>
     <message>
-        <location filename="../scripts/Widgets/CommandLine/PreferencesPage.ui" line="+17"/>
         <source>History Size:</source>
+        <translation type="vanished">Tamanho da História:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/CommandLine/PreferencesPage.ui" line="+17"/>
+        <source>History size:</source>
         <translation>Tamanho da História:</translation>
     </message>
     <message>
@@ -2405,7 +2422,7 @@ Você deseja recuperá-lo?</translation>
         <translation type="vanished">Unidade &apos;%1&apos; selecionado - nada a ser feito</translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+136"/>
         <source>Converted drawing from %1 to %2</source>
         <translation>Desenho convertido de %1 para %2</translation>
     </message>
@@ -2658,7 +2675,7 @@ Você deseja recuperá-lo?</translation>
 <context>
     <name>DefaultAction</name>
     <message>
-        <location filename="../scripts/DefaultAction.js" line="+90"/>
+        <location filename="../scripts/DefaultAction.js" line="+92"/>
         <source>Select entity or region</source>
         <translation>Selecione a entidade ou região</translation>
     </message>
@@ -2688,7 +2705,7 @@ Você deseja recuperá-lo?</translation>
         <translation>Mova a entidade para a localização desejada</translation>
     </message>
     <message>
-        <location line="+388"/>
+        <location line="+394"/>
         <source>Move Reference Point</source>
         <translation>Mova o Ponto de Referência</translation>
     </message>
@@ -3373,9 +3390,8 @@ Você deseja recuperá-lo?</translation>
         <translation>Flecha</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Architectural Tick</source>
-        <translation>Carrapato Arquitetônico</translation>
+        <translation type="vanished">Carrapato Arquitetônico</translation>
     </message>
     <message>
         <source>Font</source>
@@ -3384,6 +3400,11 @@ Você deseja recuperá-lo?</translation>
     <message>
         <source>Dimension label font:</source>
         <translation type="vanished">Fonte do rótulo de dimensões:</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Architectural tick</source>
+        <translation>Carrapato Arquitetônico</translation>
     </message>
     <message>
         <location line="+23"/>
@@ -3591,12 +3612,12 @@ já se encontra na lista.</translation>
 <context>
     <name>DrawBasedOnRectanglePP</name>
     <message>
-        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+69"/>
+        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+73"/>
         <source>First corner</source>
         <translation>Primeiro vértice</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Second corner</source>
         <translation>Segundo vértice</translation>
     </message>
@@ -3833,24 +3854,24 @@ já se encontra na lista.</translation>
 <context>
     <name>EAction</name>
     <message>
-        <location filename="../scripts/EAction.js" line="+68"/>
+        <location filename="../scripts/EAction.js" line="+70"/>
         <source>Back</source>
         <translation>Voltar</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+2097"/>
+        <location line="+2106"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location line="-2096"/>
+        <location line="-2105"/>
         <source>Done</source>
         <translation>Concluído</translation>
     </message>
     <message>
         <location line="+277"/>
-        <location line="+136"/>
+        <location line="+140"/>
         <source>Active Tool:</source>
         <translation>Ferramenta Ativa:</translation>
     </message>
@@ -3875,17 +3896,22 @@ já se encontra na lista.</translation>
         <translation>Ferramentas CAD</translation>
     </message>
     <message>
-        <location line="+710"/>
+        <location line="+711"/>
+        <source>Entity is not in working set.</source>
+        <translation>A entidade não está no conjunto de trabalho.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Entity is on a locked layer.</source>
         <translation>A entidade está em uma camada trancada.</translation>
     </message>
     <message>
-        <location line="+224"/>
+        <location line="+225"/>
         <source>Length:</source>
         <translation>Comprimento:</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+57"/>
         <source>Entity is not a block reference.</source>
         <translation>A entidade não é uma referência de bloco.</translation>
     </message>
@@ -3954,6 +3980,11 @@ já se encontra na lista.</translation>
         <source>Entity is not a polyline.</source>
         <translation>A entidade não é uma polilinha.</translation>
     </message>
+    <message>
+        <location line="+4"/>
+        <source>Entity is not a spline with fit points.</source>
+        <translation>A entidade não é um spline com pontos de ajuste.</translation>
+    </message>
 </context>
 <context>
     <name>EcmaScriptShell</name>
@@ -3963,12 +3994,12 @@ já se encontra na lista.</translation>
         <translation>Mostrar Shell ECMAScript</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+55"/>
         <source>&amp;Script Shell</source>
         <translation>&amp;Script Shell</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+35"/>
         <location filename="../scripts/Misc/MiscDevelopment/EcmaScriptShell/EcmaScriptShell.ui" line="+14"/>
         <source>Script Shell</source>
         <translation>Script Shell</translation>
@@ -4947,9 +4978,24 @@ já se encontra na lista.</translation>
 <context>
     <name>FlexPainter</name>
     <message>
-        <location filename="../scripts/Misc/Examples/MathExamples/FlexPainter/FlexPainter.js" line="+1816"/>
+        <location filename="../scripts/Misc/Examples/MathExamples/FlexPainter/FlexPainter.js" line="+1115"/>
+        <source>Add Active SubLayer</source>
+        <translation>Adicionar subcamada ativa</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>FP added layer:</source>
+        <translation>Camada adicional de FP:</translation>
+    </message>
+    <message>
+        <location line="+1196"/>
         <source>&amp;FlexPainter</source>
         <translation>&amp;FlexPainter</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Paints over selection mimicking a roller stamp</source>
+        <translation>Tintas sobre a seleção, imitando um carimbo de rolo</translation>
     </message>
 </context>
 <context>
@@ -4965,62 +5011,56 @@ já se encontra na lista.</translation>
         <translation>Opções de casting de pintores</translation>
     </message>
     <message>
-        <location line="+18"/>
         <source>Mirror painters over baseline</source>
-        <translation>Espelhar os pintores na linha de base</translation>
+        <translation type="vanished">Espelhar os pintores na linha de base</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+21"/>
         <source>Flip Painters</source>
         <translation>Inverter os pintores</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Group all castings to one operation</source>
-        <translation>Agrupar todas as peças casting em uma operação</translation>
+        <translation type="vanished">Agrupar todas as peças casting em uma operação</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+10"/>
         <source>Cast in group</source>
         <translation>Casting em grupo</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Cast on newly sub-layer &apos;Painted&apos; if applicable</source>
-        <translation>Casting numa nova subcamada &quot;Painted&quot;, se aplicável</translation>
+        <translation type="vanished">Casting numa nova subcamada &quot;Painted&quot;, se aplicável</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+17"/>
         <source>Cast on sub-layer</source>
         <translation>Casting em subcamada</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Start with casting a begin apex on open forms</source>
-        <translation>Comece com a casting de um ápice inicial em formulários abertos</translation>
+        <translation type="vanished">Comece com a casting de um ápice inicial em formulários abertos</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+13"/>
         <source>Add Begin Apex</source>
         <translation>Adicionar um ápice inicial</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>End with casting an end apex on open forms</source>
-        <translation>Terminar com a casting de um ápice final em formas abertas</translation>
+        <translation type="vanished">Terminar com a casting de um ápice final em formas abertas</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Add End Apex</source>
         <translation>Adicionar ápice final</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>Add insertions in between eg. spacers, knots</source>
-        <translation>Adicione inserções entre si, por exemplo, espaçadores, nós</translation>
+        <translation type="vanished">Adicione inserções entre si, por exemplo, espaçadores, nós</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Add Insertions</source>
         <translation>Adicionar inserções</translation>
     </message>
@@ -5030,14 +5070,53 @@ já se encontra na lista.</translation>
         <translation>Padrão</translation>
     </message>
     <message>
-        <location line="+36"/>
         <source>Preview of painters</source>
-        <translation>Pré-visualização</translation>
+        <translation type="vanished">Pré-visualização</translation>
+    </message>
+    <message>
+        <source>Select painter set</source>
+        <translation type="vanished">Selecionar padrão</translation>
+    </message>
+    <message>
+        <location line="-101"/>
+        <source>Mirror painters over baseline.</source>
+        <translation>Espelhar os painters sobre a linha de base.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Group all castings to one operation.</source>
+        <translation>Agrupe todas em uma operação.</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Cast on newly sub-layer &apos;Painted&apos;.
+BUG: Interferes with group castings.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Start with casting a begin apex on open forms.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>End with casting an end apex on open forms.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Add insertions in between eg. spacers, knots. (Not implemented)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <source>Preview of painters.</source>
+        <translation></translation>
     </message>
     <message>
         <location line="+41"/>
-        <source>Select painter set</source>
-        <translation>Selecionar padrão</translation>
+        <source>Select painter set.</source>
+        <translation></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -5111,16 +5190,79 @@ já se encontra na lista.</translation>
     </message>
     <message>
         <location line="+36"/>
-        <source>Preview of insertion</source>
-        <translation>Pré-visualização da inserção</translation>
+        <source>Preview of insertion.</source>
+        <translation></translation>
     </message>
     <message>
         <location line="+38"/>
-        <source>Select Insertion or Enter void space</source>
-        <translation>Selecionar inserção ou entrar espaço vazio</translation>
+        <source>Select Insertion or Enter void space. (Not implemented)</source>
+        <translation></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+250"/>
+        <source>Version</source>
+        <translation>Versão</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>FlexPainter Beta 0.42e © CVH 2020 </source>
+        <translation>FlexPainter Beta 0.42e © CVH 2020 </translation>
+    </message>
+    <message>
+        <location line="+245"/>
+        <source>Document Units.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Enter painter width. (+0)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+90"/>
+        <source>Enter main painter stepsize. (+0)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Enter main painter length. (+)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Keep painters proportional.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Select percentage of Stepsize.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+86"/>
+        <source>Adapt scaling f 1.00-0.90 to fit the whole form.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+92"/>
+        <source>Verbose info. (persistent on)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Deleted painted over base entities. (persistent off)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Preview of insertion</source>
+        <translation type="vanished">Pré-visualização da inserção</translation>
+    </message>
+    <message>
+        <source>Select Insertion or Enter void space</source>
+        <translation type="vanished">Selecionar inserção ou entrar espaço vazio</translation>
+    </message>
+    <message>
+        <location line="-879"/>
         <source>&lt;Enter space size&gt;</source>
         <translation>&lt;Enter espaço tamanho&gt;</translation>
     </message>
@@ -5130,22 +5272,20 @@ já se encontra na lista.</translation>
         <translation>Nó da corda da cortina</translation>
     </message>
     <message>
-        <location line="+328"/>
         <source>Document Units</source>
-        <translation>Unidades de documento</translation>
+        <translation type="vanished">Unidades de documento</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+489"/>
         <source>#Undefined#</source>
         <translation>#Indefinido#</translation>
     </message>
     <message>
-        <location line="+33"/>
         <source>Enter painter width (+0)</source>
-        <translation>Introduzir a largura do pintor (+0)</translation>
+        <translation type="vanished">Introduzir a largura do pintor (+0)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+36"/>
         <source>Width : </source>
         <translation>Largura:</translation>
     </message>
@@ -5160,37 +5300,33 @@ já se encontra na lista.</translation>
         <translation>Opções do pintor repetitivo</translation>
     </message>
     <message>
-        <location line="+62"/>
         <source>Enter main painter stepsize (+0)</source>
-        <translation>Digite o tamanho do passo-a-passo do pintor principal (+0)</translation>
+        <translation type="vanished">Digite o tamanho do passo-a-passo do pintor principal (+0)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+65"/>
         <source>Stepsize :</source>
         <translation>Tamanho do degrau:</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>Enter main painter length (+)</source>
-        <translation>Introduza o comprimento do pintor principal (+)</translation>
+        <translation type="vanished">Introduza o comprimento do pintor principal (+)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Length :</source>
         <translation>Comprimento:</translation>
     </message>
     <message>
-        <location line="+19"/>
         <source>Keep painters proportional</source>
-        <translation>Manter os pintores proporcionais</translation>
+        <translation type="vanished">Manter os pintores proporcionais</translation>
     </message>
     <message>
-        <location line="+29"/>
         <source>Select percentage of Stepsize</source>
-        <translation>Selecione a porcentagem do tamanho do passo</translation>
+        <translation type="vanished">Selecione a porcentagem do tamanho do passo</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+52"/>
         <source>Closed Forms shifting % :</source>
         <translation>Fechado formulários a deslocar %:</translation>
     </message>
@@ -5200,12 +5336,11 @@ já se encontra na lista.</translation>
         <translation>Opções de escala para formas abertas</translation>
     </message>
     <message>
-        <location line="+21"/>
         <source>Adapt scaling f 1.00-0.90 to fit the whole form</source>
-        <translation>Adaptar a escala f 1.00-0.90 para se adaptar a toda a forma</translation>
+        <translation type="vanished">Adaptar a escala f 1.00-0.90 para se adaptar a toda a forma</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+24"/>
         <source>Dynamically scale to fit</source>
         <translation>Escala dinâmica para se ajustar</translation>
     </message>
@@ -5225,22 +5360,20 @@ já se encontra na lista.</translation>
         <translation>Alinhar com o fim</translation>
     </message>
     <message>
-        <location line="+36"/>
         <source>Verbose info (persistent on)</source>
-        <translation>Informação verbosa (persistente)</translation>
+        <translation type="vanished">Informação verbosa (persistente)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+39"/>
         <source>Verbose *</source>
         <translation>Verboso *</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>Deleted painted over base entities (persistent off)</source>
-        <translation>Apagado pintado sobre entidades base (persistent off)</translation>
+        <translation type="vanished">Apagado pintado sobre entidades base (persistent off)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+16"/>
         <source>Delete Base Entities *</source>
         <translation>Apagar entidades Base *</translation>
     </message>
@@ -5396,7 +5529,12 @@ já se encontra na lista.</translation>
         <translation>Clique duplo na referência do bloco para abrir o bloco</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+28"/>
+        <source>Edit block reference in-place</source>
+        <translation>Editar referência de bloco no local</translation>
+    </message>
+    <message>
+        <location line="+24"/>
         <source>Tolerance:</source>
         <translation>Tolerância:</translation>
     </message>
@@ -5438,7 +5576,7 @@ já se encontra na lista.</translation>
         <translation type="vanished">Passo angular para rotação:</translation>
     </message>
     <message>
-        <location line="-232"/>
+        <location line="-259"/>
         <source>Right-Click</source>
         <translation>Clique do Botão Direito</translation>
     </message>
@@ -5452,7 +5590,7 @@ já se encontra na lista.</translation>
         <translation type="vanished">Clique direito en un entidade mostra menu de contexto</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+73"/>
         <source>Double-click to select contour</source>
         <translation>Clique duplo para selecionar contorno</translation>
     </message>
@@ -5569,7 +5707,12 @@ já se encontra na lista.</translation>
         <translation>Auto corrigir cores preto-no-preto e branco-no-branco</translation>
     </message>
     <message>
-        <location line="+547"/>
+        <location line="+152"/>
+        <source>Use full resolution for Retina / high resolution display</source>
+        <translation>Use resolução total para a exposição Retina / alta resolução</translation>
+    </message>
+    <message>
+        <location line="+398"/>
         <source>auto</source>
         <translation>auto</translation>
     </message>
@@ -5579,7 +5722,12 @@ já se encontra na lista.</translation>
         <translation>Número de threads:</translation>
     </message>
     <message>
-        <location line="-674"/>
+        <location line="+16"/>
+        <source>Persistent selection</source>
+        <translation>Seleção Persistente</translation>
+    </message>
+    <message>
+        <location line="-693"/>
         <source>Color lightness threshold:</source>
         <translation>Limites para a luminosidade da cor:</translation>
     </message>
@@ -5593,7 +5741,7 @@ já se encontra na lista.</translation>
         <translation type="vanished">Tipos de Linha</translation>
     </message>
     <message>
-        <location line="+53"/>
+        <location line="+56"/>
         <source>Auto switch to screen based linetypes in model view</source>
         <translation>Comute automaticamente para tipos de linha baseados na tela, na visão de modelagem</translation>
     </message>
@@ -5627,7 +5775,7 @@ já se encontra na lista.</translation>
         <translation>Passo mínimo de ângulo para renderização de arcos (graus):</translation>
     </message>
     <message>
-        <location line="-263"/>
+        <location line="-266"/>
         <source>Linetypes and Lineweights</source>
         <translation>Tipos de linha e pesos de linha</translation>
     </message>
@@ -5637,12 +5785,11 @@ já se encontra na lista.</translation>
         <translation>Peso da linha por defeito:</translation>
     </message>
     <message>
-        <location line="+121"/>
         <source>Use full resolution for Retina display</source>
-        <translation>Use resolução total para a exposição Retina</translation>
+        <translation type="vanished">Use resolução total para a exposição Retina</translation>
     </message>
     <message>
-        <location line="-7"/>
+        <location line="+117"/>
         <source>Anti-aliasing on by default</source>
         <translation>Suavização ativada como padrão</translation>
     </message>
@@ -5697,9 +5844,8 @@ já se encontra na lista.</translation>
         <translation>Seleção</translation>
     </message>
     <message>
-        <location line="+6"/>
         <source>Persistent Selection</source>
-        <translation>Seleção Persistente</translation>
+        <translation type="vanished">Seleção Persistente</translation>
     </message>
 </context>
 <context>
@@ -5823,7 +5969,7 @@ já se encontra na lista.</translation>
         <translation>Ferramentas de Salto</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+12"/>
         <source>Snap label:</source>
         <translation>Rótulo do salto:</translation>
     </message>
@@ -5848,7 +5994,12 @@ já se encontra na lista.</translation>
         <translation>Formas auxiliares:</translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+30"/>
+        <source>Working set fading factor:</source>
+        <translation>Fator de desvanecimento do conjunto de trabalho:</translation>
+    </message>
+    <message>
+        <location line="+75"/>
         <source>Zoom Tools</source>
         <translation>Ferramentas de Zoom</translation>
     </message>
@@ -5858,7 +6009,7 @@ já se encontra na lista.</translation>
         <translation>Borda da caixa de zoom:</translation>
     </message>
     <message>
-        <location line="-643"/>
+        <location line="-712"/>
         <source>Origin:</source>
         <translation>Origem:</translation>
     </message>
@@ -5871,18 +6022,30 @@ já se encontra na lista.</translation>
 <context>
     <name>GraphicsViewFonts</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/GraphicsViewPreferences/FontPreferences/PreferencesPage.ui" line="+41"/>
         <source>Ruler Font:</source>
+        <translation type="vanished">Fonte Régua:</translation>
+    </message>
+    <message>
+        <source>Snap Label Font:</source>
+        <translation type="vanished">Fonte de etiquetas de snap:</translation>
+    </message>
+    <message>
+        <source>Info Label Font:</source>
+        <translation type="vanished">Fonte da etiqueta informativa:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/GraphicsViewPreferences/FontPreferences/PreferencesPage.ui" line="+41"/>
+        <source>Ruler font:</source>
         <translation>Fonte Régua:</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Snap Label Font:</source>
+        <source>Snap label font:</source>
         <translation>Fonte de etiquetas de snap:</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Info Label Font:</source>
+        <source>Info label font:</source>
         <translation>Fonte da etiqueta informativa:</translation>
     </message>
 </context>
@@ -6340,7 +6503,7 @@ já se encontra na lista.</translation>
         <translation>Especifique a segunda linha</translation>
     </message>
     <message>
-        <location line="+91"/>
+        <location line="+96"/>
         <source>Angle:</source>
         <translation>Ângulo:</translation>
     </message>
@@ -6643,7 +6806,7 @@ já se encontra na lista.</translation>
         <translation>Circunferência</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+72"/>
         <source>Polyline area:</source>
         <translation>Área:</translation>
     </message>
@@ -6729,23 +6892,39 @@ já se encontra na lista.</translation>
 <context>
     <name>Input</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/InputPreferences/PreferencesPage.ui" line="+19"/>
         <source>Decimal Point:</source>
+        <translation type="vanished">Ponto decimal:</translation>
+    </message>
+    <message>
+        <source>Cartesian Coordinate Separator:</source>
+        <translation type="vanished">Separador de coordenadas cartesianas:</translation>
+    </message>
+    <message>
+        <source>Polar Coordinate Separator:</source>
+        <translation type="vanished">Separador de coordenadas polares:</translation>
+    </message>
+    <message>
+        <source>Relative Coordinate Prefix:</source>
+        <translation type="vanished">Prefixo de Coordenadas Relativas:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/InputPreferences/PreferencesPage.ui" line="+19"/>
+        <source>Decimal point:</source>
         <translation>Ponto decimal:</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Cartesian Coordinate Separator:</source>
+        <source>Cartesian coordinate separator:</source>
         <translation>Separador de coordenadas cartesianas:</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Polar Coordinate Separator:</source>
+        <source>Polar coordinate separator:</source>
         <translation>Separador de coordenadas polares:</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Relative Coordinate Prefix:</source>
+        <source>Relative coordinate prefix:</source>
         <translation>Prefixo de Coordenadas Relativas:</translation>
     </message>
     <message>
@@ -6755,23 +6934,39 @@ já se encontra na lista.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Absolute Cartesian Coordinate:</source>
+        <source>Absolute Cartesian coordinate:</source>
         <translation>Coordenada Cartesiana Absoluta:</translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Absolute Polar Coordinate:</source>
+        <source>Absolute polar coordinate:</source>
         <translation>Coordenada Polar Absoluta:</translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Relative Cartesian Coordinate:</source>
+        <source>Relative Cartesian coordinate:</source>
         <translation>Coordenada cartesiana relativa:</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Relative Polar Coordinate:</source>
+        <source>Relative polar coordinate:</source>
         <translation>Coordenadas polares relativas:</translation>
+    </message>
+    <message>
+        <source>Absolute Cartesian Coordinate:</source>
+        <translation type="vanished">Coordenada Cartesiana Absoluta:</translation>
+    </message>
+    <message>
+        <source>Absolute Polar Coordinate:</source>
+        <translation type="vanished">Coordenada Polar Absoluta:</translation>
+    </message>
+    <message>
+        <source>Relative Cartesian Coordinate:</source>
+        <translation type="vanished">Coordenada cartesiana relativa:</translation>
+    </message>
+    <message>
+        <source>Relative Polar Coordinate:</source>
+        <translation type="vanished">Coordenadas polares relativas:</translation>
     </message>
 </context>
 <context>
@@ -7215,8 +7410,12 @@ já se encontra na lista.</translation>
 <context>
     <name>Language</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/LanguagePreferences/PreferencesPage.ui" line="+20"/>
         <source>Language of User Interface:</source>
+        <translation type="vanished">Idioma da interface do usuário:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/LanguagePreferences/PreferencesPage.ui" line="+20"/>
+        <source>Language of user interface:</source>
         <translation>Idioma da interface do usuário:</translation>
     </message>
 </context>
@@ -7759,21 +7958,29 @@ Navegador de Biblioteca não estará disponível.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Icon Size:</source>
+        <source>Icon size:</source>
         <translation>Tamanho do Ícone:</translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location line="+51"/>
+        <source>View mode:</source>
+        <translation>Modo de Exibição:</translation>
+    </message>
+    <message>
+        <source>Icon Size:</source>
+        <translation type="vanished">Tamanho do Ícone:</translation>
+    </message>
+    <message>
+        <location line="-7"/>
         <source>Dark icon background</source>
         <translation>Fundo escuro do ícone</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>View Mode:</source>
-        <translation>Modo de Exibição:</translation>
+        <translation type="vanished">Modo de Exibição:</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+17"/>
         <source>Number of items
 shown in search results:</source>
         <translation>Número de itens mostrados
@@ -8534,8 +8741,12 @@ nos resultados de busca:</translation>
         <translation>Tipo de Linha</translation>
     </message>
     <message>
-        <location filename="../scripts/Edit/DrawingPreferences/LinetypeSettings/PreferencesPage.ui" line="+19"/>
         <source>Global Linetype Scale:</source>
+        <translation type="vanished">Escala global de Tipo de Linha:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/DrawingPreferences/LinetypeSettings/PreferencesPage.ui" line="+19"/>
+        <source>Global linetype scale:</source>
         <translation>Escala global de Tipo de Linha:</translation>
     </message>
     <message>
@@ -8676,12 +8887,12 @@ nos resultados de busca:</translation>
         <translation>&amp;Elimine o original</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>&amp;Mantenha o original</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+85"/>
         <source>Use current layer and &amp;attributes</source>
         <translation>Use a camada e os &amp;atributos atuais</translation>
     </message>
@@ -9113,7 +9324,7 @@ nos resultados de busca:</translation>
         <translation>Escolha uma linha, arco, círculo ou elipse</translation>
     </message>
     <message numerus="yes">
-        <location line="+89"/>
+        <location line="+94"/>
         <source>Radius dropped below 0.0 after %n concentric circle(s).</source>
         <translation>
             <numerusform>O Raio ficou abaixo de 0,0, após %n círculo concêntrico.</numerusform>
@@ -9780,12 +9991,12 @@ nos resultados de busca:</translation>
 <context>
     <name>PropertyEditor</name>
     <message>
-        <location filename="../scripts/Widgets/PropertyEditor/PropertyEditor.js" line="+1468"/>
+        <location filename="../scripts/Widgets/PropertyEditor/PropertyEditor.js" line="+1469"/>
         <source>*VARIES*</source>
         <translation>*VARIA*</translation>
     </message>
     <message>
-        <location line="-1275"/>
+        <location line="-1276"/>
         <source>:</source>
         <translation>:</translation>
     </message>
@@ -9835,12 +10046,12 @@ nos resultados de busca:</translation>
         <translation>Mostrar todas as propriedades</translation>
     </message>
     <message>
-        <location line="+661"/>
+        <location line="+662"/>
         <source>Widgets</source>
         <translation>Widgets</translation>
     </message>
     <message>
-        <location line="-707"/>
+        <location line="-708"/>
         <source>Add custom property to selected objects</source>
         <translation>Adicione uma propriedade personalizada aos objetos selecionados</translation>
     </message>
@@ -9850,7 +10061,7 @@ nos resultados de busca:</translation>
         <translation>Auto</translation>
     </message>
     <message>
-        <location line="+143"/>
+        <location line="+144"/>
         <source>Use auto measurement</source>
         <translation>Use a medição automática</translation>
     </message>
@@ -9920,6 +10131,11 @@ nos resultados de busca:</translation>
         <location line="+10"/>
         <source>Always show all properties (this may slow down selection of entities)</source>
         <translation>Sempre mostrar todas as propriedades (isso pode retardar a seleção de entidades)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Always format property values as decimal numbers</source>
+        <translation>Sempre formatar valores de propriedade como números decimais</translation>
     </message>
 </context>
 <context>
@@ -10235,17 +10451,17 @@ nos resultados de busca:</translation>
         <translation>&amp;Elimine o original</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>&amp;Mantenha o original</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>Cópias &amp;múltiplas</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+97"/>
         <source>Angle &amp;a:</source>
         <translation>Ângulo &amp;a:</translation>
     </message>
@@ -10286,17 +10502,17 @@ nos resultados de busca:</translation>
         <translation>&amp;Elimine o original</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>&amp;Mantenha o original</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>Cópias &amp;múltiplas</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+97"/>
         <source>&amp;Angle (a):</source>
         <translation>Â&amp;ngulo (a):</translation>
     </message>
@@ -10395,7 +10611,7 @@ nos resultados de busca:</translation>
 <context>
     <name>Save</name>
     <message>
-        <location filename="../scripts/File/Save/Save.js" line="+78"/>
+        <location filename="../scripts/File/Save/Save.js" line="+92"/>
         <source>Overwrite File?</source>
         <translation>Sobreescrever arquivo?</translation>
     </message>
@@ -10411,6 +10627,22 @@ nos resultados de busca:</translation>
     <message>
         <source>The file format version you are using is not recommended: &apos;%1&apos;.</source>
         <translation type="vanished">A versão de formato de arquivo que você está usando não é recomendada: &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Block editing in progress</source>
+        <translation type="vanished">Edição de bloco em andamento</translation>
+    </message>
+    <message>
+        <source>A block is currently exploded and being edited. Please save the block before saving your drawing.</source>
+        <translation type="vanished">Um bloco está explodido e sendo editado. Salve o bloco antes de salvar seu desenho.</translation>
+    </message>
+    <message>
+        <source>Saving will save the block contents exploded.</source>
+        <translation type="vanished">Salvar irá salvar o conteúdo do bloco explodido.</translation>
+    </message>
+    <message>
+        <source>Save anyway?</source>
+        <translation type="vanished">Salvar mesmo assim?</translation>
     </message>
     <message>
         <location line="-17"/>
@@ -10550,6 +10782,16 @@ nos resultados de busca:</translation>
     </message>
     <message>
         <location line="+13"/>
+        <source>Opening</source>
+        <translation>Carregue</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Allow opening of zero size files (e.g. online files that are not synched to disk)</source>
+        <translation>Permitir a abertura de arquivos de tamanho zero (por exemplo, arquivos on-line que não são sincronizados com o disco)</translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Saving</source>
         <translation>Grave</translation>
     </message>
@@ -10671,17 +10913,17 @@ nos resultados de busca:</translation>
         <translation>&amp;Elimine o original</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>&amp;Mantenha o original</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>Cópias &amp;múltiplas</translation>
     </message>
     <message>
-        <location line="+112"/>
+        <location line="+115"/>
         <source>Factor x:</source>
         <translation>Fator x:</translation>
     </message>
@@ -10837,7 +11079,7 @@ nos resultados de busca:</translation>
 <context>
     <name>SelectContour</name>
     <message>
-        <location filename="../scripts/Select/SelectContour/SelectContour.js" line="+53"/>
+        <location filename="../scripts/Select/SelectContour/SelectContour.js" line="+54"/>
         <source>Choose entity of contour</source>
         <translation>Escolher entidade de contorno</translation>
     </message>
@@ -10880,6 +11122,11 @@ nos resultados de busca:</translation>
         <location line="+27"/>
         <source>Tolerance:</source>
         <translation>Tolerância:</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Same Layer</source>
+        <translation>Mesma camada</translation>
     </message>
 </context>
 <context>
@@ -11237,6 +11484,11 @@ nos resultados de busca:</translation>
     <message>
         <source>1</source>
         <translation type="obsolete">1</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Draw/Shape/ShapeRectanglePP/ShapeRectanglePP.ui" line="+17"/>
+        <source>Rotate:</source>
+        <translation>Rotacione:</translation>
     </message>
 </context>
 <context>
@@ -11750,7 +12002,7 @@ nos resultados de busca:</translation>
         <translation>Especifique o primeiro ponto para medir a distância a partir dele</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+32"/>
         <source>Second point</source>
         <translation>Segundo ponto</translation>
     </message>
@@ -12008,8 +12260,12 @@ nos resultados de busca:</translation>
 <context>
     <name>StatusBar</name>
     <message>
-        <location filename="../scripts/Widgets/StatusBar/PreferencesPage.ui" line="+53"/>
         <source>Status Bar Font:</source>
+        <translation type="vanished">Fonte da Barra de Status:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Widgets/StatusBar/PreferencesPage.ui" line="+53"/>
+        <source>Status bar font:</source>
         <translation>Fonte da Barra de Status:</translation>
     </message>
     <message>
@@ -12318,7 +12574,7 @@ nos resultados de busca:</translation>
         <translation>Valor padrão:</translation>
     </message>
     <message>
-        <location line="+268"/>
+        <location line="+271"/>
         <source>&amp;Undo</source>
         <translation>&amp;Desfazer</translation>
     </message>
@@ -12383,7 +12639,7 @@ nos resultados de busca:</translation>
         <translation>Outros...</translation>
     </message>
     <message>
-        <location line="+135"/>
+        <location line="+139"/>
         <source>Degree</source>
         <translation>Grau</translation>
     </message>
@@ -12678,8 +12934,12 @@ nos resultados de busca:</translation>
 <context>
     <name>Theme</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/ThemePreferences/PreferencesPage.ui" line="+20"/>
         <source>User Interface Theme:</source>
+        <translation type="vanished">Tema interface de usuário:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/ThemePreferences/PreferencesPage.ui" line="+20"/>
+        <source>User interface theme:</source>
         <translation>Tema interface de usuário:</translation>
     </message>
 </context>
@@ -12778,8 +13038,12 @@ nos resultados de busca:</translation>
 <context>
     <name>ToolBar</name>
     <message>
-        <location filename="../scripts/Edit/AppPreferences/ToolBarPreferences/PreferencesPage.ui" line="+19"/>
         <source>Icon Size:</source>
+        <translation type="vanished">Tamanho do Ícone:</translation>
+    </message>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/ToolBarPreferences/PreferencesPage.ui" line="+19"/>
+        <source>Icon size:</source>
         <translation>Tamanho do Ícone:</translation>
     </message>
     <message>
@@ -12799,8 +13063,12 @@ nos resultados de busca:</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Shortcut Prefix Character:</source>
+        <source>Shortcut prefix character:</source>
         <translation>Caracter da Tecla de Atalho:</translation>
+    </message>
+    <message>
+        <source>Shortcut Prefix Character:</source>
+        <translation type="vanished">Caracter da Tecla de Atalho:</translation>
     </message>
 </context>
 <context>
@@ -12924,17 +13192,17 @@ nos resultados de busca:</translation>
         <translation>&amp;Elimine o original</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>&amp;Mantenha o original</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>Cópias &amp;múltiplas</translation>
     </message>
     <message>
-        <location line="+86"/>
+        <location line="+89"/>
         <source>Use current layer and &amp;attributes</source>
         <translation>Use a camada e os &amp;atributos atuais</translation>
     </message>
@@ -12970,17 +13238,17 @@ nos resultados de busca:</translation>
         <translation>&amp;Elimine o original</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>&amp;Keep original</source>
         <translation>&amp;Mantenha o original</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+10"/>
         <source>&amp;Multiple copies</source>
         <translation>Cópias &amp;múltiplas</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+97"/>
         <source>&amp;Angle (a):</source>
         <translation>Ângulo (&amp;a):</translation>
     </message>
@@ -13003,12 +13271,12 @@ nos resultados de busca:</translation>
         <translation>Escolha a entidade a aparar</translation>
     </message>
     <message>
-        <location line="+169"/>
+        <location line="+174"/>
         <source>The two entities don&apos;t intersect, or are currently not supported for trimming.</source>
         <translation>As duas entidades não se cruzam, ou não são actualmente suportadas para o corte.</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+74"/>
         <source>First entity cannot be trimmed.</source>
         <translation>A primeira entidade não pode ser aparada.</translation>
     </message>
@@ -13061,6 +13329,42 @@ nos resultados de busca:</translation>
     </message>
 </context>
 <context>
+    <name>Ui</name>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/UiPreferences/PreferencesPage.ui" line="+17"/>
+        <source>These settings affect the resolution and scale of the QCAD user interface. These preferences can be adjusted if there are problems with the user interface of QCAD, such as very large or very small icons or text labels.</source>
+        <translation>Estas configurações afetam a resolução e o tamanho da interface do usuário QCAD. Estas preferências podem ser ajustadas se houver problemas com a interface de usuário do QCAD, tais como ícones muito grandes ou muito pequenos ou etiquetas de texto.</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Auto screen scale factor</source>
+        <translation>Fator de escala:</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Enable high DPI scaling</source>
+        <translation>Habilitar a Tela de Início</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Scale factor:</source>
+        <translation>Fator de escala:</translation>
+    </message>
+</context>
+<context>
+    <name>UiPreferences</name>
+    <message>
+        <location filename="../scripts/Edit/AppPreferences/UiPreferences/UiPreferences.js" line="+29"/>
+        <source>General</source>
+        <translation>Geral</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>User Interface</source>
+        <translation>Interface de usuário</translation>
+    </message>
+</context>
+<context>
     <name>Undo</name>
     <message>
         <location filename="../scripts/Edit/Undo/UndoInit.js" line="+2"/>
@@ -13071,19 +13375,16 @@ nos resultados de busca:</translation>
 <context>
     <name>UnitSettings</name>
     <message>
-        <location filename="../scripts/Edit/DrawingPreferences/UnitSettings/PreferencesPage.ui" line="+17"/>
         <source>Drawing Unit:</source>
-        <translation>Unidade de Desenho:</translation>
+        <translation type="vanished">Unidade de Desenho:</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Paper Unit:</source>
-        <translation>Unidade de Papel:</translation>
+        <translation type="vanished">Unidade de Papel:</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>Measurement System (for line types and hatch patterns):</source>
-        <translation>Sistema de medição (tipos de linha e padrões de hachura):</translation>
+        <translation type="vanished">Sistema de medição (tipos de linha e padrões de hachura):</translation>
     </message>
     <message>
         <location filename="../scripts/Edit/DrawingPreferences/UnitSettings/UnitSettings.js" line="+29"/>
@@ -13216,6 +13517,21 @@ nos resultados de busca:</translation>
         <source>Metric</source>
         <translation>Métrico</translation>
     </message>
+    <message>
+        <location filename="../scripts/Edit/DrawingPreferences/UnitSettings/PreferencesPage.ui" line="+17"/>
+        <source>Drawing unit:</source>
+        <translation>Unidade de Desenho:</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Paper unit:</source>
+        <translation>Unidade de Papel:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Measurement system (for line types and hatch patterns):</source>
+        <translation>Sistema de medição (tipos de linha e padrões de hachura):</translation>
+    </message>
 </context>
 <context>
     <name>UnlockAllLayers</name>
@@ -13313,7 +13629,7 @@ nos resultados de busca:</translation>
 <context>
     <name>ViewportWidget</name>
     <message>
-        <location filename="../scripts/Widgets/ViewportWidget/ViewportWidget.js" line="+290"/>
+        <location filename="../scripts/Widgets/ViewportWidget/ViewportWidget.js" line="+295"/>
         <source>Dropped data not supported</source>
         <translation>Dados inseridos não suportados</translation>
     </message>
@@ -13354,12 +13670,12 @@ nos resultados de busca:</translation>
 <context>
     <name>WidgetFactory</name>
     <message>
-        <location filename="../scripts/WidgetFactory.js" line="+1038"/>
+        <location filename="../scripts/WidgetFactory.js" line="+1069"/>
         <source>Restore defaults</source>
         <translation>Restaurar inadimplências</translation>
     </message>
     <message>
-        <location line="+50"/>
+        <location line="+45"/>
         <source>Insert Symbol</source>
         <translation>Inserir Símbolo</translation>
     </message>
@@ -13696,7 +14012,7 @@ nos resultados de busca:</translation>
 <context>
     <name>library</name>
     <message>
-        <location filename="../scripts/library.js" line="+856"/>
+        <location filename="../scripts/library.js" line="+865"/>
         <source>Objects</source>
         <translation>Objectos</translation>
     </message>

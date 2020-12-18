@@ -59,6 +59,8 @@ function EAction(guiAction) {
     this.waitingForContextMenu = false;
 
     this.optOutRelativeZeroResume = false;
+
+    this.resuming = false;
 }
 
 EAction.prototype = new RActionAdapter();
@@ -356,6 +358,8 @@ EAction.prototype.showUiOptions = function(resume, restoreFromSettings) {
         return;
     }
 
+    this.resuming = true;
+
     this.optionWidgetActions = [];
     for (var i = 0; i < this.uiFile.length; ++i) {
         var uiFile = this.uiFile[i];
@@ -408,6 +412,8 @@ EAction.prototype.showUiOptions = function(resume, restoreFromSettings) {
 
     // hide options tool bar widgets which are shown in a dialog instead:
     this.hideOptionsToolBarWidgets();
+
+    this.resuming = false;
 };
 
 /**
@@ -1930,7 +1936,12 @@ EAction.setProgressEnd = function() {
 EAction.assertEditable = function(entity, quiet) {
     if (!entity.isEditable()) {
         if (!quiet) {
-            EAction.handleUserWarning(qsTr("Entity is on a locked layer."));
+            if (!entity.isInWorkingSet()) {
+                EAction.handleUserWarning(qsTr("Entity is not in working set."));
+            }
+            else {
+                EAction.handleUserWarning(qsTr("Entity is on a locked layer."));
+            }
         }
         return false;
     }
@@ -2192,6 +2203,21 @@ EAction.getEntityId = function(di, action, event, preview, selectable) {
     return ret;
 };
 
+EAction.prototype.isEntitySnappable = function(e) {
+    if (!isEntity(e)) {
+        return false;
+    }
+
+    var layerId = e.getLayerId();
+    var data = e.getData();
+    var doc = data.getDocument();
+    if (isNull(doc)) {
+        return false;
+    }
+
+    return doc.isLayerSnappable(layerId);
+};
+
 /**
  * Some common, shared translated warnings:
  */
@@ -2249,4 +2275,8 @@ EAction.warnNotLineArcCircleEllipseSplinePolyline = function() {
 
 EAction.warnNotPolyline = function() {
     EAction.handleUserWarning(qsTr("Entity is not a polyline."));
+};
+
+EAction.warnNotSplineWithFitPoints = function() {
+    EAction.handleUserWarning(qsTr("Entity is not a spline with fit points."));
 };

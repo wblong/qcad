@@ -85,11 +85,15 @@
             
             REcmaHelper::registerFunction(&engine, proto, sortBlocks, "sortBlocks");
             
+            REcmaHelper::registerFunction(&engine, proto, sortLayers, "sortLayers");
+            
             REcmaHelper::registerFunction(&engine, proto, queryAllObjects, "queryAllObjects");
             
             REcmaHelper::registerFunction(&engine, proto, queryAllVisibleEntities, "queryAllVisibleEntities");
             
             REcmaHelper::registerFunction(&engine, proto, queryAllEntities, "queryAllEntities");
+            
+            REcmaHelper::registerFunction(&engine, proto, queryWorkingSetEntities, "queryWorkingSetEntities");
             
             REcmaHelper::registerFunction(&engine, proto, queryAllUcs, "queryAllUcs");
             
@@ -331,6 +335,8 @@
             
             REcmaHelper::registerFunction(&engine, proto, isSelected, "isSelected");
             
+            REcmaHelper::registerFunction(&engine, proto, isSelectedWorkingSet, "isSelectedWorkingSet");
+            
             REcmaHelper::registerFunction(&engine, proto, isEntity, "isEntity");
             
             REcmaHelper::registerFunction(&engine, proto, isLayerLocked, "isLayerLocked");
@@ -344,6 +350,8 @@
             REcmaHelper::registerFunction(&engine, proto, isLayerFrozen, "isLayerFrozen");
             
             REcmaHelper::registerFunction(&engine, proto, isParentLayerFrozen, "isParentLayerFrozen");
+            
+            REcmaHelper::registerFunction(&engine, proto, isLayerSnappable, "isLayerSnappable");
             
             REcmaHelper::registerFunction(&engine, proto, isParentLayerSnappable, "isParentLayerSnappable");
             
@@ -913,6 +921,67 @@
             return result;
         }
          QScriptValue
+        REcmaStorage::sortLayers
+        (QScriptContext* context, QScriptEngine* engine) 
+        
+        {
+            //REcmaHelper::functionStart("REcmaStorage::sortLayers", context, engine);
+            //qDebug() << "ECMAScript WRAPPER: REcmaStorage::sortLayers";
+            //QCoreApplication::processEvents();
+
+            QScriptValue result = engine->undefinedValue();
+            
+                    // public function: can be called from ECMA wrapper of ECMA shell:
+                    RStorage* self = 
+                        getSelf("sortLayers", context);
+                  
+
+                //Q_ASSERT(self!=NULL);
+                if (self==NULL) {
+                    return REcmaHelper::throwError("self is NULL", context);
+                }
+                
+    
+    if( context->argumentCount() ==
+    1 && (
+            context->argument(0).isArray()
+        ) /* type: QList < RLayer::Id > */
+    
+    ){
+    // prepare arguments:
+    
+                    // argument isArray
+                    QList < RLayer::Id >
+                    a0;
+                    REcmaHelper::fromScriptValue(
+                        engine,
+                        context->argument(0),
+                        a0
+                    );
+                
+    // end of arguments
+
+    // call C++ function:
+    // return type 'QList < RLayer::Id >'
+    QList < RLayer::Id > cppResult =
+        
+               self->sortLayers(a0);
+        // return type: QList < RLayer::Id >
+                // List of ...:
+                result = REcmaHelper::listToScriptValue(engine, cppResult);
+            
+    } else
+
+
+        
+            {
+               return REcmaHelper::throwError("Wrong number/types of arguments for RStorage.sortLayers().",
+                   context);
+            }
+            //REcmaHelper::functionEnd("REcmaStorage::sortLayers", context, engine);
+            return result;
+        }
+         QScriptValue
         REcmaStorage::queryAllObjects
         (QScriptContext* context, QScriptEngine* engine) 
         
@@ -1258,6 +1327,56 @@
                    context);
             }
             //REcmaHelper::functionEnd("REcmaStorage::queryAllEntities", context, engine);
+            return result;
+        }
+         QScriptValue
+        REcmaStorage::queryWorkingSetEntities
+        (QScriptContext* context, QScriptEngine* engine) 
+        
+        {
+            //REcmaHelper::functionStart("REcmaStorage::queryWorkingSetEntities", context, engine);
+            //qDebug() << "ECMAScript WRAPPER: REcmaStorage::queryWorkingSetEntities";
+            //QCoreApplication::processEvents();
+
+            QScriptValue result = engine->undefinedValue();
+            
+                    // public function: can be called from ECMA wrapper of ECMA shell:
+                    RStorage* self = 
+                        getSelf("queryWorkingSetEntities", context);
+                  
+
+                //Q_ASSERT(self!=NULL);
+                if (self==NULL) {
+                    return REcmaHelper::throwError("self is NULL", context);
+                }
+                
+    
+    if( context->argumentCount() ==
+    0
+    ){
+    // prepare arguments:
+    
+    // end of arguments
+
+    // call C++ function:
+    // return type 'QSet < REntity::Id >'
+    QSet < REntity::Id > cppResult =
+        
+               self->queryWorkingSetEntities();
+        // return type: QSet < REntity::Id >
+                // QSet (convert to QVariantList):
+                result = REcmaHelper::setToScriptValue(engine, cppResult);
+
+                
+    } else
+
+
+        
+            {
+               return REcmaHelper::throwError("Wrong number/types of arguments for RStorage.queryWorkingSetEntities().",
+                   context);
+            }
+            //REcmaHelper::functionEnd("REcmaStorage::queryWorkingSetEntities", context, engine);
             return result;
         }
          QScriptValue
@@ -9754,6 +9873,66 @@
             return result;
         }
          QScriptValue
+        REcmaStorage::isSelectedWorkingSet
+        (QScriptContext* context, QScriptEngine* engine) 
+        
+        {
+            //REcmaHelper::functionStart("REcmaStorage::isSelectedWorkingSet", context, engine);
+            //qDebug() << "ECMAScript WRAPPER: REcmaStorage::isSelectedWorkingSet";
+            //QCoreApplication::processEvents();
+
+            QScriptValue result = engine->undefinedValue();
+            
+                    // public function: can be called from ECMA wrapper of ECMA shell:
+                    RStorage* self = 
+                        getSelf("isSelectedWorkingSet", context);
+                  
+
+                //Q_ASSERT(self!=NULL);
+                if (self==NULL) {
+                    return REcmaHelper::throwError("self is NULL", context);
+                }
+                
+    
+    if( context->argumentCount() ==
+    1 && (
+            context->argument(0).isNumber()
+        ) /* type: REntity::Id */
+    
+    ){
+    // prepare arguments:
+    
+                    // argument isStandardType
+                    REntity::Id
+                    a0 =
+                    (REntity::Id)
+                    (int)
+                    context->argument( 0 ).
+                    toNumber();
+                
+    // end of arguments
+
+    // call C++ function:
+    // return type 'bool'
+    bool cppResult =
+        
+               self->isSelectedWorkingSet(a0);
+        // return type: bool
+                // standard Type
+                result = QScriptValue(cppResult);
+            
+    } else
+
+
+        
+            {
+               return REcmaHelper::throwError("Wrong number/types of arguments for RStorage.isSelectedWorkingSet().",
+                   context);
+            }
+            //REcmaHelper::functionEnd("REcmaStorage::isSelectedWorkingSet", context, engine);
+            return result;
+        }
+         QScriptValue
         REcmaStorage::isEntity
         (QScriptContext* context, QScriptEngine* engine) 
         
@@ -10423,6 +10602,108 @@
                    context);
             }
             //REcmaHelper::functionEnd("REcmaStorage::isParentLayerFrozen", context, engine);
+            return result;
+        }
+         QScriptValue
+        REcmaStorage::isLayerSnappable
+        (QScriptContext* context, QScriptEngine* engine) 
+        
+        {
+            //REcmaHelper::functionStart("REcmaStorage::isLayerSnappable", context, engine);
+            //qDebug() << "ECMAScript WRAPPER: REcmaStorage::isLayerSnappable";
+            //QCoreApplication::processEvents();
+
+            QScriptValue result = engine->undefinedValue();
+            
+                    // public function: can be called from ECMA wrapper of ECMA shell:
+                    RStorage* self = 
+                        getSelf("isLayerSnappable", context);
+                  
+
+                //Q_ASSERT(self!=NULL);
+                if (self==NULL) {
+                    return REcmaHelper::throwError("self is NULL", context);
+                }
+                
+    
+    if( context->argumentCount() ==
+    1 && (
+            context->argument(0).isNumber()
+        ) /* type: RLayer::Id */
+    
+    ){
+    // prepare arguments:
+    
+                    // argument isStandardType
+                    RLayer::Id
+                    a0 =
+                    (RLayer::Id)
+                    (int)
+                    context->argument( 0 ).
+                    toNumber();
+                
+    // end of arguments
+
+    // call C++ function:
+    // return type 'bool'
+    bool cppResult =
+        
+               self->isLayerSnappable(a0);
+        // return type: bool
+                // standard Type
+                result = QScriptValue(cppResult);
+            
+    } else
+
+
+        
+    
+    if( context->argumentCount() ==
+    1 && (
+            context->argument(0).isVariant() || 
+            context->argument(0).isQObject() || 
+            context->argument(0).isNull()
+        ) /* type: RLayer */
+    
+    ){
+    // prepare arguments:
+    
+                    // argument is reference
+                    RLayer*
+                    ap0 =
+                    qscriptvalue_cast<
+                    RLayer*
+                        >(
+                        context->argument(
+                        0
+                        )
+                    );
+                    if( ap0 == NULL ){
+                           return REcmaHelper::throwError("RStorage: Argument 0 is not of type RLayer*.",
+                               context);                    
+                    }
+                    RLayer& a0 = *ap0;
+                
+    // end of arguments
+
+    // call C++ function:
+    // return type 'bool'
+    bool cppResult =
+        
+               self->isLayerSnappable(a0);
+        // return type: bool
+                // standard Type
+                result = QScriptValue(cppResult);
+            
+    } else
+
+
+        
+            {
+               return REcmaHelper::throwError("Wrong number/types of arguments for RStorage.isLayerSnappable().",
+                   context);
+            }
+            //REcmaHelper::functionEnd("REcmaStorage::isLayerSnappable", context, engine);
             return result;
         }
          QScriptValue

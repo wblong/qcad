@@ -41,6 +41,7 @@ public:
     static RPropertyTypeId PropertyCustom;
     static RPropertyTypeId PropertyHandle;
     static RPropertyTypeId PropertyProtected;
+    static RPropertyTypeId PropertyWorkingSet;
     static RPropertyTypeId PropertyType;
     static RPropertyTypeId PropertyBlock;
     static RPropertyTypeId PropertyLayer;
@@ -88,6 +89,10 @@ public:
 
     RPattern getCustomPattern() const {
         return data.getCustomPattern();
+    }
+
+    void setCustomPattern(const RPattern& p) {
+        data.setCustomPattern(p);
     }
 
     virtual bool setProperty(RPropertyTypeId propertyTypeId, const QVariant& value,

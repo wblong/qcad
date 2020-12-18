@@ -41,6 +41,7 @@ RTransaction RMoveReferencePointOperation::apply(RDocument& document, bool previ
 
     RTransaction transaction(document.getStorage(), text);
     transaction.setGroup(transactionGroup);
+    transaction.setTypes(transactionTypes);
 
     RVector delta = targetPoint-referencePoint;
     bool moveSelected = false;

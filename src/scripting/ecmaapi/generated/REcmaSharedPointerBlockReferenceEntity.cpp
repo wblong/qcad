@@ -116,6 +116,8 @@
             
             REcmaHelper::registerFunction(&engine, proto, setReferencedBlockId, "setReferencedBlockId");
             
+            REcmaHelper::registerFunction(&engine, proto, setReferencedBlockName, "setReferencedBlockName");
+            
             REcmaHelper::registerFunction(&engine, proto, getReferencedBlockId, "getReferencedBlockId");
             
             REcmaHelper::registerFunction(&engine, proto, getReferencedBlockName, "getReferencedBlockName");
@@ -154,6 +156,10 @@
             
             ctor.setProperty("PropertyProtected",
                 qScriptValueFromValue(&engine, RBlockReferenceEntity::PropertyProtected),
+                QScriptValue::SkipInEnumeration | QScriptValue::ReadOnly);
+            
+            ctor.setProperty("PropertyWorkingSet",
+                qScriptValueFromValue(&engine, RBlockReferenceEntity::PropertyWorkingSet),
                 QScriptValue::SkipInEnumeration | QScriptValue::ReadOnly);
             
             ctor.setProperty("PropertyType",
@@ -2276,6 +2282,61 @@
             return result;
         }
          QScriptValue
+        REcmaSharedPointerBlockReferenceEntity::setReferencedBlockName
+        (QScriptContext* context, QScriptEngine* engine) 
+        
+        {
+            //REcmaHelper::functionStart("REcmaSharedPointerBlockReferenceEntity::setReferencedBlockName", context, engine);
+            //qDebug() << "ECMAScript WRAPPER: REcmaSharedPointerBlockReferenceEntity::setReferencedBlockName";
+            //QCoreApplication::processEvents();
+
+            QScriptValue result = engine->undefinedValue();
+            
+                    // public function: can be called from ECMA wrapper of ECMA shell:
+                    RBlockReferenceEntity* self = 
+                        getSelf("setReferencedBlockName", context);
+                  
+
+                //Q_ASSERT(self!=NULL);
+                if (self==NULL) {
+                    return REcmaHelper::throwError("self is NULL", context);
+                }
+                
+    
+    if( context->argumentCount() ==
+    1 && (
+            context->argument(0).isString()
+        ) /* type: QString */
+    
+    ){
+    // prepare arguments:
+    
+                    // argument isStandardType
+                    QString
+                    a0 =
+                    (QString)
+                    
+                    context->argument( 0 ).
+                    toString();
+                
+    // end of arguments
+
+    // call C++ function:
+    // return type 'void'
+    
+               self->setReferencedBlockName(a0);
+    } else
+
+
+        
+            {
+               return REcmaHelper::throwError("Wrong number/types of arguments for RBlockReferenceEntity.setReferencedBlockName().",
+                   context);
+            }
+            //REcmaHelper::functionEnd("REcmaSharedPointerBlockReferenceEntity::setReferencedBlockName", context, engine);
+            return result;
+        }
+         QScriptValue
         REcmaSharedPointerBlockReferenceEntity::getReferencedBlockId
         (QScriptContext* context, QScriptEngine* engine) 
         
@@ -2534,6 +2595,64 @@
                self->queryEntity(a0
         ,
     a1);
+        // return type: QSharedPointer < REntity >
+                // Shared pointer to entity, cast to best match:
+                result = REcmaHelper::toScriptValue(engine, cppResult);
+            
+    } else
+
+
+        
+    
+    if( context->argumentCount() ==
+    3 && (
+            context->argument(0).isNumber()
+        ) /* type: REntity::Id */
+     && (
+            context->argument(1).isBool()
+        ) /* type: bool */
+     && (
+            context->argument(2).isBool()
+        ) /* type: bool */
+    
+    ){
+    // prepare arguments:
+    
+                    // argument isStandardType
+                    REntity::Id
+                    a0 =
+                    (REntity::Id)
+                    (int)
+                    context->argument( 0 ).
+                    toNumber();
+                
+                    // argument isStandardType
+                    bool
+                    a1 =
+                    (bool)
+                    
+                    context->argument( 1 ).
+                    toBool();
+                
+                    // argument isStandardType
+                    bool
+                    a2 =
+                    (bool)
+                    
+                    context->argument( 2 ).
+                    toBool();
+                
+    // end of arguments
+
+    // call C++ function:
+    // return type 'QSharedPointer < REntity >'
+    QSharedPointer < REntity > cppResult =
+        
+               self->queryEntity(a0
+        ,
+    a1
+        ,
+    a2);
         // return type: QSharedPointer < REntity >
                 // Shared pointer to entity, cast to best match:
                 result = REcmaHelper::toScriptValue(engine, cppResult);

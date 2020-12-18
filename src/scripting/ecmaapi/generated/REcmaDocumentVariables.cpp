@@ -154,6 +154,10 @@
                 qScriptValueFromValue(&engine, RDocumentVariables::PropertyDimensionFont),
                 QScriptValue::SkipInEnumeration | QScriptValue::ReadOnly);
             
+            ctor.setProperty("PropertyWorkingSetBlockReferenceId",
+                qScriptValueFromValue(&engine, RDocumentVariables::PropertyWorkingSetBlockReferenceId),
+                QScriptValue::SkipInEnumeration | QScriptValue::ReadOnly);
+            
 
     // enum values:
     

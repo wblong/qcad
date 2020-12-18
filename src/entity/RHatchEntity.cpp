@@ -29,6 +29,7 @@
 RPropertyTypeId RHatchEntity::PropertyCustom;
 RPropertyTypeId RHatchEntity::PropertyHandle;
 RPropertyTypeId RHatchEntity::PropertyProtected;
+RPropertyTypeId RHatchEntity::PropertyWorkingSet;
 RPropertyTypeId RHatchEntity::PropertyType;
 RPropertyTypeId RHatchEntity::PropertyBlock;
 RPropertyTypeId RHatchEntity::PropertyLayer;
@@ -70,6 +71,7 @@ void RHatchEntity::init() {
     RHatchEntity::PropertyCustom.generateId(typeid(RHatchEntity), RObject::PropertyCustom);
     RHatchEntity::PropertyHandle.generateId(typeid(RHatchEntity), RObject::PropertyHandle);
     RHatchEntity::PropertyProtected.generateId(typeid(RHatchEntity), RObject::PropertyProtected);
+    RHatchEntity::PropertyWorkingSet.generateId(typeid(RHatchEntity), RObject::PropertyWorkingSet);
     RHatchEntity::PropertyType.generateId(typeid(RHatchEntity), REntity::PropertyType);
     RHatchEntity::PropertyBlock.generateId(typeid(RHatchEntity), REntity::PropertyBlock);
     RHatchEntity::PropertyLayer.generateId(typeid(RHatchEntity), REntity::PropertyLayer);
@@ -397,5 +399,14 @@ void RHatchEntity::setViewportContext(const RViewportData& vp) {
     // apply viewport transforms:
     RVector offs =  vp.getViewCenter()*vp.getScale() + vp.getViewTarget()*vp.getScale() - data.getOriginPoint()*vp.getScale();
     offs.rotate(vp.getRotation());
-    data.setOriginPoint(vp.getCenter() - offs);
+
+    // make sure custom pattern is not cleared here:
+    data.setOriginPoint(vp.getCenter() - offs, false);
+
+    // rotate custom pattern:
+    if (data.hasCustomPattern()) {
+        RPattern p = data.getCustomPattern();
+        p.rotate(vp.getRotation());
+        data.setCustomPattern(p);
+    }
 }

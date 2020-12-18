@@ -21,6 +21,7 @@
 #include "RSettings.h"
 #include "RStorage.h"
 #include "RStorageBlockSort.h"
+#include "RStorageLayerSort.h"
 #include "RMainWindow.h"
 
 RStorage::RStorage() :
@@ -123,6 +124,7 @@ void RStorage::setCurrentLayer(RLayer::Id layerId, RTransaction* transaction) {
     QSharedPointer<RDocumentVariables> docVars = startDocumentVariablesTransaction(transaction, useLocalTransaction);
     Q_ASSERT(!docVars.isNull());
     docVars->setCurrentLayerId(layerId);
+    transaction->setType(RTransaction::CurrentLayerChange);
     endDocumentVariablesTransaction(transaction, useLocalTransaction, docVars);
 }
 
@@ -136,6 +138,7 @@ void RStorage::setCurrentLayer(const QString& layerName, RTransaction* transacti
     }
 
     docVars->setCurrentLayerId(layerId);
+    transaction->setType(RTransaction::CurrentLayerChange);
     endDocumentVariablesTransaction(transaction, useLocalTransaction, docVars);
 }
 
@@ -277,6 +280,13 @@ QList<RBlock::Id> RStorage::sortBlocks(const QList<RBlock::Id>& blockIds) const 
     return ret;
 }
 
+QList<RLayer::Id> RStorage::sortLayers(const QList<RLayer::Id>& layerIds) const {
+    QList<RLayer::Id> ret = layerIds;
+    RStorageLayerSort s(this);
+    qSort(ret.begin(), ret.end(), s);
+    return ret;
+}
+
 bool RStorage::lessThan(const QPair<REntity::Id, int>& p1, const QPair<REntity::Id, int>& p2) {
     if (p1.second==p2.second) {
         return p1.first < p2.first;
@@ -304,6 +314,7 @@ QSharedPointer<RDocumentVariables> RStorage::startDocumentVariablesTransaction(R
 
     if (useLocalTransaction) {
         transaction = new RTransaction(*this, "Change document setting", true);
+        transaction->setType(RTransaction::ChangeDocumentSetting);
     }
 
     return queryDocumentVariables();
@@ -1051,6 +1062,27 @@ bool RStorage::isParentLayerSnappable(const RLayer& layer) const {
 }
 
 /**
+ * \return True if this layer and its parent layers are snappable.
+ */
+bool RStorage::isLayerSnappable(RLayer::Id layerId) const {
+    QSharedPointer<RLayer> l = queryLayerDirect(layerId);
+    if (l.isNull()) {
+        return false;
+    }
+    return isLayerSnappable(*l);
+}
+
+/**
+ * \return True if this layer and its parent layers are snappable.
+ */
+bool RStorage::isLayerSnappable(const RLayer& layer) const {
+    if (!layer.isSnappable()) {
+        return false;
+    }
+    return isParentLayerSnappable(layer);
+}
+
+/**
  * \return True if this layer and its parent layers are plottable.
  */
 bool RStorage::isLayerPlottable(RLayer::Id layerId) const {
@@ -1140,6 +1172,10 @@ bool RStorage::isEntityVisible(const REntity& entity, RObject::Id blockId) const
     bool ignoreLayerVisibility = false;
 
     QSharedPointer<RLayer> layer = queryLayerDirect(layerId);
+    if (layer.isNull()) {
+        // entity might not be on a layer yet:
+        return true;
+    }
 
 //    qDebug() << "entity: ";
 //    dump();
@@ -1199,3 +1235,22 @@ bool RStorage::isEntityVisible(const REntity& entity, RObject::Id blockId) const
 
     return true;
 }
+
+//RBlockReferenceEntity::Id RStorage::getWorkingSetBlockReferenceId() const {
+//    QSharedPointer<RDocumentVariables> v = queryDocumentVariablesDirect();
+//    if (v.isNull()) {
+//        return RObject::INVALID_ID;
+//    }
+//    return v->getWorkingSetBlockReferenceId();
+//}
+
+//void RStorage::setWorkingSetBlockReferenceId(RBlockReferenceEntity::Id id, int group, RTransaction* transaction) {
+//    bool useLocalTransaction;
+//    QSharedPointer<RDocumentVariables> docVars = startDocumentVariablesTransaction(transaction, useLocalTransaction);
+//    if (group!=-1) {
+//        transaction->setGroup(group);
+//    }
+//    Q_ASSERT(!docVars.isNull());
+//    docVars->setWorkingSetBlockReferenceId(id);
+//    endDocumentVariablesTransaction(transaction, useLocalTransaction, docVars);
+//}
