@@ -2612,7 +2612,7 @@ Versione:</translatorcomment>
         <translation type="vanished">Unità &apos;%1&apos; selezionato - niente da fare</translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+136"/>
         <source>Converted drawing from %1 to %2</source>
         <translation>Disegno convertito da %1 a %2</translation>
     </message>
@@ -3882,7 +3882,7 @@ is already in the list.</source>
 <context>
     <name>DrawBasedOnRectanglePP</name>
     <message>
-        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+72"/>
+        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+73"/>
         <source>First corner</source>
         <translation>Primo punto dell&apos;angolo</translation>
     </message>
@@ -4136,24 +4136,24 @@ is already in the list.</source>
 <context>
     <name>EAction</name>
     <message>
-        <location filename="../scripts/EAction.js" line="+68"/>
+        <location filename="../scripts/EAction.js" line="+70"/>
         <source>Back</source>
         <translation>Indietro</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+2102"/>
+        <location line="+2106"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
     </message>
     <message>
-        <location line="-2101"/>
+        <location line="-2105"/>
         <source>Done</source>
         <translation>Fatto</translation>
     </message>
     <message>
         <location line="+277"/>
-        <location line="+136"/>
+        <location line="+140"/>
         <source>Active Tool:</source>
         <translation>Strumento attivo:</translation>
     </message>
@@ -6417,7 +6417,7 @@ BUG: Interferes with group castings.</source>
     <message>
         <location line="+30"/>
         <source>Working set fading factor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fattore di dissolvenza del gruppo di lavoro:</translation>
     </message>
     <message>
         <location line="+75"/>
@@ -11835,7 +11835,7 @@ Seconda entità non può essere tagliata.</translatorcomment>
 <context>
     <name>Save</name>
     <message>
-        <location filename="../scripts/File/Save/Save.js" line="+90"/>
+        <location filename="../scripts/File/Save/Save.js" line="+92"/>
         <source>Overwrite File?</source>
         <translation>Sovrascrivere il file?</translation>
     </message>
@@ -11862,17 +11862,23 @@ Seconda entità non può essere tagliata.</translatorcomment>
         <translation type="vanished">La versione del formato del file in uso non è raccomandato: &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location line="-36"/>
         <source>Block editing in progress</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Editing del blocco in corso</translation>
+    </message>
+    <message>
+        <source>A block is currently exploded and being edited. Please save the block before saving your drawing.</source>
+        <translation type="vanished">Un blocco è attualmente esploso e in fase di modifica. Si prega di salvare il blocco prima di salvare il disegno.</translation>
+    </message>
+    <message>
+        <source>Saving will save the block contents exploded.</source>
+        <translation type="vanished">Il salvataggio salverà il contenuto del blocco esploso.</translation>
+    </message>
+    <message>
+        <source>Save anyway?</source>
+        <translation type="vanished">Salvare comunque?</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>A block is currently exploded and being edited. Please save the block before saving your drawing. Saving will save the block contents exploded. Save anyway?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+36"/>
         <source>The file format version you are using is not recommended: &quot;%1&quot;.</source>
         <translation>La versione del formato del file in uso non è raccomandato: &quot;%1&quot;.</translation>
     </message>
@@ -12008,6 +12014,16 @@ Seconda entità non può essere tagliata.</translatorcomment>
     </message>
     <message>
         <location line="+13"/>
+        <source>Opening</source>
+        <translation>Carico</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Allow opening of zero size files (e.g. online files that are not synched to disk)</source>
+        <translation>Consentire l&apos;apertura di file di dimensioni zero (ad es. file online non sincronizzati su disco)</translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Saving</source>
         <translation>Salva</translation>
     </message>
@@ -14763,7 +14779,7 @@ Obiettivo punto</translatorcomment>
         <translation>Le due entità non si intersecano, o non sono attualmente supportati per il taglio.</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+74"/>
         <source>First entity cannot be trimmed.</source>
         <translation>Prima entità non può essere tagliato.</translation>
     </message>

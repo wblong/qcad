@@ -2422,7 +2422,7 @@ Você deseja recuperá-lo?</translation>
         <translation type="vanished">Unidade &apos;%1&apos; selecionado - nada a ser feito</translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+136"/>
         <source>Converted drawing from %1 to %2</source>
         <translation>Desenho convertido de %1 para %2</translation>
     </message>
@@ -3612,7 +3612,7 @@ já se encontra na lista.</translation>
 <context>
     <name>DrawBasedOnRectanglePP</name>
     <message>
-        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+72"/>
+        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+73"/>
         <source>First corner</source>
         <translation>Primeiro vértice</translation>
     </message>
@@ -3854,24 +3854,24 @@ já se encontra na lista.</translation>
 <context>
     <name>EAction</name>
     <message>
-        <location filename="../scripts/EAction.js" line="+68"/>
+        <location filename="../scripts/EAction.js" line="+70"/>
         <source>Back</source>
         <translation>Voltar</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+2102"/>
+        <location line="+2106"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location line="-2101"/>
+        <location line="-2105"/>
         <source>Done</source>
         <translation>Concluído</translation>
     </message>
     <message>
         <location line="+277"/>
-        <location line="+136"/>
+        <location line="+140"/>
         <source>Active Tool:</source>
         <translation>Ferramenta Ativa:</translation>
     </message>
@@ -5996,7 +5996,7 @@ BUG: Interferes with group castings.</source>
     <message>
         <location line="+30"/>
         <source>Working set fading factor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fator de desvanecimento do conjunto de trabalho:</translation>
     </message>
     <message>
         <location line="+75"/>
@@ -10611,7 +10611,7 @@ nos resultados de busca:</translation>
 <context>
     <name>Save</name>
     <message>
-        <location filename="../scripts/File/Save/Save.js" line="+90"/>
+        <location filename="../scripts/File/Save/Save.js" line="+92"/>
         <source>Overwrite File?</source>
         <translation>Sobreescrever arquivo?</translation>
     </message>
@@ -10629,17 +10629,23 @@ nos resultados de busca:</translation>
         <translation type="vanished">A versão de formato de arquivo que você está usando não é recomendada: &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location line="-36"/>
         <source>Block editing in progress</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Edição de bloco em andamento</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>A block is currently exploded and being edited. Please save the block before saving your drawing. Saving will save the block contents exploded. Save anyway?</source>
-        <translation type="unfinished"></translation>
+        <source>A block is currently exploded and being edited. Please save the block before saving your drawing.</source>
+        <translation type="vanished">Um bloco está explodido e sendo editado. Salve o bloco antes de salvar seu desenho.</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <source>Saving will save the block contents exploded.</source>
+        <translation type="vanished">Salvar irá salvar o conteúdo do bloco explodido.</translation>
+    </message>
+    <message>
+        <source>Save anyway?</source>
+        <translation type="vanished">Salvar mesmo assim?</translation>
+    </message>
+    <message>
+        <location line="-17"/>
         <source>The file &quot;%1&quot; already exists. Do you wish to overwrite it?</source>
         <translation>O arquivo &quot;%1&quot; já existe. Você deseja substituí-lo?</translation>
     </message>
@@ -10776,6 +10782,16 @@ nos resultados de busca:</translation>
     </message>
     <message>
         <location line="+13"/>
+        <source>Opening</source>
+        <translation>Carregue</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Allow opening of zero size files (e.g. online files that are not synched to disk)</source>
+        <translation>Permitir a abertura de arquivos de tamanho zero (por exemplo, arquivos on-line que não são sincronizados com o disco)</translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Saving</source>
         <translation>Grave</translation>
     </message>
@@ -13260,7 +13276,7 @@ nos resultados de busca:</translation>
         <translation>As duas entidades não se cruzam, ou não são actualmente suportadas para o corte.</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+74"/>
         <source>First entity cannot be trimmed.</source>
         <translation>A primeira entidade não pode ser aparada.</translation>
     </message>

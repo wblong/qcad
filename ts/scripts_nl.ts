@@ -2383,7 +2383,7 @@ Wilt u het herstellen?</translation>
         <translation type="vanished">Eenheid &apos;%1&apos; geselecteerd - niets te doen</translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+136"/>
         <source>Converted drawing from %1 to %2</source>
         <translation>Tekening omgezet van %1 naar %2</translation>
     </message>
@@ -3550,7 +3550,7 @@ is al in de lijst.</translation>
 <context>
     <name>DrawBasedOnRectanglePP</name>
     <message>
-        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+72"/>
+        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+73"/>
         <source>First corner</source>
         <translation>Eerste hoekpunt</translation>
     </message>
@@ -3792,24 +3792,24 @@ is al in de lijst.</translation>
 <context>
     <name>EAction</name>
     <message>
-        <location filename="../scripts/EAction.js" line="+68"/>
+        <location filename="../scripts/EAction.js" line="+70"/>
         <source>Back</source>
         <translation>Terug</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+2102"/>
+        <location line="+2106"/>
         <source>Cancel</source>
         <translation>Annuleer</translation>
     </message>
     <message>
-        <location line="-2101"/>
+        <location line="-2105"/>
         <source>Done</source>
         <translation>Klaar</translation>
     </message>
     <message>
         <location line="+277"/>
-        <location line="+136"/>
+        <location line="+140"/>
         <source>Active Tool:</source>
         <translation>Actief gereedschap:</translation>
     </message>
@@ -5885,7 +5885,7 @@ BUG: Interferes with group castings.</source>
     <message>
         <location line="+30"/>
         <source>Working set fading factor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Werkset vervagingsfactor:</translation>
     </message>
     <message>
         <location line="+75"/>
@@ -10427,7 +10427,7 @@ getoond in zoekresultaten:</translation>
 <context>
     <name>Save</name>
     <message>
-        <location filename="../scripts/File/Save/Save.js" line="+90"/>
+        <location filename="../scripts/File/Save/Save.js" line="+92"/>
         <source>Overwrite File?</source>
         <translation>Bestand overschrijven?</translation>
     </message>
@@ -10482,17 +10482,23 @@ getoond in zoekresultaten:</translation>
         <translation type="vanished">Gebruiker gedefinieerde kleuren worden &apos;gerond&apos; op de dichtstbijzijnde beschikbare kleur.</translation>
     </message>
     <message>
-        <location line="-60"/>
         <source>Block editing in progress</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Bezig met bewerken van blok</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>A block is currently exploded and being edited. Please save the block before saving your drawing. Saving will save the block contents exploded. Save anyway?</source>
-        <translation type="unfinished"></translation>
+        <source>A block is currently exploded and being edited. Please save the block before saving your drawing.</source>
+        <translation type="vanished">Een blok is momenteel geëxplodeerd en wordt bewerkt. Sla het blok op voordat u uw tekening opslaat.</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <source>Saving will save the block contents exploded.</source>
+        <translation type="vanished">Door op te slaan wordt de geëxplodeerde inhoud van het blok opgeslagen.</translation>
+    </message>
+    <message>
+        <source>Save anyway?</source>
+        <translation type="vanished">Toch opslaan?</translation>
+    </message>
+    <message>
+        <location line="-41"/>
         <source>The file &quot;%1&quot; already exists. Do you wish to overwrite it?</source>
         <translation>Het bestand &quot;%1&quot; bestaat al. Wilt u het overschrijven?</translation>
     </message>
@@ -10555,6 +10561,16 @@ getoond in zoekresultaten:</translation>
     </message>
     <message>
         <location line="+13"/>
+        <source>Opening</source>
+        <translation>Laden</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Allow opening of zero size files (e.g. online files that are not synched to disk)</source>
+        <translation>Sta het openen van nulgroottebestanden toe (bijv. online bestanden die niet gesynchroniseerd zijn met de schijf)</translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Saving</source>
         <translation>Opslaan</translation>
     </message>
@@ -13009,7 +13025,7 @@ getoond in zoekresultaten:</translation>
         <translation>De twee objecten snijden zich niet of worden momenteel niet ondersteund voor het trimmen.</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+74"/>
         <source>First entity cannot be trimmed.</source>
         <translation>Eerste object kan niet worden getrimmed.</translation>
     </message>

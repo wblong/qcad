@@ -212,6 +212,11 @@ public:
     virtual QSet<REntity::Id> queryAllBlockReferences() const = 0;
 
     /**
+     * \return A set of all viewport entity IDs.
+     */
+    virtual QSet<REntity::Id> queryAllViewports() const = 0;
+
+    /**
      * \return A set of entity IDs of all selected entities.
      */
     virtual QSet<REntity::Id> querySelectedEntities() const = 0;
@@ -859,8 +864,8 @@ public:
      */
     virtual void update() {}
 
-    RBlockReferenceEntity::Id getWorkingSetBlockReferenceId() const;
-    void setWorkingSetBlockReferenceId(RBlockReferenceEntity::Id id, int group = -1, RTransaction* transaction = NULL);
+//    RBlockReferenceEntity::Id getWorkingSetBlockReferenceId() const;
+//    void setWorkingSetBlockReferenceId(RBlockReferenceEntity::Id id, int group = -1, RTransaction* transaction = NULL);
 
 protected:
     QDateTime lastModified;

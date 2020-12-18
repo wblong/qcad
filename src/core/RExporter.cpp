@@ -1822,10 +1822,15 @@ double RExporter::getCurrentPixelSizeHint() const {
     double ret = pixelSizeHint;
 
     // adjust pixel size hint, based on block context:
-    for (int i=0; i<blockScales.size(); i++) {
-        // blockScale array contains absolute values:
-        if (blockScales[i]>RS::PointTolerance) {
-            ret /= blockScales[i];
+    for (int i=0; i<entityStack.size(); i++) {
+        REntity* e = entityStack[i];
+        RBlockReferenceEntity* br = dynamic_cast<RBlockReferenceEntity*>(e);
+        if (br==NULL) {
+            continue;
+        }
+        double sf = qMax(br->getScaleFactors().x, br->getScaleFactors().y);
+        if (sf>RS::PointTolerance) {
+            ret /= sf;
         }
     }
 

@@ -1115,10 +1115,8 @@ void RGraphicsViewImage::paintEntitiesMulti(const RBox& queryBox) {
                         regen = true;
                     }
                     else if (drawable.getPainterPath().getAutoRegen()==true) {
-                        if (drawable.getPainterPath().getPixelSizeHint()>RS::PointTolerance &&
-                           (drawable.getPainterPath().getPixelSizeHint()<ps/5 ||
-                            drawable.getPainterPath().getPixelSizeHint()>ps*5)) {
-
+                        double psh = drawable.getPainterPath().getPixelSizeHint();
+                        if (psh>RS::PointTolerance && (psh<ps/5 || psh>ps*5)) {
                             regen = true;
                         }
                     }
@@ -1279,7 +1277,7 @@ void RGraphicsViewImage::paintEntityThread(int threadId, REntity::Id id, bool pr
         bool workingSet = true;
         if (!isPrintingOrExporting() && !preview) {
             RDocument* doc = getDocument();
-            if (doc->getWorkingSetBlockReferenceId()!=RObject::INVALID_ID) {
+            if (doc->isEditingWorkingSet()) {
                 if (!drawable.isWorkingSet()) {
                     // fade out entities not in working set:
                     workingSet = false;

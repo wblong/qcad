@@ -1190,8 +1190,10 @@ RDocumentInterface::IoErrorCode RDocumentInterface::importFile(
         return RDocumentInterface::IoErrorNotFound;
     }
 
-    if (fi.size()==0) {
-        return RDocumentInterface::IoErrorZeroSize;
+    if (RSettings::getBoolValue("SaveAs/OpenZeroSizeFile", false)==false) {
+        if (fi.size()==0) {
+            return RDocumentInterface::IoErrorZeroSize;
+        }
     }
 
     if (!fi.isReadable()) {
@@ -1360,6 +1362,8 @@ void RDocumentInterface::undo() {
 
     QList<RTransaction> t = document.undo();
     for (int i=0; i<t.length(); i++) {
+        t[i].setType(RTransaction::Undo);
+
         //QList<RObject::Id> objectIds = t[i].getAffectedObjects();
         objectChangeEvent(t[i]);
 
@@ -1384,6 +1388,8 @@ void RDocumentInterface::redo() {
     QList<RTransaction> t = document.redo();
 
     for (int i=0; i<t.length(); i++) {
+        t[i].setType(RTransaction::Redo);
+
         //QList<RObject::Id> objectIds = t[i].getAffectedObjects();
         objectChangeEvent(t[i]);
 
@@ -2156,7 +2162,7 @@ RTransaction RDocumentInterface::applyOperation(ROperation* operation) {
     }
 
     RTransaction transaction = operation->apply(document, false);
-    transaction.setType(operation->getTransactionType());
+    transaction.setTypes(operation->getTransactionTypes());
     if (transaction.isFailed()) {
         qWarning() << "RDocumentInterface::applyOperation: "
                 "transaction failed";
@@ -2187,8 +2193,8 @@ RTransaction RDocumentInterface::applyOperation(ROperation* operation) {
  * Triggers an objectChangeEvent for every object in the given set.
  */
 void RDocumentInterface::objectChangeEvent(RTransaction& transaction) {
-    if (transaction.getType()==RTransaction::CurrentLayerChange ||
-        transaction.getType()==RTransaction::CurrentLayerSelectionChange) {
+    if (transaction.getType(RTransaction::CurrentLayerChange) ||
+        transaction.getType(RTransaction::CurrentLayerSelectionChange)) {
 
         // optimization for layer change / layer selection change:
         return;
@@ -2259,13 +2265,16 @@ void RDocumentInterface::objectChangeEvent(RTransaction& transaction) {
                 }
             }
 
-            if (transaction.getType()==RTransaction::LayerVisibilityStatusChange) {
+            if (transaction.getType(RTransaction::LayerVisibilityStatusChange)) {
                 //qDebug() << "layer visibility changed";
                 // tag all block references as changed as they might contain entities on that layer:
                 // TODO: only tag if they do contain entities on that layer
                 QSet<RObject::Id> blockReferenceIds = document.queryAllBlockReferences();
                 //qDebug() << "blockReferenceIds:" << blockReferenceIds;
                 entityIdsToRegenerate.unite(blockReferenceIds);
+
+                QSet<RObject::Id> viewportIds = document.queryAllViewports();
+                entityIdsToRegenerate.unite(viewportIds);
     //            QSet<RObject::Id>::iterator it;
     //            for (it=blockReferenceIds.begin(); it!=blockReferenceIds.end(); it++) {
     //                RObject::Id id = *it;
@@ -2345,12 +2354,12 @@ void RDocumentInterface::objectChangeEvent(RTransaction& transaction) {
         }
     }
 
-    if (transaction.getType()==RTransaction::LayerLockStatusChange) {
+    if (transaction.getType(RTransaction::LayerLockStatusChange)) {
         // only lock status has changed, no regen:
         return;
     }
 
-    if (transaction.getType()==RTransaction::LayerVisibilityStatusChange) {
+    if (transaction.getType(RTransaction::LayerVisibilityStatusChange)) {
         // only visibility has changed, regen block references only:
         // TODO: this can still be slow for drawings with many / complex block references
         // TODO: find out which block references really need a regen or store layer info with

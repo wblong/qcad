@@ -2713,7 +2713,7 @@ Möchten Sie die Zeichnung wiederherstellen?</translation>
         <translation type="vanished">Einheit &apos;%1&apos; gewählt - keine Konvertierung nötig</translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+136"/>
         <source>Converted drawing from %1 to %2</source>
         <translation>Zeichnung konvertiert von %1 in %2</translation>
     </message>
@@ -4003,7 +4003,7 @@ ist bereits in der Liste.</translation>
 <context>
     <name>DrawBasedOnRectanglePP</name>
     <message>
-        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+72"/>
+        <location filename="../scripts/Draw/DrawBasedOnRectanglePP.js" line="+73"/>
         <source>First corner</source>
         <translation>Erster Eckpunkt</translation>
     </message>
@@ -4268,24 +4268,24 @@ ist bereits in der Liste.</translation>
 <context>
     <name>EAction</name>
     <message>
-        <location filename="../scripts/EAction.js" line="+68"/>
+        <location filename="../scripts/EAction.js" line="+70"/>
         <source>Back</source>
         <translation>Zurück</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+2102"/>
+        <location line="+2106"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location line="-2101"/>
+        <location line="-2105"/>
         <source>Done</source>
         <translation>Fertig</translation>
     </message>
     <message>
         <location line="+277"/>
-        <location line="+136"/>
+        <location line="+140"/>
         <source>Active Tool:</source>
         <translation>Aktives Werkzeug:</translation>
     </message>
@@ -6604,7 +6604,7 @@ BUG: Interferes with group castings.</translation>
     <message>
         <location line="+30"/>
         <source>Working set fading factor:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ausblendungsfaktor des Arbeitssatzes:</translation>
     </message>
     <message>
         <location line="+75"/>
@@ -12520,7 +12520,7 @@ nicht öffnen.
         <translation type="vanished">Alle Benutzerdefinierten Farben werden auf die nächste verfügbare Farbe gerundet.</translation>
     </message>
     <message>
-        <location filename="../scripts/File/Save/Save.js" line="+108"/>
+        <location filename="../scripts/File/Save/Save.js" line="+110"/>
         <source>File Format Version Not Recommended</source>
         <translation>Dateiversion nicht empfohlen</translation>
     </message>
@@ -12529,17 +12529,27 @@ nicht öffnen.
         <translation type="vanished">Die benutzte Dateiformatversion wird nicht empfohlen: &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location line="-36"/>
         <source>Block editing in progress</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Block in Bearbeitung</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>A block is currently exploded and being edited. Please save the block before saving your drawing. Saving will save the block contents exploded. Save anyway?</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Ein Block ist derzeit aufgebrochen und wird bearbeitet. Bitte speichern Sie den Block, bevor Sie Ihre Zeichnung speichern. Trotzdem speichern?</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <source>A block is currently exploded and being edited. Please save the block before saving your drawing.</source>
+        <translation type="vanished">Ein Block ist derzeit aufgebrochen und wird bearbeitet. Bitte speichern Sie den Block, bevor Sie Ihre Zeichnung speichern.</translation>
+    </message>
+    <message>
+        <source>Saving will save the block contents exploded.</source>
+        <translation type="vanished">Beim Speichern wird der aufgebrochene Blockinhalt gespeichert.</translation>
+    </message>
+    <message>
+        <source>Save anyway?</source>
+        <translation type="vanished">Trotzdem speichern?</translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Custom properties will not be saved.</source>
         <translation>Benutzerdefinierte Eigenschaften werden nicht gespeichert.</translation>
     </message>
@@ -12689,6 +12699,16 @@ nicht öffnen.
     </message>
     <message>
         <location line="+13"/>
+        <source>Opening</source>
+        <translation>Laden</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Allow opening of zero size files (e.g. online files that are not synched to disk)</source>
+        <translation>Öffnen von Dateien mit Grösse Null erlauben (z. B. Online-Dateien, die nicht mit der Festplatte synchronisiert werden)</translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Saving</source>
         <translation>Speichern</translation>
     </message>
@@ -15555,7 +15575,7 @@ nicht öffnen.
         <translation>Die zwei Objekte schneiden sich nicht oder werden momentan nicht für Trimmen unterstützt.</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+74"/>
         <source>First entity cannot be trimmed.</source>
         <translation>Erstes Objekt kann nicht getrimmt werden.</translation>
     </message>
